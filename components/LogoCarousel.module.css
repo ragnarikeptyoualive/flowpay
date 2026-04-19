@@ -1,0 +1,21 @@
+/* LogoCarousel.module.css */
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.marquee {
+  animation: marquee 25s linear infinite;
+}
+
+/* Make it slower and smoother on mobile */
+@media (max-width: 768px) {
+  .marquee {
+    animation-duration: 35s;
+  }
+}
