@@ -28,8 +28,8 @@ export default function AIChatWidget() {
         <div className="w-80 rounded-[2rem] border border-slate-200 bg-white p-5 shadow-2xl">
           <div className="flex items-start justify-between gap-3">
             <div>
-              <p className="text-xs uppercase tracking-[0.24em] text-slate-500">AI Concierge</p>
-              <h3 className="mt-2 text-lg font-semibold text-slate-900">Ask our setup assistant</h3>
+              <p className="text-xs uppercase tracking-[0.24em] text-slate-500">Direct Access to James</p>
+              <h3 className="mt-2 text-lg font-semibold text-slate-900">Talk to Senior Operator</h3>
             </div>
             <button
               onClick={() => setOpen(false)}
@@ -60,7 +60,7 @@ export default function AIChatWidget() {
             ))}
           </div>
           <a
-            href="https://t.me/ADjamesGrugeon"
+            href="https://t.me/ADjamesGrugeon?text=Inquiry_NewAccount"
             target="_blank"
             rel="noopener noreferrer"
             className="mt-4 inline-flex w-full items-center justify-center rounded-full bg-slate-900 px-4 py-3 text-sm font-semibold text-white transition hover:bg-slate-800"
@@ -74,7 +74,7 @@ export default function AIChatWidget() {
         className="flex items-center gap-2 rounded-full bg-blue-600 px-4 py-3 text-sm font-semibold text-white shadow-2xl hover:bg-blue-700 transition"
       >
         <MessageSquare className="h-5 w-5" />
-        AI Concierge
+        Talk to James
       </button>
     </div>
   );

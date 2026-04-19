@@ -8,8 +8,8 @@ import { Providers } from './providers'
 const _geist = Geist({ subsets: ['latin'] });
 const _geistMono = Geist_Mono({ subsets: ['latin'] });
 
-const title = 'FlowPay | Verified Merchant Infrastructure & Escrow for E-Commerce';
-const description = 'FlowPay delivers verified Shopify and Stripe infrastructure, escrow security, and international banking with fast deployment for high-volume operators.';
+const title = 'Buy Aged Stripe Account | Bypass Shopify Verification | Unfreeze Stripe Funds | FlowPay';
+const description = 'Buy aged Stripe account, bypass Shopify verification, unfreeze Stripe funds. US/UK Business Infrastructure for high-volume operators. Verified Stripe, Shopify accounts. 48h delivery.';
 
 export const metadata: Metadata = {
   title,
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
         url: 'https://flowpay.com/og-image.png',
         width: 1200,
         height: 630,
-        alt: 'FlowPay verified merchant infrastructure',
+        alt: 'Buy aged Stripe account - Bypass Shopify verification - FlowPay verified infrastructure',
       },
     ],
   },
@@ -36,6 +36,7 @@ export const metadata: Metadata = {
     description,
   },
   generator: 'v0.app',
+  keywords: 'buy aged Stripe account, bypass Shopify verification, unfreeze Stripe funds, US Stripe account, UK business infrastructure, verified Shopify store',
   icons: {
     icon: '/icon-light-32x32.png',
     apple: '/apple-icon.png',

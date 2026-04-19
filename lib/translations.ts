@@ -1,717 +1,20 @@
-export const translations = {
-  en: {
-    nav: {
-      solutions: 'Solutions',
-      continuity: 'Continuity',
-      proof: 'Proof',
-      how: 'How It Works',
-      faq: 'FAQ',
-    },
-    terms: {
-      title: 'Verified merchant operations',
-      setup: '48h setup',
-      escrow: 'Escrow-backed transfers',
-      protection: 'Protected funds',
-      coverage: 'Global banking coverage',
-      jurisdictions: '40+ jurisdictions',
-    },
-    hero: {
-      badge: 'Premium infrastructure for elite operators',
-      subtitle: 'Enterprise Infrastructure · Trusted by 500+ Operators',
-      title: 'Scale Without Borders',
-      description: 'Instant business infrastructure for global e-commerce operators. Pre-verified merchant environments, international banking, and secure escrow engineered for operational continuity.',
-      cta1: 'Talk To James',
-      cta2: 'Explore Solutions',
-      jurisdiction: 'Operating in 40+ jurisdictions',
-    },
-    solutions: {
-      title: 'Built for operators who move fast.',
-      subtitle: 'Three integrated pillars that eliminate setup friction, protect capital, and keep your business running without interruption.',
-      merchant: {
-        title: 'Verified Merchant Storefronts',
-        desc: 'Ready-to-deploy, high-volume Shopify and Stripe environments. Fully verified, KYC-cleared, and primed for immediate scale eliminating weeks of onboarding delays.',
-        p1: 'Pre-verified KYC',
-        p2: 'High-volume ready',
-        p3: 'Instant deployment',
-      },
-      banking: {
-        title: 'Global Banking Solutions',
-        desc: 'Multi-jurisdiction banking coverage for seamless capital movement across international markets. Maintain liquidity, protect margins, and stay compliant at every step.',
-        p1: 'Multi-currency accounts',
-        p2: 'Cross-border settlement',
-        p3: 'Compliance-ready',
-      },
-      escrow: {
-        title: 'Secure Escrow Services',
-        desc: 'The middle-man advantage. Every transaction is protected through our institutional escrow framework guaranteeing trust between parties and eliminating counterparty risk.',
-        p1: 'Funds held securely',
-        p2: 'Dispute resolution',
-        p3: 'Zero counterparty risk',
-      },
-    },
-    continuity: {
-      title: 'Designed for uninterrupted growth.',
-      subtitle: 'Every layer of our infrastructure is engineered to minimize downtime and maximize throughput.',
-      uptime: {
-        title: '99.9% Uptime',
-        desc: 'Redundant infrastructure ensures your operations never pause.',
-      },
-      compliance: {
-        title: 'Institutional Compliance',
-        desc: 'Built on enterprise-grade verification and KYC frameworks.',
-      },
-      support: {
-        title: '24/7 Operator Support',
-        desc: 'Direct access to senior advisors through private channels.',
-      },
-      rapid: {
-        title: 'Rapid Deployment',
-        desc: 'Environments go live within hours, not weeks.',
-      },
-    },
-    proof: {
-      title: 'Enterprise Proof',
-      subtitle: 'Results from real operators.',
-      desc: 'Verified dashboards and operator feedback from our active client base.',
-      p1: '€34K+ monthly gross volume — verified Stripe dashboard',
-      p2: 'Active Stripe environment — multi-currency enabled',
-      p3: 'Operator feedback — successful onboarding',
-      p4: '€25K+ Shopify analytics — live storefront',
-      p5: 'USDT settlement confirmation — escrow completed',
-      p6: 'Team & security access — fully provisioned',
-      cards: [
-        { title: 'Real-time Analytics', alt: 'Shopify Analytics Dashboard' },
-        { title: 'Payment Tracking', alt: 'Payment Overview Dashboard' },
-        { title: 'Messaging Integration', alt: 'WhatsApp Integration' },
-        { title: 'Secure Communications', alt: 'Secure Messaging' },
-        { title: 'Team Management', alt: 'Team Parameters' },
-        { title: 'Financial Overview', alt: 'Financial Dashboard' },
-      ],
-    },
-    carousel: {
-      subtitle: 'Platforms we offer',
-    },
-    featureCards: [
-      {
-        title: 'Live in hours',
-        description: 'Launch verified Shopify and Stripe operations fast with a fully prepped merchant stack.',
-      },
-      {
-        title: 'Escrow-first security',
-        description: 'Funds are held until delivery is confirmed, so every swap is protected and trust is enforced.',
-      },
-      {
-        title: 'Global liquidity',
-        description: 'Banking coverage across jurisdictions keeps your cashflow moving and your operation compliant.',
-      },
-      {
-        title: 'Operator support',
-        description: 'Senior support and dispute guidance available whenever your deal needs a human hand.',
-      },
-    ],
-    how: {
-      title: 'How It Works',
-      subtitle: 'From conversation to live infrastructure in 3 steps.',
-      readBeforeTitle: '📌 Read Before Buying / Selling',
-      step1: {
-        num: '01',
-        title: 'Get Started',
-        desc: "Message James Grugeon on Telegram at @ADjamesGrugeon and tell him your needs - what account you're looking for or selling.",
-      },
-      step2: {
-        num: '02',
-        title: 'James Finds a Match',
-        desc: 'He sources or matches you with a verified account that fits your exact requirements - platform, volume, jurisdiction.',
-      },
-      step3: {
-        num: '03',
-        title: 'Secure Escrow Handover',
-        desc: 'You pay James. The seller transfers full account ownership & credentials. Once you confirm everything works, James releases funds to the seller.',
-      },
-      buying: "If you're BUYING",
-      bp1: 'Get verified accounts that are production-ready',
-      bp2: 'Complete transparency on account history',
-      bp3: 'Full escrow protection for your investment',
-      selling: "If you're SELLING",
-      sp1: 'Guaranteed payment through escrow',
-      sp2: 'Verified buyers only',
-      sp3: 'Professional account transfer process',
-      frozen: 'Frozen Funds & Holds',
-      frozenDesc: 'If your funds are on hold with a payment processor, we can help unlock them through our institutional relationships and compliance framework.',
-      trust: 'Why Trust @JamesGrugeon?',
-      t1: 'Community of 2,500+ active buyers & sellers',
-      t2: 'Hundreds of successful deals completed',
-      t3: 'Available 24/7 for support & disputes',
-      t4: 'Zero tolerance for scammers — instant ban',
-      t5: 'Your funds are NEVER released without your confirmation',
-      t6: 'Every deal logged & documented',
-      rules: 'Rules',
-      r1: 'Never send money directly to buyers/sellers',
-      r2: 'Always go through @JamesGrugeon escrow',
-      r3: 'No direct deals — you will get scammed',
-      r4: 'All inquiries go through @JamesGrugeon only',
-      r5: 'Respect all members or get banned',
-      footer: "Whether you're buying, selling or have funds on hold — we've got you covered.",
-    },
-    faq: {
-      title: 'Questions',
-      subtitle: 'Frequently asked.',
-      q1: 'What exactly is included in a merchant environment?',
-      a1: 'A fully verified Shopify or Stripe environment, pre-cleared for high-volume operations, with complete documentation and access credentials delivered through our escrow protocol.',
-      q2: 'How does the escrow process protect me?',
-      a2: 'The escrow process ensures funds are held securely until both parties confirm the transaction is complete. Only after verification will funds be released.',
-      q3: 'Which jurisdictions do you cover?',
-      a3: 'We operate in 40+ jurisdictions across the globe, providing banking and merchant solutions that comply with local regulations.',
-      q4: 'How long does deployment take?',
-      a4: 'Environments go live within hours, not weeks. Our rapid deployment process ensures minimal setup time.',
-      q5: 'Is this compliant?',
-      a5: 'Yes, we build on enterprise-grade verification and KYC frameworks. All solutions are designed with institutional compliance as a core pillar.',
-    },
-    cta: {
-      title: 'Ready to scale without borders?',
-      desc: 'Connect with a senior advisor on Telegram. Private, discreet, and direct.',
-      telegram: 'Start on Telegram',
-      whatsapp: 'Message on WhatsApp',
-    },
-    footer: '© 2024 FlowPay. All rights reserved.',
-    privacy: {
-      label: 'Privacy',
-      title: 'FlowPay privacy policy',
-      intro: 'FlowPay collects only the data required to deliver accounts, manage support, and process refunds. We protect your information and use it to keep your merchant setup secure and compliant.',
-      infoUsed: {
-        title: 'Information We Use',
-        desc: 'We may collect contact details, business verification data, and transaction information needed to build and maintain your account. This data is used solely for service delivery, support, and refund processing.',
-      },
-      dataProtection: {
-        title: 'Data Protection',
-        desc: 'Your data is stored securely and shared only with trusted service partners when required to activate accounts or deliver support. We do not sell your information.',
-      },
-      supportComms: {
-        title: 'Support and Refund Communications',
-        desc: 'We use your provided contact details to manage onboarding, answer support requests, and process refunds. Communication is handled professionally and kept confidential.',
-      },
-    },
-    termsOfService: {
-      label: 'Terms',
-      title: 'FlowPay terms of service',
-      intro: 'These terms apply to FlowPay services for ready-to-use merchant accounts, fraud-protected payment setups, and managed support. By using FlowPay, you agree to our delivery, refund, and support policies.',
-      delivery: {
-        title: 'Delivery',
-        desc: 'FlowPay delivers pre-verified accounts and merchant infrastructure tailored to your business requirements. Delivery timelines vary by package, but every order includes clear setup expectations and ongoing status updates.',
-      },
-      refund: {
-        title: 'Refund Policy',
-        desc: 'We offer a full refund for valid delivery issues reported within 48 hours of account handoff. If your purchased account fails to meet the agreed requirements or onboarding support, contact us immediately to initiate the refund process.',
-      },
-      support: {
-        title: 'Support',
-        desc: 'After purchase, FlowPay includes 3 months of support. This includes account verification help, issue resolution, and guidance to keep your operation running smoothly.',
-      },
-    },
-    about: {
-      label: 'About FlowPay',
-      title: 'Ready-to-use accounts made secure, fast, and fully supported.',
-      intro: 'FlowPay delivers verified merchant infrastructure for e-commerce operators who want launch-ready Shopify, Stripe, and banking accounts without the usual setup friction. Our goal is to provide fully prepared accounts with safety, compliance, and powerful escrow protections built in.',
-      safety: {
-        title: 'Safety First',
-        desc: 'Every FlowPay account is delivered with verified infrastructure and secure onboarding. We work to ensure you receive a fully tested merchant setup backed by trusted payments and escrow workflows.',
-      },
-      refund: {
-        title: 'Refund Guarantee',
-        desc: 'If the account does not match the agreed delivery or setup criteria, you are eligible for a full refund within 48 hours of delivery. We keep our promise with a clear refund policy and responsive support.',
-      },
-      support: {
-        title: 'Three Months of Support',
-        desc: 'Every purchase includes 3 months of after-purchase support. Our team is available to help with verification, account issues, escalation, and ensuring your operation stays live and compliant.',
-      },
-      whatYouGet: {
-        title: 'What You Get',
-        list: [
-          '• Pre-configured Shopify and Stripe merchant accounts',
-          '• Escrow-backed protections and secure transfer processes',
-          '• 48-hour full refund policy for delivery issues',
-          '• 3 months of support after purchase',
-        ],
-      },
-    },
-  },
-  fr: {
-    nav: {
-      solutions: 'Solutions',
-      continuity: 'Continuité',
-      proof: 'Preuves',
-      how: 'Comment cela fonctionne',
-      faq: 'FAQ',
-    },
-    terms: {
-      title: 'Opérations de marchands vérifiées',
-      setup: 'Configuration en 48h',
-      escrow: 'Transferts garantis par dépôt',
-      protection: 'Fonds protégés',
-      coverage: 'Couverture bancaire mondiale',
-      jurisdictions: '40+ juridictions',
-    },
-    hero: {
-      badge: 'Infrastructure premium pour opérateurs élite',
-      subtitle: 'Infrastructure Entreprise · De confiance pour 500+ Opérateurs',
-      title: 'Croissance Sans Frontières.',
-      description: 'Infrastructure commerciale instantanée pour les opérateurs de commerce électronique mondiaux. Environnements marchands pré-vérifiés, services bancaires internationaux et dépôt sécurisé — conçus pour la continuité opérationnelle.',
-      cta1: 'Parler Avec James',
-      cta2: 'Explorer les Solutions',
-      jurisdiction: 'Opérant dans 40+ juridictions',
-    },
-    solutions: {
-      title: 'Conçu pour les opérateurs qui se déplacent rapidement.',
-      subtitle: 'Trois piliers intégrés qui éliminent les frictions de configuration, protègent le capital et maintiennent votre entreprise en fonctionnement — sans interruption.',
-      merchant: {
-        title: 'Devantures Marchands Vérifiées',
-        desc: "Environnements Shopify et Stripe de haute capacité prêts à être déployés. Entièrement vérifiés, approuvés par KYC et prêts pour une mise à l'échelle immédiate.",
-        p1: 'KYC pré-vérifié',
-        p2: 'Prêt pour haut volume',
-        p3: 'Déploiement instantané',
-      },
-      banking: {
-        title: 'Solutions Bancaires Mondiales',
-        desc: 'Couverture bancaire multi-juridictionnelle pour un mouvement de capital transparent entre les marchés internationaux.',
-        p1: 'Comptes multi-devises',
-        p2: 'Règlement transfrontalier',
-        p3: 'Prêt à la conformité',
-      },
-      escrow: {
-        title: 'Services de Dépôt Sécurisé',
-        desc: "L'avantage du tiers. Chaque transaction est protégée par notre cadre de dépôt institutionnel.",
-        p1: 'Fonds sécurisés',
-        p2: 'Résolution des litiges',
-        p3: 'Zéro risque de contrepartie',
-      },
-    },
-    continuity: {
-      title: 'Conçu pour une croissance ininterrompue.',
-      subtitle: "Chaque couche de notre infrastructure est conçue pour minimiser les temps d'arrêt et maximiser le débit.",
-      uptime: {
-        title: 'Disponibilité 99,9%',
-        desc: "L'infrastructure redondante garantit que vos opérations ne s'arrêtent jamais.",
-      },
-      compliance: {
-        title: 'Conformité Institutionnelle',
-        desc: 'Basé sur des cadres de vérification et KYC au niveau entreprise.',
-      },
-      support: {
-        title: 'Support Opérateur 24/7',
-        desc: 'Accès direct aux conseillers supérieurs via des canaux privés.',
-      },
-      rapid: {
-        title: 'Déploiement Rapide',
-        desc: 'Les environnements sont en ligne en quelques heures, pas en semaines.',
-      },
-    },
-    proof: {
-      title: 'Preuves Entreprise',
-      subtitle: "Résultats d'opérateurs réels.",
-      desc: 'Tableaux de bord vérifiés et commentaires d\'opérateurs de notre base active.',
-      p1: '€34K+ volume brut mensuel — tableau de bord Stripe vérifié',
-      p2: 'Environnement Stripe actif — multi-devises activé',
-      p3: 'Commentaires des opérateurs — intégration réussie',
-      p4: '€25K+ analyses Shopify — vitrine en direct',
-      p5: 'Confirmation de règlement USDT — dépôt complété',
-      p6: "Accès d'équipe et de sécurité — entièrement provisionné",
-      cards: [
-        { title: 'Analytique en Temps Réel', alt: 'Tableau de Bord Shopify' },
-        { title: 'Suivi des Paiements', alt: 'Tableau de Bord des Paiements' },
-        { title: 'Intégration de Messagerie', alt: 'Intégration WhatsApp' },
-        { title: 'Communications Sécurisées', alt: 'Messagerie Sécurisée' },
-        { title: 'Gestion d\'Équipe', alt: 'Paramètres d\'Équipe' },
-        { title: 'Aperçu Financier', alt: 'Tableau de Bord Financier' },
-      ],
-    },
-    carousel: {
-      subtitle: 'Plateformes que nous proposons',
-    },
-    featureCards: [
-      {
-        title: 'En ligne en heures',
-        description: 'Lancez rapidement des opérations Shopify et Stripe vérifiées avec une pile marchande entièrement préparée.',
-      },
-      {
-        title: 'Sécurité par dépôt prioritaire',
-        description: "Les fonds sont retenus jusqu'à confirmation de la livraison, chaque échange est protégé et la confiance imposée.",
-      },
-      {
-        title: 'Liquidité mondiale',
-        description: 'Couverture bancaire à travers les juridictions maintient votre flux de trésorerie et votre opération conforme.',
-      },
-      {
-        title: 'Support opérateur',
-        description: "Support senior et guidance en cas de litige disponibles dès que votre deal a besoin d'une main humaine.",
-      },
-    ],
-    how: {
-      title: 'Comment cela fonctionne',
-      subtitle: "De la conversation à l'infrastructure en direct en 3 étapes.",
-      readBeforeTitle: '📌 Lire Avant d\'Acheter / Vendre',
-      step1: {
-        num: '01',
-        title: 'Commencer',
-        desc: 'Envoyez un message à James Grugeon sur Telegram à @ADjamesGrugeon et dites-lui vos besoins.',
-      },
-      step2: {
-        num: '02',
-        title: 'James Trouve une Correspondance',
-        desc: 'Il source ou vous assortit avec un compte vérifié qui correspond à vos exigences exactes.',
-      },
-      step3: {
-        num: '03',
-        title: 'Transfert Sécurisé en Dépôt',
-        desc: 'Vous payez James. Le vendeur transfère la propriété complète du compte et les identifiants.',
-      },
-      buying: 'Si vous ACHETEZ',
-      bp1: 'Obtenez des comptes vérifiés prêts pour la production',
-      bp2: "Transparence complète sur l'historique du compte",
-      bp3: 'Protection complète du dépôt pour votre investissement',
-      selling: 'Si vous VENDEZ',
-      sp1: 'Paiement garanti via dépôt',
-      sp2: 'Acheteurs vérifiés uniquement',
-      sp3: 'Processus de transfert de compte professionnel',
-      frozen: 'Fonds Gelés et Retenues',
-      frozenDesc: 'Si vos fonds sont retenus par un processeur de paiement, nous pouvons vous aider à les déverrouiller.',
-      trust: 'Pourquoi faire confiance à @JamesGrugeon?',
-      t1: 'Communauté de 2 500+ acheteurs et vendeurs actifs',
-      t2: 'Des centaines de transactions réussies',
-      t3: 'Disponible 24/7 pour le support et les différends',
-      t4: 'Zéro tolérance pour les arnaqueurs',
-      t5: 'Vos fonds ne sont JAMAIS libérés sans votre confirmation',
-      t6: 'Chaque transaction enregistrée et documentée',
-      rules: 'Règles',
-      r1: "Ne jamais envoyer d'argent directement aux acheteurs/vendeurs",
-      r2: 'Toujours utiliser le dépôt @JamesGrugeon',
-      r3: 'Pas de transactions directes — vous serez arnaqué',
-      r4: 'Toutes les questions vont à @JamesGrugeon uniquement',
-      r5: 'Respectez tous les membres ou soyez banni',
-      footer: 'Que vous achetiez, vendiez ou ayez des fonds retenus — nous vous avons couvert.',
-    },
-    faq: {
-      title: 'Questions',
-      subtitle: 'Fréquemment posées.',
-      q1: "Qu'est-ce exactement inclus dans un environnement marchand?",
-      a1: "Un environnement Shopify ou Stripe entièrement vérifié, pré-autorisé pour les opérations à haut volume.",
-      q2: "Comment le processus de dépôt m'aide-t-il à rester protégé?",
-      a2: "Le processus de dépôt garantit que les fonds sont sécurisés jusqu'à ce que les deux parties confirment la transaction.",
-      q3: 'Quelles juridictions couvrez-vous?',
-      a3: 'Nous opérons dans 40+ juridictions à travers le monde.',
-      q4: 'Combien de temps prend le déploiement?',
-      a4: 'Les environnements sont en ligne en quelques heures, pas en semaines.',
-      q5: 'Est-ce conforme?',
-      a5: 'Oui, nous construisons sur des cadres de vérification et KYC au niveau entreprise.',
-    },
-    cta: {
-      title: 'Prêt à croître sans frontières?',
-      desc: 'Connectez-vous avec un conseiller senior sur Telegram. Privé, discret et direct.',
-      telegram: 'Démarrer sur Telegram',
-      whatsapp: 'Message sur WhatsApp',
-    },
-    footer: '© 2024 FlowPay. Tous droits réservés.',
-    privacy: {
-      label: 'Confidentialité',
-      title: 'Politique de confidentialité FlowPay',
-      intro: 'FlowPay ne collecte que les données nécessaires pour fournir des comptes, gérer le support et traiter les remboursements. Nous protégeons vos informations et les utilisons pour garantir la sécurité et la conformité de votre configuration marchande.',
-      infoUsed: {
-        title: 'Informations que nous utilisons',
-        desc: 'Nous pouvons collecter des coordonnées, des données de vérification commerciale et des informations de transaction nécessaires pour créer et maintenir votre compte. Ces données sont utilisées uniquement pour la prestation de services, le support et le traitement des remboursements.',
-      },
-      dataProtection: {
-        title: 'Protection des données',
-        desc: 'Vos données sont stockées en toute sécurité et partagées uniquement avec des partenaires de service de confiance lorsque cela est nécessaire pour activer des comptes ou fournir un support. Nous ne vendons pas vos informations.',
-      },
-      supportComms: {
-        title: 'Communications de support et de remboursement',
-        desc: 'Nous utilisons vos coordonnées fournies pour gérer l\'intégration, répondre aux demandes de support et traiter les remboursements. La communication est gérée de manière professionnelle et gardée confidentielle.',
-      },
-    },
-    termsOfService: {
-      label: 'Conditions',
-      title: 'Conditions d\'utilisation FlowPay',
-      intro: 'Ces conditions s\'appliquent aux services FlowPay pour les comptes marchands prêts à l\'emploi, les configurations de paiement protégées contre la fraude et le support géré. En utilisant FlowPay, vous acceptez nos politiques de livraison, de remboursement et de support.',
-      delivery: {
-        title: 'Livraison',
-        desc: 'FlowPay livre des comptes pré-vérifiés et une infrastructure marchande adaptée à vos besoins commerciaux. Les délais de livraison varient selon le forfait, mais chaque commande comprend des attentes de configuration claires et des mises à jour de statut continues.',
-      },
-      refund: {
-        title: 'Politique de Remboursement',
-        desc: 'Nous offrons un remboursement complet pour les problèmes de livraison valides signalés dans les 48 heures suivant la remise du compte. Si votre compte acheté ne répond pas aux exigences convenues ou au support d\'intégration, contactez-nous immédiatement pour lancer le processus de remboursement.',
-      },
-      support: {
-        title: 'Support',
-        desc: 'Après l\'achat, FlowPay inclut 3 mois de support. Cela comprend l\'aide à la vérification du compte, la résolution des problèmes et des conseils pour maintenir votre opération en bon état de marche.',
-      },
-    },
-    about: {
-      label: 'À propos de FlowPay',
-      title: 'Des comptes prêts à l\'emploi sécurisés, rapides et entièrement pris en charge.',
-      intro: 'FlowPay fournit une infrastructure marchande vérifiée pour les opérateurs de commerce électronique qui souhaitent lancer rapidement des comptes Shopify, Stripe et bancaires sans les frictions de configuration habituelles. Notre objectif est de fournir des comptes entièrement préparés avec sécurité, conformité et protections de dépôt puissantes intégrées.',
-      safety: {
-        title: 'Sécurité Avant Tout',
-        desc: 'Chaque compte FlowPay est livré avec une infrastructure vérifiée et une intégration sécurisée. Nous nous assurons que vous recevez une configuration marchande entièrement testée, soutenue par des paiements fiables et des flux de travail de dépôt.',
-      },
-      refund: {
-        title: 'Garantie de Remboursement',
-        desc: 'Si le compte ne correspond pas aux critères de livraison ou de configuration convenus, vous êtes éligible à un remboursement complet dans les 48 heures suivant la livraison. Nous tenons notre promesse avec une politique de remboursement claire et un support réactif.',
-      },
-      support: {
-        title: 'Trois Mois de Support',
-        desc: 'Chaque achat comprend 3 mois de support après-vente. Notre équipe est disponible pour aider avec la vérification, les problèmes de compte, l\'escalade et pour garantir que votre opération reste en direct et conforme.',
-      },
-      whatYouGet: {
-        title: 'Ce Que Vous Obtenez',
-        list: [
-          '• Comptes marchands Shopify et Stripe préconfigurés',
-          '• Protections soutenues par le dépôt et processus de transfert sécurisé',
-          '• Politique de remboursement complet de 48 heures pour les problèmes de livraison',
-          '• 3 mois de support après achat',
-        ],
-      },
-    },
-  },
-  ar: {
-    nav: {
-      solutions: 'الحلول',
-      continuity: 'الاستمرارية',
-      proof: 'الإثبات',
-      how: 'كيف يعمل',
-      faq: 'الأسئلة الشائعة',
-    },
-    terms: {
-      title: 'عمليات التجار الموثوقة',
-      setup: 'إعداد في 48 ساعة',
-      escrow: 'تحويلات مدعومة بالضمان',
-      protection: 'أموال محمية',
-      coverage: 'تغطية مصرفية عالمية',
-      jurisdictions: '40+ اختصاص',
-    },
-    hero: {
-      badge: 'بنية تحتية مميزة للمشغلين النخبة',
-      subtitle: 'البنية التحتية للمؤسسات · موثوقة من قبل 500+ مشغلين',
-      title: 'النمو بدون حدود.',
-      description: 'البنية التحتية التجارية الفورية لمشغلي التجارة الإلكترونية العالميين. بيئات تجار مُتحققة مسبقًا وخدمات مصرفية دولية وضمان آمن.',
-      cta1: 'تحدث مع جيمس',
-      cta2: 'استكشاف الحلول',
-      jurisdiction: 'العمل في أكثر من 40 اختصاص',
-    },
-    solutions: {
-      title: 'مصمم للمشغلين الذين يتحركون بسرعة.',
-      subtitle: 'ثلاث دعائم متكاملة تلغي احتكاك الإعداد وتحمي رأس المال.',
-      merchant: {
-        title: 'واجهات متاجر موثوقة',
-        desc: 'بيئات Shopify و Stripe عالية الحجم جاهزة للنشر. تم التحقق منها بالكامل وموثوقة.',
-        p1: 'التحقق المسبق من KYC',
-        p2: 'جاهز للحجم العالي',
-        p3: 'النشر الفوري',
-      },
-      banking: {
-        title: 'حلول مصرفية عالمية',
-        desc: 'تغطية مصرفية متعددة الاختصاصات لحركة رأس المال السلسة عبر الأسواق الدولية.',
-        p1: 'حسابات متعددة العملات',
-        p2: 'التسوية عبر الحدود',
-        p3: 'جاهز للامتثال',
-      },
-      escrow: {
-        title: 'خدمات الضمان الآمنة',
-        desc: 'كل معاملة محمية من خلال إطار الضمان المؤسسي لدينا.',
-        p1: 'أموال محمية بشكل آمن',
-        p2: 'حل النزاعات',
-        p3: 'صفر مخاطر الطرف الآخر',
-      },
-    },
-    continuity: {
-      title: 'مصمم للنمو المستمر.',
-      subtitle: 'كل طبقة من البنية التحتية لدينا مصممة لتقليل وقت التوقف.',
-      uptime: {
-        title: '99.9% وقت التشغيل',
-        desc: 'البنية التحتية الزائدة تضمن عدم توقف العمليات.',
-      },
-      compliance: {
-        title: 'الامتثال المؤسسي',
-        desc: 'مبني على أطر التحقق وKYC على مستوى المؤسسة.',
-      },
-      support: {
-        title: 'دعم المشغل 24/7',
-        desc: 'الوصول المباشر إلى كبار المستشارين عبر القنوات الخاصة.',
-      },
-      rapid: {
-        title: 'النشر السريع',
-        desc: 'البيئات تصبح مباشرة في غضون ساعات وليس أسابيع.',
-      },
-    },
-    proof: {
-      title: 'إثبات المؤسسة',
-      subtitle: 'نتائج من مشغلين حقيقيين.',
-      desc: 'لوحات معلومات موثوقة وتعليقات من قاعدة العملاء النشطين.',
-      p1: '€34K+ حجم إجمالي شهري — لوحة معلومات Stripe موثوقة',
-      p2: 'بيئة Stripe نشطة — متعدد العملات مفعل',
-      p3: 'تعليقات المشغلين — الإعداد الناجح',
-      p4: '€25K+ تحليلات Shopify — متجر مباشر',
-      p5: 'تأكيد تسوية USDT — ضمان مكتمل',
-      p6: 'وصول الفريق والأمان — مزود بالكامل',
-      cards: [
-        { title: 'تحليلات فورية', alt: 'لوحة تحكم Shopify' },
-        { title: 'تتبع المدفوعات', alt: 'لوحة نظرة عامة على المدفوعات' },
-        { title: 'تكامل المراسلة', alt: 'تكامل واتساب' },
-        { title: 'اتصالات آمنة', alt: 'مراسلة آمنة' },
-        { title: 'إدارة الفريق', alt: 'معلمات الفريق' },
-        { title: 'نظرة مالية', alt: 'لوحة التحكم المالية' },
-      ],
-    },
-    carousel: {
-      subtitle: 'المنصات التي نقدمها',
-    },
-    featureCards: [
-      {
-        title: 'تشغيل في ساعات',
-        description: 'إطلاق عمليات Shopify وStripe الموثقة بسرعة مع حزمة تاجر مجهزة كاملاً.',
-      },
-      {
-        title: 'الأمان أولاً بالضمان',
-        description: 'الأموال محتجزة حتى التأكيد على التسليم، كل تبادل محمي ويفرض الثقة.',
-      },
-      {
-        title: 'السيولة العالمية',
-        description: 'تغطية مصرفية عبر الاختصاصات تحافظ على تدفق نقديتك وتدعم عملياتك متوافقة.',
-      },
-      {
-        title: 'دعم المشغل',
-        description: 'دعم كبار المستشارين وإرشاد النزاعات متاح عندما تحتاج صفقة يد بشرية.',
-      },
-    ],
-    how: {
-      title: 'كيف يعمل',
-      subtitle: 'من المحادثة إلى البنية التحتية المباشرة في 3 خطوات.',
-      readBeforeTitle: '📌 اقرأ قبل الشراء / البيع',
-      step1: {
-        num: '01',
-        title: 'ابدأ',
-        desc: 'راسل جيمس جروجيون على Telegram في @ADjamesGrugeon وأخبره باحتياجاتك.',
-      },
-      step2: {
-        num: '02',
-        title: 'جيمس يجد تطابقًا',
-        desc: 'إنه يحصل على حساب موثوق يطابق متطلباتك الدقيقة.',
-      },
-      step3: {
-        num: '03',
-        title: 'نقل الضمان الآمن',
-        desc: 'تدفع لجيمس. ينقل البائع ملكية الحساب والبيانات الكاملة.',
-      },
-      buying: 'إذا كنت تشتري',
-      bp1: 'احصل على حسابات موثوقة جاهزة للإنتاج',
-      bp2: 'شفافية كاملة عن سجل الحساب',
-      bp3: 'حماية ضمان كاملة لاستثمارك',
-      selling: 'إذا كنت تبيع',
-      sp1: 'ضمان الدفع عبر الضمان',
-      sp2: 'المشترون الموثوقون فقط',
-      sp3: 'عملية نقل حساب احترافية',
-      frozen: 'الأموال المجمدة والحجوزات',
-      frozenDesc: 'إذا تم حجز أموالك لدى معالج دفع، يمكننا مساعدتك في فتحها.',
-      trust: 'لماذا تثق في @JamesGrugeon?',
-      t1: 'مجتمع من 2500+ مشترين وبائعين نشطين',
-      t2: 'مئات الصفقات الناجحة المكتملة',
-      t3: 'متاح 24/7 للدعم والنزاعات',
-      t4: 'عدم التسامح مع المحتالين',
-      t5: 'أموالك لا تُفرج عنها أبدًا بدون تأكيدك',
-      t6: 'كل صفقة مسجلة وموثقة',
-      rules: 'القواعد',
-      r1: 'لا ترسل أموالًا مباشرة للمشترين/البائعين',
-      r2: 'استخدم دائمًا ضمان @JamesGrugeon',
-      r3: 'لا توجد صفقات مباشرة — سيتم خداعك',
-      r4: 'جميع الاستفسارات تذهب إلى @JamesGrugeon فقط',
-      r5: 'احترم جميع الأعضاء أو سيتم حظرك',
-      footer: 'سواء كنت تشتري أو تبيع أو لديك أموال محجوزة — نحن نغطيك.',
-    },
-    faq: {
-      title: 'أسئلة',
-      subtitle: 'مسأول بشكل متكرر.',
-      q1: 'ما هو بالضبط المدرج في بيئة التاجر؟',
-      a1: 'بيئة Shopify أو Stripe مُتحققة بالكامل، ومصرحة مسبقًا للعمليات الضخمة.',
-      q2: 'كيف يحميني عملية الضمان؟',
-      a2: 'تضمن عملية الضمان أن الأموال محمية بشكل آمن حتى يؤكد الجانبان إتمام المعاملة.',
-      q3: 'أي الاختصاصات تغطيها؟',
-      a3: 'نعمل في أكثر من 40 اختصاص في جميع أنحاء العالم.',
-      q4: 'كم من الوقت يستغرق النشر؟',
-      a4: 'البيئات تصبح مباشرة في غضون ساعات وليس أسابيع.',
-      q5: 'هل هذا متوافق؟',
-      a5: 'نعم، نحن نبني على أطر التحقق وKYC على مستوى المؤسسة.',
-    },
-    cta: {
-      title: 'هل أنت مستعد للنمو بدون حدود؟',
-      desc: 'تواصل مع مستشار أول على Telegram. خاص ومباشر.',
-      telegram: 'ابدأ على Telegram',
-      whatsapp: 'الرسالة على WhatsApp',
-    },
-    footer: '© 2024 FlowPay. جميع الحقوق محفوظة.',
-    privacy: {
-      label: 'الخصوصية',
-      title: 'سياسة خصوصية FlowPay',
-      intro: 'تجمع FlowPay فقط البيانات المطلوبة لتقديم الحسابات وإدارة الدعم ومعالجة المبالغ المستردة. نحن نحمي معلوماتك ونستخدمها للحفاظ على إعداد التاجر الخاص بك آمنًا ومتوافقًا.',
-      infoUsed: {
-        title: 'المعلومات التي نستخدمها',
-        desc: 'قد نجمع تفاصيل الاتصال وبيانات التحقق من الأعمال ومعلومات المعاملات اللازمة لبناء حسابك وصيانته. تُستخدم هذه البيانات فقط لتقديم الخدمة والدعم ومعالجة المبالغ المستردة.',
-      },
-      dataProtection: {
-        title: 'حماية البيانات',
-        desc: 'تُخزن بياناتك بشكل آمن ولا تتم مشاركتها إلا مع شركاء الخدمة الموثوقين عند الحاجة لتفعيل الحسابات أو تقديم الدعم. نحن لا نبيع معلوماتك.',
-      },
-      supportComms: {
-        title: 'اتصالات الدعم والمبالغ المستردة',
-        desc: 'نستخدم تفاصيل الاتصال التي قدمتها لإدارة الإعداد الأولي والرد على طلبات الدعم ومعالجة المبالغ المستردة. تتم إدارة الاتصالات بشكل احترافي وتُحفظ بسرية.',
-      },
-    },
-    termsOfService: {
-      label: 'الشروط',
-      title: 'شروط خدمة FlowPay',
-      intro: 'تنطبق هذه الشروط على خدمات FlowPay للحسابات التجارية الجاهزة للاستخدام وإعدادات الدفع المحمية من الاحتيال والدعم المُدار. باستخدام FlowPay، فإنك توافق على سياسات التسليم والاسترداد والدعم الخاصة بنا.',
-      delivery: {
-        title: 'التسليم',
-        desc: 'تُسلم FlowPay حسابات مُتحققة مسبقًا وبنية تحتية تجارية مصممة وفقًا لمتطلبات عملك. تختلف جداول التسليم حسب الباقة، لكن كل طلب يتضمن توقعات إعداد واضحة وتحديثات مستمرة للحالة.',
-      },
-      refund: {
-        title: 'سياسة الاسترداد',
-        desc: 'نقدم استردادًا كاملاً لمشاكل التسليم الصالحة المبلغ عنها خلال 48 ساعة من تسليم الحساب. إذا فشل حسابك المشتراة في تلبية المتطلبات المتفق عليها أو دعم الإعداد الأولي، اتصل بنا فورًا لبدء عملية الاسترداد.',
-      },
-      support: {
-        title: 'الدعم',
-        desc: 'بعد الشراء، يتضمن FlowPay 3 أشهر من الدعم. يشمل ذلك مساعدة التحقق من الحساب، وحل المشكلات، والتوجيه للحفاظ على سير عملياتك بسلاسة.',
-      },
-    },
-    about: {
-      label: 'حول FlowPay',
-      title: 'حسابات جاهزة للاستخدام، آمنة، سريعة، ومدعومة بالكامل.',
-      intro: 'تقدم FlowPay بنية تحتية تجارية مُتحققة لمشغلي التجارة الإلكترونية الذين يرغبون في إطلاق حسابات Shopify وStripe والبنكية بسرعة دون تعقيدات الإعداد المعتادة. هدفنا هو توفير حسابات مُجهزة بالكامل مع أمان، امتثال، وحمايات ضمان قوية مدمجة.',
-      safety: {
-        title: 'الأمان أولاً',
-        desc: 'يتم تسليم كل حساب FlowPay ببنية تحتية مُتحققة وإعداد آمن. نعمل لضمان حصولك على إعداد تجاري مُختبر بالكامل مدعوم بمدفوعات موثوقة وسير عمل ضمان.',
-      },
-      refund: {
-        title: 'ضمان الاسترداد',
-        desc: 'إذا لم يطابق الحساب معايير التسليم أو الإعداد المتفق عليها، فأنت مؤهل لاسترداد كامل خلال 48 ساعة من التسليم. نفي بوعودنا من خلال سياسة استرداد واضحة ودعم سريع الاستجابة.',
-      },
-      support: {
-        title: 'ثلاثة أشهر من الدعم',
-        desc: 'يشمل كل عملية شراء 3 أشهر من الدعم بعد الشراء. فريقنا متاح للمساعدة في التحقق، مشكلات الحساب، التصعيد، وضمان استمرار عملك بشكل مباشر ومتوافق.',
-      },
-      whatYouGet: {
-        title: 'ما الذي ستحصل عليه',
-        list: [
-          '• حسابات تجار Shopify وStripe مكونة مسبقًا',
-          '• حمايات مدعومة بالضمان وعمليات نقل آمنة',
-          '• سياسة استرداد كامل خلال 48 ساعة لمشاكل التسليم',
-          '• 3 أشهر من الدعم بعد الشراء',
-        ],
-      },
-    },
-  },
-};
+// lib/translations.ts
 
-export type Language = keyof typeof translations;
+export type Language = 'en' | 'fr' | 'ar' | 'es' | 'pt' | 'vi' | 'it' | 'zh' | 'de';
 
-export interface Terms {
+interface NavTranslations {
+  solutions: string;
+  continuity: string;
+  proof: string;
+  how: string;
+  faq: string;
+  feedbacks: string;
+  cta: string;
+  mobileTitle: string;
+  mobileMenuLabel: string;
+}
+
+interface TermsTranslations {
   title: string;
   setup: string;
   escrow: string;
@@ -720,17 +23,158 @@ export interface Terms {
   jurisdictions: string;
 }
 
-export interface ProofCard {
+interface HeroTranslations {
+  badge: string;
+  subtitle: string;
+  title: string;
+  description: string;
+  cta1: string;
+  cta2: string;
+  ctaNewAccount: string;
+  ctaFundsHold: string;
+  ctaKYC: string;
+  jurisdiction: string;
+}
+
+interface TelegramChannelTranslations {
+  title: string;
+  desc: string;
+  cta: string;
+  success: string;
+}
+
+interface ReplacementPolicyTranslations {
+  title: string;
+  desc: string;
+  points: string[];
+}
+
+interface TelegramProof {
+  text: string;
+  author: string;
+}
+
+interface SolutionPillar {
+  title: string;
+  desc: string;
+  p1: string;
+  p2: string;
+  p3: string;
+}
+
+interface SolutionsTranslations {
+  title: string;
+  subtitle: string;
+  merchant: SolutionPillar;
+  banking: SolutionPillar;
+  escrow: SolutionPillar;
+}
+
+interface ContinuityItem {
+  title: string;
+  desc: string;
+}
+
+interface ContinuityTranslations {
+  title: string;
+  subtitle: string;
+  uptime: ContinuityItem;
+  compliance: ContinuityItem;
+  support: ContinuityItem;
+  rapid: ContinuityItem;
+}
+
+interface ProofCard {
   title: string;
   alt: string;
 }
 
-export interface FeatureCard {
+interface ProofTranslations {
+  title: string;
+  subtitle: string;
+  desc: string;
+  p1: string;
+  p2: string;
+  p3: string;
+  p4: string;
+  p5: string;
+  p6: string;
+  cards: ProofCard[];
+}
+
+interface CarouselTranslations {
+  subtitle: string;
+}
+
+interface FeatureCard {
   title: string;
   description: string;
 }
 
-export interface PrivacySection {
+interface HowStep {
+  num: string;
+  title: string;
+  desc: string;
+}
+
+interface HowTranslations {
+  title: string;
+  subtitle: string;
+  step1: HowStep;
+  step2: HowStep;
+  step3: HowStep;
+  buying: string;
+  selling: string;
+  frozen: string;
+  frozenDesc: string;
+  trust: string;
+  t1: string;
+  t2: string;
+  t3: string;
+  t4: string;
+  t5: string;
+  t6: string;
+  rules: string;
+  r1: string;
+  r2: string;
+  r3: string;
+  r4: string;
+  r5: string;
+  readBeforeTitle: string;
+  footer: string;
+}
+
+interface FAQTranslations {
+  title: string;
+  subtitle: string;
+  q1: string;
+  a1: string;
+  q2: string;
+  a2: string;
+  q3: string;
+  a3: string;
+  q4: string;
+  a4: string;
+  q5: string;
+  a5: string;
+}
+
+interface CTATranslations {
+  title: string;
+  desc: string;
+  telegram: string;
+  whatsapp: string;
+}
+
+interface FeedbackTranslations {
+  label: string;
+  title: string;
+  subtitle: string;
+  desc: string;
+  screenshots: Array<{ alt: string; caption: string }>;
+}
+
+interface PrivacyTranslations {
   label: string;
   title: string;
   intro: string;
@@ -739,7 +183,7 @@ export interface PrivacySection {
   supportComms: { title: string; desc: string };
 }
 
-export interface TermsOfServiceSection {
+interface TermsOfServiceTranslations {
   label: string;
   title: string;
   intro: string;
@@ -748,12 +192,277 @@ export interface TermsOfServiceSection {
   support: { title: string; desc: string };
 }
 
-export interface AboutSection {
-  label: string;
-  title: string;
-  intro: string;
-  safety: { title: string; desc: string };
-  refund: { title: string; desc: string };
-  support: { title: string; desc: string };
-  whatYouGet: { title: string; list: string[] };
+interface TranslationSet {
+  nav: NavTranslations;
+  terms: TermsTranslations;
+  hero: HeroTranslations;
+  liveInventory: string[];
+  telegramChannel: TelegramChannelTranslations;
+  replacementPolicy: ReplacementPolicyTranslations;
+  telegramProofs: TelegramProof[];
+  solutions: SolutionsTranslations;
+  continuity: ContinuityTranslations;
+  proof: ProofTranslations;
+  carousel: CarouselTranslations;
+  featureCards: FeatureCard[];
+  how: HowTranslations;
+  faq: FAQTranslations;
+  cta: CTATranslations;
+  feedbacks: FeedbackTranslations;
+  privacy: PrivacyTranslations;
+  termsOfService: TermsOfServiceTranslations;
 }
+
+export const translations: Record<Language, TranslationSet> = {
+  en: {
+    nav: { solutions: 'Solutions', continuity: 'Continuity', proof: 'Proof', how: 'How It Works', faq: 'FAQ', feedbacks: 'Feedbacks', cta: 'Talk to James', mobileTitle: 'Navigation', mobileMenuLabel: 'Open menu' },
+    terms: { title: 'Verified merchant operations', setup: '48h setup', escrow: 'Escrow-backed transfers', protection: 'Protected funds', coverage: 'Global banking coverage', jurisdictions: '40+ jurisdictions' },
+    hero: { badge: 'Verified Infrastructure for High-Volume Operators', subtitle: 'We provide the Stripe, Shopify, and Banking environments the platforms tried to take away. No verification loops. No local ID required. 48h delivery.', title: 'Verified Infrastructure for High-Volume Operators', description: 'Buy aged Stripe account with high-limits. Bypass Shopify verification instantly. Unfreeze Stripe funds from holds. US/UK Business Infrastructure ready in 48h.', cta1: 'I need a new account', cta2: 'Explore Solutions', ctaNewAccount: 'I need a new account', ctaFundsHold: 'My funds are on hold', ctaKYC: 'Verification help', jurisdiction: 'Operating in 40+ jurisdictions' },
+    liveInventory: ['✅ 1x US Stripe + Shopify Store just delivered to an operator in Morocco 🇲🇦', '✅ 1x UK Aged Stripe Account delivered to Algeria 🇩🇿', '✅ 1x High-Limit Shopify delivered to Egypt 🇪🇬', '✅ 1x US Stripe Unfrozen delivered to Lebanon 🇱🇧', '✅ 1x EU Shopify Store delivered to Spain 🇪🇸', '✅ 1x UK Stripe Account delivered to France 🇫🇷', '✅ 1x US High-Volume Stripe delivered to UK 🇬🇧', '✅ 1x Shopify + Stripe delivered to USA 🇺🇸', '✅ 1x UAE Banking + Stripe delivered to UAE 🇦🇪', '✅ 1x Asia Stripe Account delivered to Vietnam 🇻🇳', '✅ 1x US Stripe delivered to Philippines 🇵🇭'],
+    telegramChannel: { title: 'Join our Telegram Channel for Daily Stock Updates', desc: 'Get real-time inventory alerts, new stock notifications, and operator tips. No email required.', cta: 'Join Channel Now', success: 'Joined! Check your Telegram for daily updates.' },
+    replacementPolicy: { title: 'Our Replacement Policy', desc: 'If the account flags within 24h of login, we replace it 1:1. No questions asked.', points: ['24h replacement guarantee', '1:1 swap if account flags', 'High-quality replacements only', 'Includes re-verification'] },
+    telegramProofs: [{ text: 'Payout hit the bank, thanks James!', author: 'Operator MA' }, { text: 'Account perfect, already scaling volume.', author: 'Trader DZ' }, { text: 'Fast delivery + works perfectly!', author: 'EG Operator' }],
+    solutions: { title: 'Built for operators who move fast', subtitle: 'Three integrated pillars that eliminate setup friction, protect capital, and keep your business running without interruption.', merchant: { title: 'Verified Merchant Storefronts', desc: 'Ready-to-deploy, high-volume Shopify and Stripe environments. Fully verified, KYC-cleared, and primed for immediate scale.', p1: 'Pre-verified KYC - no ID loops', p2: 'High-volume ready - bypass verification', p3: 'Instant deployment - unfreeze funds fast' }, banking: { title: 'Global Banking Solutions', desc: 'Multi-jurisdiction banking coverage for seamless capital movement across international markets.', p1: 'Multi-currency accounts', p2: 'Cross-border settlement', p3: 'Compliance-ready - high-limit history' }, escrow: { title: 'Secure Escrow Services', desc: 'The middle-man advantage. Every transaction is protected through our institutional escrow framework.', p1: 'Funds held securely', p2: 'Dispute resolution', p3: 'Zero counterparty risk' } },
+    continuity: { title: 'Operational Continuity', subtitle: 'We solve the three main problems that keep operators stuck.', uptime: { title: 'Creation Issues?', desc: "Don't burn your clean IPs and devices. We provide ready-to-scale, aged infrastructure that passes 'Day 1' risk checks." }, compliance: { title: 'Verification (KYC) Walls?', desc: "Stop getting stuck in ID loops. Every account we deliver is pre-cleared with high-quality documentation." }, support: { title: 'Bans & Funds on Hold?', desc: "Locked at 25% reserve? We source accounts with high-limit history and provide advisory on moving capital out of 90-day holds." }, rapid: { title: '24/7 Operator Support', desc: 'Direct access to senior advisors through private Telegram channels.' } },
+    proof: { title: 'Enterprise Proof', subtitle: 'Results from real operators + client Telegram feedback.', desc: 'Verified dashboards, operator feedback, and real Telegram chat proofs from our active client base.', p1: '€34K+ monthly gross volume — verified Stripe dashboard', p2: 'Active Stripe environment — multi-currency enabled', p3: 'Operator feedback — successful onboarding', p4: '€25K+ Shopify analytics — live storefront', p5: 'USDT settlement confirmation — escrow completed', p6: 'Team & security access — fully provisioned', cards: [{ title: 'Real-time Analytics', alt: 'Shopify Analytics Dashboard' }, { title: 'Payment Tracking', alt: 'Payment Overview Dashboard' }, { title: 'Messaging Integration', alt: 'WhatsApp Integration' }, { title: 'Secure Communications', alt: 'Secure Messaging' }, { title: 'Team Management', alt: 'Team Parameters' }, { title: 'Financial Overview', alt: 'Financial Dashboard' }] },
+    carousel: { subtitle: 'Trusted by operators worldwide' },
+    featureCards: [{ title: 'Instant Setup', description: 'Get started in minutes, not days.' }, { title: 'Verified Accounts', description: 'Pre-vetted, ready-to-use accounts.' }, { title: 'Global Coverage', description: 'Access accounts across multiple regions.' }, { title: '24/7 Support', description: 'Dedicated help whenever you need it.' }],
+    how: { title: 'How It Works', subtitle: 'Simple, secure, and fast', step1: { num: '01', title: 'Connect & Confirm', desc: 'Reach out via Telegram or WhatsApp. Share your requirements. We match you with a verified account.' }, step2: { num: '02', title: 'Verify & Secure', desc: 'Review account details, use our escrow service, and complete the transfer with full protection.' }, step3: { num: '03', title: 'Deploy & Scale', desc: 'Get full credentials, 2FA reset, and start operating immediately with confidence.' }, buying: 'Buying', selling: 'Selling', frozen: 'Frozen Account?', frozenDesc: 'We help recover or replace frozen accounts with verified alternatives.', trust: 'Why Trust Us?', t1: '5,000+ successful transactions', t2: 'Escrow protection on every deal', t3: '24/7 multilingual support', t4: 'Verified accounts only', t5: 'Transparent pricing', t6: 'Post-sale support included', rules: 'Rules & Restrictions', r1: 'No chargebacks or disputes', r2: 'No illegal use of accounts', r3: 'Respect platform ToS', r4: 'One account per buyer unless approved', r5: 'Escrow fees are non-refundable', readBeforeTitle: '📌 Read Before Buying / Selling', footer: 'Always verify details before finalizing. When in doubt, ask.' },
+    faq: { title: 'FAQ', subtitle: 'Quick answers to common questions', q1: 'How fast is delivery?', a1: 'Most accounts are delivered within 1-24 hours after payment confirmation.', q2: 'Is escrow mandatory?', a2: 'Yes, all transactions use our secure escrow service for buyer and seller protection.', q3: 'What if my account gets banned?', a3: 'We offer replacement guarantees on eligible accounts within the warranty period.', q4: 'Do you support my country?', a4: 'We operate globally. Contact us to confirm availability for your region.', q5: 'How do I contact support?', a5: 'Reach us 24/7 via Telegram @ADjamesGrugeon or WhatsApp +1 (254) 275-5458.' },
+    cta: { title: 'Ready to Scale?', desc: 'Join thousands of operators who trust our infrastructure.', telegram: 'Message on Telegram', whatsapp: 'Chat on WhatsApp' },
+    feedbacks: { label: 'FEEDBACKS', title: 'Past Deals Feedback', subtitle: 'Real screenshots from completed FlowPay transactions', desc: 'See actual dashboards and proofs from operators who received Stripe/Shopify accounts, unfrozen funds, and successful escrow completions.', screenshots: [{ alt: 'US Stripe dashboard post-delivery', caption: 'US Stripe dashboard after delivery - €34K+ monthly volume' }, { alt: 'UK Shopify store live', caption: 'UK Shopify store live after verification bypass' }, { alt: 'Escrow payout confirmation', caption: 'USDT escrow payout confirmed and received' }, { alt: 'High-limit banking transfer', caption: 'High-limit banking transfer completed' }, { alt: 'Team access provisioned', caption: 'Team and security access fully provisioned' }, { alt: 'Unfrozen funds released', caption: 'Stripe funds unfrozen from 90-day hold' }] },
+    privacy: { label: 'PRIVACY POLICY', title: 'Privacy Policy', intro: 'We take your privacy seriously. This policy explains how we collect, use, and protect your information when you use our services.', infoUsed: { title: 'Information We Collect', desc: 'We collect information you provide directly to us, such as when you create an account, make a purchase, or contact us for support.' }, dataProtection: { title: 'How We Protect Your Data', desc: 'We implement industry-standard security measures to protect your personal information from unauthorized access, alteration, or disclosure.' }, supportComms: { title: 'Communications & Support', desc: 'We may contact you via Telegram, WhatsApp, or email to provide support, updates, or important service notifications.' } },
+    termsOfService: {
+      label: 'TERMS OF SERVICE',
+      title: 'Terms of Service',
+      intro: 'By using our services, you agree to these terms. Please read them carefully before proceeding with any transaction.',
+      delivery: { title: 'Account Delivery', desc: 'Accounts are delivered within 1-24 hours after payment confirmation via escrow. Delivery includes full credentials, 2FA reset instructions, and initial setup guidance.' },
+      refund: { title: 'Refund Policy', desc: 'We offer a 24-hour replacement guarantee. If an account flags or fails within 24h of login, we replace it 1:1. No refunds after 24h unless account was never delivered.' },
+      support: { title: 'Support & Communication', desc: 'Support is provided via Telegram @ADjamesGrugeon or WhatsApp +1 (254) 275-5458. Response time is typically under 1 hour during business hours.' },
+    }
+  },
+
+  fr: {
+    nav: { solutions: 'Solutions', continuity: 'Continuité', proof: 'Preuves', how: 'Comment ça marche', faq: 'FAQ', feedbacks: 'Avis', cta: 'Parler à James', mobileTitle: 'Navigation', mobileMenuLabel: 'Ouvrir le menu' },
+    terms: { title: 'Opérations commerçants vérifiées', setup: 'Configuration 48h', escrow: 'Transferts sous séquestre', protection: 'Fonds protégés', coverage: 'Couverture bancaire mondiale', jurisdictions: '40+ juridictions' },
+    hero: { badge: 'Infrastructure vérifiée pour opérateurs haut volume', subtitle: 'Nous fournissons les environnements Stripe, Shopify et bancaires que les plateformes ont essayé de vous retirer. Aucune boucle de vérification. Aucun ID local requis. Livraison 48h.', title: 'Infrastructure vérifiée pour opérateurs haut volume', description: 'Achetez un compte Stripe âgé avec limites élevées. Contournez la vérification Shopify instantanément. Débloquez les fonds Stripe retenus. Infrastructure commerciale US/UK prête en 48h.', cta1: "J'ai besoin d'un nouveau compte", cta2: 'Explorer les solutions', ctaNewAccount: "J'ai besoin d'un nouveau compte", ctaFundsHold: 'Mes fonds sont bloqués', ctaKYC: 'Aide vérification', jurisdiction: 'Opérant dans 40+ juridictions' },
+    liveInventory: ['✅ 1x US Stripe + Shopify livré à un opérateur au Maroc 🇲🇦', '✅ 1x Compte Stripe UK âgé livré à l\'Algérie 🇩🇿', '✅ 1x Shopify haute limite livré à l\'Égypte 🇪🇬', '✅ 1x US Stripe débloqué livré au Liban 🇱🇧', '✅ 1x Boutique Shopify UE livrée à l\'Espagne 🇪🇸', '✅ 1x Compte Stripe UK livré à la France 🇫🇷', '✅ 1x Stripe US haut volume livré au UK 🇬🇧', '✅ 1x Shopify + Stripe livré aux USA 🇺🇸', '✅ 1x Banque UAE + Stripe livré aux UAE 🇦🇪', '✅ 1x Compte Stripe Asie livré au Vietnam 🇻🇳', '✅ 1x Stripe US livré aux Philippines 🇵🇭'],
+    telegramChannel: { title: 'Rejoignez notre chaîne Telegram pour les mises à jour quotidiennes', desc: 'Recevez des alertes d\'inventaire en temps réel, des notifications de nouveau stock et des conseils d\'opérateurs. Aucun email requis.', cta: 'Rejoindre maintenant', success: 'Rejoint ! Vérifiez Telegram pour les mises à jour quotidiennes.' },
+    replacementPolicy: { title: 'Notre politique de remplacement', desc: 'Si le compte est signalé dans les 24h après connexion, nous le remplaçons 1:1. Sans questions.', points: ['Garantie de remplacement 24h', 'Échange 1:1 si signalé', 'Remplacements haute qualité uniquement', 'Inclut la re-vérification'] },
+    telegramProofs: [{ text: 'Paiement arrivé en banque, merci James !', author: 'Opérateur MA' }, { text: 'Compte parfait, déjà en train de scaler.', author: 'Trader DZ' }, { text: 'Livraison rapide + fonctionne parfaitement !', author: 'Opérateur EG' }],
+    solutions: { title: 'Conçu pour les opérateurs qui avancent vite', subtitle: 'Trois piliers intégrés qui éliminent les frictions de configuration, protègent le capital et maintiennent votre activité sans interruption.', merchant: { title: 'Vitrines commerçants vérifiées', desc: 'Environnements Shopify et Stripe haute limite prêts à déployer. Entièrement vérifiés, KYC approuvés, prêts pour un scaling immédiat.', p1: 'KYC pré-vérifié - pas de boucles ID', p2: 'Prêt haut volume - contournez la vérification', p3: 'Déploiement instantané - débloquez les fonds vite' }, banking: { title: 'Solutions bancaires mondiales', desc: 'Couverture bancaire multi-juridictions pour des mouvements de capitaux fluides sur les marchés internationaux.', p1: 'Comptes multi-devises', p2: 'Règlement transfrontalier', p3: 'Prêt conformité - historique haute limite' }, escrow: { title: 'Services de séquestre sécurisés', desc: 'L\'avantage du tiers de confiance. Chaque transaction est protégée via notre cadre institutionnel de séquestre.', p1: 'Fonds détenus en sécurité', p2: 'Résolution de litiges', p3: 'Zéro risque de contrepartie' } },
+    continuity: { title: 'Continuité opérationnelle', subtitle: 'Nous résolvons les trois problèmes principaux qui bloquent les opérateurs.', uptime: { title: 'Problèmes de création ?', desc: 'Ne brûlez pas vos IPs et appareils propres. Nous fournissons une infrastructure âgée prête à scaler qui passe les contrôles de risque "Jour 1".' }, compliance: { title: 'Murs de vérification (KYC) ?', desc: 'Arrêtez de rester bloqué dans des boucles d\'ID. Chaque compte que nous livrons est pré-approuvé avec une documentation de haute qualité.' }, support: { title: 'Bannissements & fonds bloqués ?', desc: 'Bloqué à 25% de réserve ? Nous sourçons des comptes avec historique haute limite et conseillons sur la sortie des retenues de 90 jours.' }, rapid: { title: 'Support opérateur 24/7', desc: 'Accès direct aux conseillers seniors via des chaînes Telegram privées.' } },
+    proof: { title: 'Preuves entreprise', subtitle: 'Résultats d\'opérateurs réels + retours clients Telegram.', desc: 'Tableaux de bord vérifiés, retours d\'opérateurs et vraies preuves de chat Telegram de notre base client active.', p1: '34K€+ volume mensuel brut — tableau Stripe vérifié', p2: 'Environnement Stripe actif — multi-devises activé', p3: 'Retour opérateur — onboarding réussi', p4: '25K€+ analytics Shopify — boutique en ligne', p5: 'Confirmation règlement USDT — séquestre terminé', p6: 'Accès équipe & sécurité — entièrement provisionné', cards: [{ title: 'Analytics en temps réel', alt: 'Tableau de bord Shopify Analytics' }, { title: 'Suivi des paiements', alt: 'Tableau de bord des paiements' }, { title: 'Intégration messagerie', alt: 'Intégration WhatsApp' }, { title: 'Communications sécurisées', alt: 'Messagerie sécurisée' }, { title: 'Gestion d\'équipe', alt: 'Paramètres d\'équipe' }, { title: 'Vue financière', alt: 'Tableau de bord financier' }] },
+    carousel: { subtitle: 'Approuvé par des opérateurs du monde entier' },
+    featureCards: [{ title: 'Configuration instantanée', description: 'Commencez en minutes, pas en jours.' }, { title: 'Comptes vérifiés', description: 'Comptes pré-vérifiés, prêts à l\'emploi.' }, { title: 'Couverture mondiale', description: 'Accédez aux comptes dans plusieurs régions.' }, { title: 'Support 24/7', description: 'Aide dédiée quand vous en avez besoin.' }],
+    how: { title: 'Comment ça marche', subtitle: 'Simple, sécurisé et rapide', step1: { num: '01', title: 'Connectez & Confirmez', desc: 'Contactez-nous via Telegram ou WhatsApp. Partagez vos besoins. Nous vous associons à un compte vérifié.' }, step2: { num: '02', title: 'Vérifiez & Sécurisez', desc: 'Examinez les détails du compte, utilisez notre service de séquestre et finalisez le transfert avec une protection totale.' }, step3: { num: '03', title: 'Déployez & Scalez', desc: 'Obtenez les identifiants complets, réinitialisation 2FA, et commencez à opérer immédiatement en toute confiance.' }, buying: 'Acheter', selling: 'Vendre', frozen: 'Compte gelé ?', frozenDesc: 'Nous aidons à récupérer ou remplacer les comptes gelés par des alternatives vérifiées.', trust: 'Pourquoi nous faire confiance ?', t1: '5 000+ transactions réussies', t2: 'Protection par séquestre sur chaque deal', t3: 'Support multilingue 24/7', t4: 'Comptes vérifiés uniquement', t5: 'Tarification transparente', t6: 'Support après-vente inclus', rules: 'Règles & Restrictions', r1: 'Pas de chargebacks ou litiges', r2: 'Pas d\'utilisation illégale des comptes', r3: 'Respectez les CGU des plateformes', r4: 'Un compte par acheteur sauf approbation', r5: 'Frais de séquestre non remboursables', readBeforeTitle: '📌 Lire avant d\'acheter / vendre', footer: 'Vérifiez toujours les détails avant de finaliser. En cas de doute, demandez.' },
+    faq: { title: 'FAQ', subtitle: 'Réponses rapides aux questions courantes', q1: 'Quelle est la rapidité de livraison ?', a1: 'La plupart des comptes sont livrés dans les 1-24 heures après confirmation du paiement.', q2: 'Le séquestre est-il obligatoire ?', a2: 'Oui, toutes les transactions utilisent notre service de séquestre sécurisé pour la protection de l\'acheteur et du vendeur.', q3: 'Que se passe-t-il si mon compte est banni ?', a3: 'Nous offrons des garanties de remplacement sur les comptes éligibles pendant la période de garantie.', q4: 'Supportez-vous mon pays ?', a4: 'Nous opérons mondialement. Contactez-nous pour confirmer la disponibilité dans votre région.', q5: 'Comment contacter le support ?', a5: 'Contactez-nous 24/7 via Telegram @ADjamesGrugeon ou WhatsApp +1 (254) 275-5458.' },
+    cta: { title: 'Prêt à scaler ?', desc: 'Rejoignez des milliers d\'opérateurs qui font confiance à notre infrastructure.', telegram: 'Message sur Telegram', whatsapp: 'Chat sur WhatsApp' },
+    feedbacks: { label: 'FEEDBACKS', title: 'Retours sur les transactions passées', subtitle: 'Captures d\'écran réelles de transactions FlowPay complétées', desc: 'Voir les tableaux de bord et preuves réels des opérateurs ayant reçu des comptes Stripe/Shopify, fonds débloqués et séquestres réussis.', screenshots: [{ alt: 'Tableau de bord Stripe US après livraison', caption: 'Tableau de bord Stripe US après livraison - 34K€+ volume mensuel' }, { alt: 'Boutique Shopify UK en ligne', caption: 'Boutique Shopify UK en ligne après contournement de vérification' }, { alt: 'Confirmation paiement séquestre', caption: 'Paiement USDT séquestre confirmé et reçu' }, { alt: 'Transfert bancaire haut limite', caption: 'Transfert bancaire haut limite complété' }, { alt: 'Accès équipe provisionné', caption: 'Accès équipe et sécurité entièrement provisionné' }, { alt: 'Fonds débloqués', caption: 'Fonds Stripe débloqués de retenue 90 jours' }] },
+    privacy: { label: 'POLITIQUE DE CONFIDENTIALITÉ', title: 'Politique de Confidentialité', intro: 'Nous prenons votre vie privée au sérieux. Cette politique explique comment nous collectons, utilisons et protégeons vos informations lorsque vous utilisez nos services.', infoUsed: { title: 'Informations Collectées', desc: 'Nous collectons les informations que vous nous fournissez directement, comme lors de la création d\'un compte, d\'un achat ou d\'un contact avec le support.' }, dataProtection: { title: 'Protection des Données', desc: 'Nous mettons en œuvre des mesures de sécurité standard pour protéger vos informations personnelles contre tout accès, modification ou divulgation non autorisés.' }, supportComms: { title: 'Communications & Support', desc: 'Nous pouvons vous contacter via Telegram, WhatsApp ou email pour fournir un support, des mises à jour ou des notifications de service importantes.' } },
+    termsOfService: {
+      label: 'CONDITIONS D\'UTILISATION',
+      title: 'Conditions d\'Utilisation',
+      intro: 'En utilisant nos services, vous acceptez ces conditions. Veuillez les lire attentivement avant toute transaction.',
+      delivery: { title: 'Livraison des Comptes', desc: 'Les comptes sont livrés dans les 1-24 heures après confirmation du paiement via séquestre. La livraison inclut les identifiants complets, les instructions de réinitialisation 2FA et un guide de configuration initial.' },
+      refund: { title: 'Politique de Remboursement', desc: 'Nous offrons une garantie de remplacement de 24h. Si un compte est signalé ou échoue dans les 24h après connexion, nous le remplaçons 1:1. Aucun remboursement après 24h sauf si le compte n\'a jamais été livré.' },
+      support: { title: 'Support & Communication', desc: 'Le support est fourni via Telegram @ADjamesGrugeon ou WhatsApp +1 (254) 275-5458. Le temps de réponse est généralement inférieur à 1 heure pendant les heures de bureau.' },
+    }
+  },
+
+  ar: {
+    nav: { solutions: 'الحلول', continuity: 'الاستمرارية', proof: 'الإثباتات', how: 'كيف يعمل', faq: 'الأسئلة الشائعة', feedbacks: 'تعليقات', cta: 'تحدث مع جيمس', mobileTitle: 'التنقل', mobileMenuLabel: 'فتح القائمة' },
+    terms: { title: 'عمليات تجار موثقة', setup: 'إعداد 48 ساعة', escrow: 'تحويلات بضمان', protection: 'أموال محمية', coverage: 'تغطية مصرفية عالمية', jurisdictions: '40+ ولاية قضائية' },
+    hero: { badge: 'بنية تحتية موثقة للمشغلين عالي الحجم', subtitle: 'نوفر بيئات Stripe وShopify والبنوك التي حاولت المنصات سحبها. لا حلقات تحقق. لا حاجة لهوية محلية. تسليم 48 ساعة.', title: 'بنية تحتية موثقة للمشغلين عالي الحجم', description: 'اشترِ حساب Stripe قديم بحدود عالية. تجاوز تحقق Shopify فوراً. أطلق سراح أموال Stripe المحتجزة. بنية تجارية أمريكية/بريطانية جاهزة في 48 ساعة.', cta1: 'أحتاج حساباً جديداً', cta2: 'استكشف الحلول', ctaNewAccount: 'أحتاج حساباً جديداً', ctaFundsHold: 'أموالي محتجزة', ctaKYC: 'مساعدة في التحقق', jurisdiction: 'نعمل في 40+ ولاية قضائية' },
+    liveInventory: ['✅ 1x US Stripe + Shopify تم تسليمها لمشغل في المغرب 🇲🇦', '✅ 1x حساب Stripe بريطاني قديم تم تسليمه للجزائر 🇩🇿', '✅ 1x Shopify عالي الحد تم تسليمه لمصر 🇪🇬', '✅ 1x US Stripe غير مجمد تم تسليمه للبنان 🇱🇧', '✅ 1x متجر Shopify أوروبي تم تسليمه لإسبانيا 🇪🇸', '✅ 1x حساب Stripe بريطاني تم تسليمه لفرنسا 🇫🇷', '✅ 1x Stripe أمريكي عالي الحجم تم تسليمه للمملكة المتحدة 🇬🇧', '✅ 1x Shopify + Stripe تم تسليمه للولايات المتحدة 🇺🇸', '✅ 1x بنك إماراتي + Stripe تم تسليمه للإمارات 🇦🇪', '✅ 1x حساب Stripe آسيوي تم تسليمه لفيتنام 🇻🇳', '✅ 1x Stripe أمريكي تم تسليمه للفلبين 🇵🇭'],
+    telegramChannel: { title: 'انضم لقناة تليجرام للحصول على تحديثات المخزون اليومية', desc: 'احصل على تنبيهات المخزون في الوقت الفعلي، إشعارات المخزون الجديد، ونصائح للمشغلين. لا حاجة للبريد الإلكتروني.', cta: 'انضم الآن', success: 'تم الانضمام! تحقق من تليجرام للتحديثات اليومية.' },
+    replacementPolicy: { title: 'سياسة الاستبدال الخاصة بنا', desc: 'إذا تم وضع علامة على الحساب خلال 24 ساعة من تسجيل الدخول، نستبدله 1:1. بدون أسئلة.', points: ['ضمان استبدال 24 ساعة', 'تبديل 1:1 إذا تم وضع علامة', 'استبدالات عالية الجودة فقط', 'يشمل إعادة التحقق'] },
+    telegramProofs: [{ text: 'وصل الدفع للبنك، شكراً جيمس!', author: 'مشغل مغربي' }, { text: 'الحساب مثالي، بالفعل نوسع الحجم.', author: 'متاجر جزائري' }, { text: 'تسليم سريع + يعمل بشكل مثالي!', author: 'مشغل مصري' }],
+    solutions: { title: 'مصمم للمشغلين الذين يتحركون بسرعة', subtitle: 'ثلاثة أعمدة متكاملة تزيل احتكاك الإعداد، تحمي رأس المال، وتحافظ على عمل نشاطك بدون انقطاع.', merchant: { title: 'واجهات تجار موثقة', desc: 'بيئات Shopify وStripe عالية الحجم جاهزة للنشر. موثقة بالكامل، معتمدة من KYC، وجاهزة للتوسع الفوري.', p1: 'KYC مُتحقق مسبقاً - لا حلقات هوية', p2: 'جاهز للحجم العالي - تجاوز التحقق', p3: 'نشر فوري - أطلق سراح الأموال بسرعة' }, banking: { title: 'حلول مصرفية عالمية', desc: 'تغطية مصرفية متعددة الولايات القضائية لحركة رأس المال السلسة عبر الأسواق الدولية.', p1: 'حسابات متعددة العملات', p2: 'تسوية عبر الحدود', p3: 'جاهز للامتثال - تاريخ حدود عالية' }, escrow: { title: 'خدمات ضمان آمنة', desc: 'ميزة الوسيط. كل معاملة محمية من خلال إطار الضمان المؤسسي الخاص بنا.', p1: 'أموال محتجزة بأمان', p2: 'حل النزاعات', p3: 'صفر مخاطر طرف مقابل' } },
+    continuity: { title: 'الاستمرارية التشغيلية', subtitle: 'نحل المشاكل الثلاث الرئيسية التي تبقي المشغلين عالقين.', uptime: { title: 'مشاكل في الإنشاء؟', desc: 'لا تحرق عناوين IP وأجهزتك النظيفة. نوفر بنية تحتية قديمة جاهزة للتوسع تمر بفحوصات المخاطر "اليوم الأول".' }, compliance: { title: 'جدران التحقق (KYC)؟', desc: 'توقف عن التعلق في حلقات الهوية. كل حساب نسلمه معتمد مسبقاً بوثائق عالية الجودة.' }, support: { title: 'حظرات وأموال محتجزة؟', desc: 'محتجز عند 25% احتياطي؟ نوفر حسابات بتاريخ حدود عالية ونقدم استشارات حول إخراج رأس المال من الاحتجازات 90 يوماً.' }, rapid: { title: 'دعم المشغلين 24/7', desc: 'وصول مباشر لمستشارين كبار عبر قنوات تليجرام خاصة.' } },
+    proof: { title: 'إثباتات الشركة', subtitle: 'نتائج من مشغلين حقيقيين + ملاحظات عملاء تليجرام.', desc: 'لوحات تحكم موثقة، ملاحظات مشغلين، وإثباتات محادثات تليجرام حقيقية من قاعدة عملائنا النشطة.', p1: '34K€+ حجم إجمالي شهري — لوحة Stripe موثقة', p2: 'بيئة Stripe نشطة — متعددة العملات مفعلة', p3: 'ملاحظات المشغل — تشغيل ناجح', p4: '25K€+ تحليلات Shopify — متجر مباشر', p5: 'تأكيد تسوية USDT — ضمان مكتمل', p6: 'وصول الفريق والأمان — مجهز بالكامل', cards: [{ title: 'تحليلات في الوقت الفعلي', alt: 'لوحة تحليلات Shopify' }, { title: 'تتبع المدفوعات', alt: 'لوحة نظرة عامة على المدفوعات' }, { title: 'تكامل المراسلة', alt: 'تكامل واتساب' }, { title: 'اتصالات آمنة', alt: 'مراسلة آمنة' }, { title: 'إدارة الفريق', alt: 'معلمات الفريق' }, { title: 'نظرة مالية', alt: 'لوحة المعلومات المالية' }] },
+    carousel: { subtitle: 'موثوق به من قبل مشغلين حول العالم' },
+    featureCards: [{ title: 'إعداد فوري', description: 'ابدأ في دقائق، ليس أيام.' }, { title: 'حسابات موثقة', description: 'حسابات مُفحوصة مسبقاً، جاهزة للاستخدام.' }, { title: 'تغطية عالمية', description: 'الوصول للحسابات عبر مناطق متعددة.' }, { title: 'دعم 24/7', description: 'مساعدة مخصصة وقتما تحتاجها.' }],
+    how: { title: 'كيف يعمل', subtitle: 'بسيط، آمن، وسريع', step1: { num: '01', title: 'اتصل & أكد', desc: 'تواصل عبر تليجرام أو واتساب. شارك متطلباتك. نطابقك مع حساب موثق.' }, step2: { num: '02', title: 'تحقق & آمن', desc: 'راجع تفاصيل الحساب، استخدم خدمة الضمان الخاصة بنا، وأكمل التحويل بحماية كاملة.' }, step3: { num: '03', title: 'انشر & وسع', desc: 'احصل على بيانات الاعتماد الكاملة، إعادة تعيين 2FA، وابدأ التشغيل فوراً بثقة.' }, buying: 'الشراء', selling: 'البيع', frozen: 'حساب مجمد؟', frozenDesc: 'نساعد في استعادة أو استبدال الحسابات المجمدة ببدائل موثقة.', trust: 'لماذا تثق بنا؟', t1: '5,000+ معاملة ناجحة', t2: 'حماية ضمان على كل صفقة', t3: 'دعم متعدد اللغات 24/7', t4: 'حسابات موثقة فقط', t5: 'تسعير شفاف', t6: 'دعم ما بعد البيع شامل', rules: 'القواعد والقيود', r1: 'لا استرجاعات أو نزاعات', r2: 'لا استخدام غير قانوني للحسابات', r3: 'احترم شروط منصات الاستخدام', r4: 'حساب واحد لكل مشتري إلا إذا تمت الموافقة', r5: 'رسوم الضمان غير قابلة للاسترداد', readBeforeTitle: '📌 اقرأ قبل الشراء / البيع', footer: 'تحقق دائماً من التفاصيل قبل الإنهاء. عند الشك، اسأل.' },
+    faq: { title: 'الأسئلة الشائعة', subtitle: 'إجابات سريعة على الأسئلة الشائعة', q1: 'ما سرعة التسليم؟', a1: 'يتم تسليم معظم الحسابات خلال 1-24 ساعة بعد تأكيد الدفع.', q2: 'هل الضمان إلزامي؟', a2: 'نعم، جميع المعاملات تستخدم خدمة الضمان الآمنة الخاصة بنا لحماية المشتري والبائع.', q3: 'ماذا لو تم حظر حسابي؟', a3: 'نقدم ضمانات استبدال على الحسابات المؤهلة خلال فترة الضمان.', q4: 'هل تدعمون بلدي؟', a4: 'نعمل عالمياً. تواصل معنا لتأكيد التوفر في منطقتك.', q5: 'كيف أتواصل مع الدعم؟', a5: 'تواصل معنا 24/7 عبر تليجرام @ADjamesGrugeon أو واتساب +1 (254) 275-5458.' },
+    cta: { title: 'جاهز للتوسع؟', desc: 'انضم لآلاف المشغلين الذين يثقون ببنيتنا التحتية.', telegram: 'راسل على تليجرام', whatsapp: 'دردش على واتساب' },
+    feedbacks: { label: 'FEEDBACKS', title: 'تعليقات على الصفقات السابقة', subtitle: 'لقطات شاشة حقيقية من معاملات FlowPay المكتملة', desc: 'شاهد لوحات التحكم والأدلة الحقيقية من المشغلين الذين تلقوا حسابات Stripe/Shopify، وأموال غير مجمدة، وإكمالات ضمان ناجحة.', screenshots: [{ alt: 'لوحة تحكم Stripe أمريكية بعد التسليم', caption: 'لوحة تحكم Stripe أمريكية بعد التسليم - 34K€+ حجم شهري' }, { alt: 'متجر Shopify بريطاني مباشر', caption: 'متجر Shopify بريطاني مباشر بعد تجاوز التحقق' }, { alt: 'تأكيد دفع الضمان', caption: 'دفع USDT ضمان مؤكد ومستلم' }, { alt: 'تحويل بنكي عالي الحد', caption: 'تحويل بنكي عالي الحد مكتمل' }, { alt: 'وصول الفريق مجهز', caption: 'وصول الفريق والأمان مجهز بالكامل' }, { alt: 'أموال غير مجمدة', caption: 'أموال Stripe غير مجمدة من احتجاز 90 يوم' }] },
+    privacy: { label: 'سياسة الخصوصية', title: 'سياسة الخصوصية', intro: 'نحن نأخذ خصوصيتك على محمل الجد. تشرح هذه السياسة كيف نجمع ونستخدم ونحمي معلوماتك عند استخدام خدماتنا.', infoUsed: { title: 'المعلومات التي نجمعها', desc: 'نجمع المعلومات التي تقدمها لنا مباشرة، مثل عند إنشاء حساب أو إجراء عملية شراء أو الاتصال بالدعم.' }, dataProtection: { title: 'كيف نحمي بياناتك', desc: 'نطبق تدابير أمنية قياسية لحماية معلوماتك الشخصية من الوصول غير المصرح به أو التعديل أو الكشف.' }, supportComms: { title: 'التواصل والدعم', desc: 'قد نتواصل معك عبر تليجرام أو واتساب أو البريد الإلكتروني لتقديم الدعم أو التحديثات أو الإشعارات الهامة.' } },
+    termsOfService: {
+      label: 'شروط الخدمة',
+      title: 'شروط الخدمة',
+      intro: 'باستخدام خدماتنا، فإنك توافق على هذه الشروط. يرجى قراءتها بعناية قبل المتابعة في أي معاملة.',
+      delivery: { title: 'تسليم الحسابات', desc: 'يتم تسليم الحسابات خلال 1-24 ساعة بعد تأكيد الدفع عبر الضمان. يشمل التسليم بيانات الاعتماد الكاملة، وتعليمات إعادة تعيين 2FA، وتوجيهات الإعداد الأولي.' },
+      refund: { title: 'سياسة الاسترداد', desc: 'نحن نقدم ضمان استبدال لمدة 24 ساعة. إذا تم وضع علامة على الحساب أو فشل خلال 24 ساعة من تسجيل الدخول، نستبدله 1:1. لا توجد استردادات بعد 24 ساعة إلا إذا لم يتم تسليم الحساب أبداً.' },
+      support: { title: 'الدعم والتواصل', desc: 'يتم توفير الدعم عبر تليجرام @ADjamesGrugeon أو واتساب +1 (254) 275-5458. وقت الاستجابة عادة أقل من ساعة واحدة خلال ساعات العمل.' },
+    }
+  },
+
+  es: {
+    nav: { solutions: 'Soluciones', continuity: 'Continuidad', proof: 'Pruebas', how: 'Cómo Funciona', faq: 'Preguntas Frecuentes', feedbacks: 'Opiniones', cta: 'Hablar con James', mobileTitle: 'Navegación', mobileMenuLabel: 'Abrir menú' },
+    terms: { title: 'Operaciones de comerciantes verificados', setup: 'Configuración 48h', escrow: 'Transferencias con depósito en garantía', protection: 'Fondos protegidos', coverage: 'Cobertura bancaria global', jurisdictions: '40+ jurisdicciones' },
+    hero: { badge: 'Infraestructura Verificada para Operadores de Alto Volumen', subtitle: 'Proporcionamos los entornos de Stripe, Shopify y banca que las plataformas intentaron quitarte. Sin bucles de verificación. Sin ID local requerido. Entrega en 48h.', title: 'Infraestructura Verificada para Operadores de Alto Volumen', description: 'Compra cuentas Stripe envejecidas con límites altos. Salta la verificación de Shopify al instante. Desbloquea fondos de Stripe retenidos. Infraestructura empresarial EE.UU./Reino Unido lista en 48h.', cta1: 'Necesito una cuenta nueva', cta2: 'Explorar Soluciones', ctaNewAccount: 'Necesito una cuenta nueva', ctaFundsHold: 'Mis fondos están retenidos', ctaKYC: 'Ayuda con verificación', jurisdiction: 'Operando en 40+ jurisdicciones' },
+    liveInventory: ['✅ 1x US Stripe + Shopify entregado a operador en Marruecos 🇲🇦', '✅ 1x Cuenta Stripe UK envejecida entregada a Argelia 🇩🇿', '✅ 1x Shopify alto límite entregada a Egipto 🇪🇬', '✅ 1x US Stripe desbloqueada entregada a Líbano 🇱🇧', '✅ 1x Tienda Shopify UE entregada a España 🇪🇸', '✅ 1x Cuenta Stripe UK entregada a Francia 🇫🇷', '✅ 1x Stripe US alto volumen entregada a UK 🇬🇧', '✅ 1x Shopify + Stripe entregada a EE.UU. 🇺🇸', '✅ 1x Banco UAE + Stripe entregada a UAE 🇦🇪', '✅ 1x Cuenta Stripe Asia entregada a Vietnam 🇻🇳', '✅ 1x Stripe US entregada a Filipinas 🇵🇭'],
+    telegramChannel: { title: 'Únete a nuestro Canal de Telegram para Actualizaciones Diarias de Stock', desc: 'Recibe alertas de inventario en tiempo real, notificaciones de nuevo stock y consejos para operadores. Sin email requerido.', cta: 'Únete Ahora', success: '¡Unido! Revisa Telegram para actualizaciones diarias.' },
+    replacementPolicy: { title: 'Nuestra Política de Reemplazo', desc: 'Si la cuenta se marca dentro de 24h del login, la reemplazamos 1:1. Sin preguntas.', points: ['Garantía de reemplazo 24h', 'Cambio 1:1 si se marca', 'Solo reemplazos de alta calidad', 'Incluye reverificación'] },
+    telegramProofs: [{ text: '¡Pago llegó al banco, gracias James!', author: 'Operador MA' }, { text: 'Cuenta perfecta, ya escalando volumen.', author: 'Trader DZ' }, { text: 'Entrega rápida + ¡funciona perfecto!', author: 'Operador EG' }],
+    solutions: { title: 'Construido para operadores que se mueven rápido', subtitle: 'Tres pilares integrados que eliminan fricción de configuración, protegen capital y mantienen tu negocio corriendo sin interrupciones.', merchant: { title: 'Vitrinas de Comerciantes Verificadas', desc: 'Entornos Shopify y Stripe de alto volumen listos para desplegar. Totalmente verificados, KYC aprobado, y preparados para escalar inmediatamente.', p1: 'KYC pre-verificado - sin bucles de ID', p2: 'Listo para alto volumen - salta verificación', p3: 'Despliegue instantáneo - desbloquea fondos rápido' }, banking: { title: 'Soluciones Bancarias Globales', desc: 'Cobertura bancaria multi-jurisdicción para movimiento de capital fluido en mercados internacionales.', p1: 'Cuentas multi-divisa', p2: 'Liquidación transfronteriza', p3: 'Listo para cumplimiento - historial de alto límite' }, escrow: { title: 'Servicios de Depósito en Garantía Seguros', desc: 'La ventaja del intermediario. Cada transacción está protegida a través de nuestro marco institucional de depósito en garantía.', p1: 'Fondos retenidos de forma segura', p2: 'Resolución de disputas', p3: 'Cero riesgo de contraparte' } },
+    continuity: { title: 'Continuidad Operacional', subtitle: 'Resolvemos los tres problemas principales que mantienen atascados a los operadores.', uptime: { title: '¿Problemas de creación?', desc: 'No quemes tus IPs y dispositivos limpios. Proporcionamos infraestructura envejecida lista para escalar que pasa los controles de riesgo "Día 1".' }, compliance: { title: '¿Muros de Verificación (KYC)?', desc: 'Deja de quedarte atascado en bucles de ID. Cada cuenta que entregamos está pre-aprobada con documentación de alta calidad.' }, support: { title: '¿Baneos y fondos retenidos?', desc: '¿Bloqueado al 25% de reserva? Obtenemos cuentas con historial de alto límite y asesoramos sobre sacar capital de retenciones de 90 días.' }, rapid: { title: 'Soporte de Operadores 24/7', desc: 'Acceso directo a asesores senior a través de canales privados de Telegram.' } },
+    proof: { title: 'Pruebas Empresariales', subtitle: 'Resultados de operadores reales + comentarios de clientes de Telegram.', desc: 'Dashboards verificados, comentarios de operadores y pruebas reales de chat de Telegram de nuestra base de clientes activa.', p1: '34K€+ volumen bruto mensual — dashboard de Stripe verificado', p2: 'Entorno de Stripe activo — multi-divisa habilitado', p3: 'Comentario de operador — onboarding exitoso', p4: '25K€+ analytics de Shopify — tienda en vivo', p5: 'Confirmación de liquidación USDT — depósito en garantía completado', p6: 'Acceso de equipo y seguridad — totalmente provisionado', cards: [{ title: 'Analytics en Tiempo Real', alt: 'Dashboard de Analytics de Shopify' }, { title: 'Seguimiento de Pagamentos', alt: 'Dashboard de Vista General de Pagamentos' }, { title: 'Integración de Mensajería', alt: 'Integración de WhatsApp' }, { title: 'Comunicaciones Seguras', alt: 'Mensajería Segura' }, { title: 'Gestión de Equipo', alt: 'Parámetros de Equipo' }, { title: 'Vista Financiera', alt: 'Dashboard Financiero' }] },
+    carousel: { subtitle: 'Confiado por operadores de todo el mundo' },
+    featureCards: [{ title: 'Configuración Instantánea', description: 'Comienza en minutos, no en días.' }, { title: 'Cuentas Verificadas', description: 'Cuentas pre-verificadas, listas para usar.' }, { title: 'Cobertura Global', description: 'Accede a cuentas en múltiples regiones.' }, { title: 'Soporte 24/7', description: 'Ayuda dedicada cuando la necesites.' }],
+    how: { title: 'Cómo Funciona', subtitle: 'Simple, seguro y rápido', step1: { num: '01', title: 'Conecta y Confirma', desc: 'Contáctanos vía Telegram o WhatsApp. Comparte tus requisitos. Te emparejamos con una cuenta verificada.' }, step2: { num: '02', title: 'Verifica y Asegura', desc: 'Revisa detalles de la cuenta, usa nuestro servicio de depósito en garantía y completa la transferencia con protección total.' }, step3: { num: '03', title: 'Despliega y Escala', desc: 'Obtén credenciales completas, reinicio de 2FA, y empieza a operar inmediatamente con confianza.' }, buying: 'Comprar', selling: 'Vender', frozen: '¿Cuenta Congelada?', frozenDesc: 'Ayudamos a recuperar o reemplazar cuentas congeladas con alternativas verificadas.', trust: '¿Por Qué Confiar en Nosotros?', t1: '5,000+ transacciones exitosas', t2: 'Protección de depósito en garantía en cada trato', t3: 'Soporte multilingüe 24/7', t4: 'Solo cuentas verificadas', t5: 'Precios transparentes', t6: 'Soporte post-venta incluido', rules: 'Reglas y Restricciones', r1: 'Sin contracargos o disputas', r2: 'Sin uso ilegal de cuentas', r3: 'Respeta los Términos de Servicio de la plataforma', r4: 'Una cuenta por comprador a menos que se apruebe', r5: 'Las tarifas de depósito en garantía no son reembolsables', readBeforeTitle: '📌 Leer Antes de Comprar / Vender', footer: 'Siempre verifica detalles antes de finalizar. En caso de duda, pregunta.' },
+    faq: { title: 'Preguntas Frecuentes', subtitle: 'Respuestas rápidas a preguntas comunes', q1: '¿Qué tan rápido es el envío?', a1: 'La mayoría de cuentas se entregan dentro de 1-24 horas después de la confirmación del pago.', q2: '¿Es obligatorio el depósito en garantía?', a2: 'Sí, todas las transacciones usan nuestro servicio seguro de depósito en garantía para protección del comprador y vendedor.', q3: '¿Qué pasa si mi cuenta es baneada?', a3: 'Ofrecemos garantías de reemplazo en cuentas elegibles dentro del período de garantía.', q4: '¿Soportan mi país?', a4: 'Operamos globalmente. Contáctanos para confirmar disponibilidad en tu región.', q5: '¿Cómo contacto al soporte?', a5: 'Contáctanos 24/7 vía Telegram @ADjamesGrugeon o WhatsApp +1 (254) 275-5458.' },
+    cta: { title: '¿Listo para Escalar?', desc: 'Únete a miles de operadores que confían en nuestra infraestructura.', telegram: 'Mensaje en Telegram', whatsapp: 'Chat en WhatsApp' },
+    feedbacks: { label: 'FEEDBACKS', title: 'Retroalimentación de Tratos Pasados', subtitle: 'Capturas de pantalla reales de transacciones FlowPay completadas', desc: 'Vea tableros reales y pruebas de operadores que recibieron cuentas Stripe/Shopify, fondos desbloqueados y completaciones de depósito en garantía exitosas.', screenshots: [{ alt: 'Tablero Stripe US post-entrega', caption: 'Tablero Stripe US después de entrega - 34K€+ volumen mensual' }, { alt: 'Tienda Shopify UK activa', caption: 'Tienda Shopify UK activa después de bypass de verificación' }, { alt: 'Confirmación pago depósito en garantía', caption: 'Pago USDT depósito en garantía confirmado' }, { alt: 'Transferencia bancaria alto límite', caption: 'Transferencia bancaria alto límite completada' }, { alt: 'Acceso de equipo provisionado', caption: 'Acceso de equipo y seguridad totalmente provisionado' }, { alt: 'Fondos desbloqueados', caption: 'Fondos de Stripe desbloqueados de retención de 90 días' }] },
+    privacy: { label: 'POLÍTICA DE PRIVACIDAD', title: 'Política de Privacidad', intro: 'Nos tomamos su privacidad en serio. Esta política explica cómo recopilamos, usamos y protegemos su información cuando utiliza nuestros servicios.', infoUsed: { title: 'Información que Recopilamos', desc: 'Recopilamos información que nos proporciona directamente, como al crear una cuenta, realizar una compra o contactarnos para soporte.' }, dataProtection: { title: 'Cómo Protegemos Sus Datos', desc: 'Implementamos medidas de seguridad estándar para proteger su información personal contra acceso, alteración o divulgación no autorizados.' }, supportComms: { title: 'Comunicaciones y Soporte', desc: 'Podemos contactarle vía Telegram, WhatsApp o email para proporcionar soporte, actualizaciones o notificaciones de servicio importantes.' } },
+    termsOfService: {
+      label: 'TÉRMINOS DE SERVICIO',
+      title: 'Términos de Servicio',
+      intro: 'Al usar nuestros servicios, usted acepta estos términos. Por favor léalos cuidadosamente antes de proceder con cualquier transacción.',
+      delivery: { title: 'Entrega de Cuentas', desc: 'Las cuentas se entregan dentro de 1-24 horas después de la confirmación del pago vía depósito en garantía. La entrega incluye credenciales completas, instrucciones de reinicio de 2FA y guía de configuración inicial.' },
+      refund: { title: 'Política de Reembolso', desc: 'Ofrecemos una garantía de reemplazo de 24 horas. Si una cuenta se marca o falla dentro de las 24h posteriores al login, la reemplazamos 1:1. No hay reembolsos después de 24h a menos que la cuenta nunca haya sido entregada.' },
+      support: { title: 'Soporte y Comunicación', desc: 'El soporte se proporciona vía Telegram @ADjamesGrugeon o WhatsApp +1 (254) 275-5458. El tiempo de respuesta es típicamente menor a 1 hora durante horario laboral.' },
+    }
+  },
+
+  pt: {
+    nav: { solutions: 'Soluções', continuity: 'Continuidade', proof: 'Provas', how: 'Como Funciona', faq: 'Perguntas Frequentes', feedbacks: 'Feedbacks', cta: 'Falar com James', mobileTitle: 'Navegação', mobileMenuLabel: 'Abrir menu' },
+    terms: { title: 'Operações de comerciantes verificadas', setup: 'Configuração 48h', escrow: 'Transferências com custódia', protection: 'Fundos protegidos', coverage: 'Cobertura bancária global', jurisdictions: '40+ jurisdições' },
+    hero: { badge: 'Infraestrutura Verificada para Operadores de Alto Volume', subtitle: 'Fornecemos os ambientes Stripe, Shopify e bancários que as plataformas tentaram retirar. Sem loops de verificação. Sem ID local necessário. Entrega em 48h.', title: 'Infraestrutura Verificada para Operadores de Alto Volume', description: 'Compre contas Stripe envelhecidas com limites altos. Contorne a verificação do Shopify instantaneamente. Desbloqueie fundos do Stripe retidos. Infraestrutura empresarial EUA/Reino Unido pronta em 48h.', cta1: 'Preciso de uma nova conta', cta2: 'Explorar Soluções', ctaNewAccount: 'Preciso de uma nova conta', ctaFundsHold: 'Meus fundos estão retidos', ctaKYC: 'Ajuda com verificação', jurisdiction: 'Operando em 40+ jurisdições' },
+    liveInventory: ['✅ 1x US Stripe + Shopify entregue a operador em Marrocos 🇲🇦', '✅ 1x Conta Stripe UK envelhecida entregue à Argélia 🇩🇿', '✅ 1x Shopify alto limite entregue ao Egito 🇪🇬', '✅ 1x US Stripe desbloqueado entregue ao Líbano 🇱🇧', '✅ 1x Loja Shopify UE entregue à Espanha 🇪🇸', '✅ 1x Conta Stripe UK entregue à França 🇫🇷', '✅ 1x Stripe US alto volume entregue ao UK 🇬🇧', '✅ 1x Shopify + Stripe entregue aos EUA 🇺🇸', '✅ 1x Banco UAE + Stripe entregue aos UAE 🇦🇪', '✅ 1x Conta Stripe Ásia entregue ao Vietnã 🇻🇳', '✅ 1x Stripe US entregue às Filipinas 🇵🇭'],
+    telegramChannel: { title: 'Junte-se ao nosso Canal do Telegram para Atualizações Diárias de Estoque', desc: 'Receba alertas de inventário em tempo real, notificações de novo estoque e dicas para operadores. Sem email necessário.', cta: 'Entrar Agora', success: 'Entrou! Verifique o Telegram para atualizações diárias.' },
+    replacementPolicy: { title: 'Nossa Política de Substituição', desc: 'Se a conta for sinalizada dentro de 24h do login, substituímos 1:1. Sem perguntas.', points: ['Garantia de substituição 24h', 'Troca 1:1 se sinalizada', 'Apenas substituições de alta qualidade', 'Inclui reverificação'] },
+    telegramProofs: [{ text: 'Pagamento chegou ao banco, obrigado James!', author: 'Operador MA' }, { text: 'Conta perfeita, já escalando volume.', author: 'Trader DZ' }, { text: 'Entrega rápida + funciona perfeitamente!', author: 'Operador EG' }],
+    solutions: { title: 'Construído para operadores que se movem rápido', subtitle: 'Três pilares integrados que eliminam atrito de configuração, protegem capital e mantêm seu negócio funcionando sem interrupção.', merchant: { title: 'Vitrines de Comerciantes Verificadas', desc: 'Ambientes Shopify e Stripe de alto volume prontos para implantação. Totalmente verificados, KYC aprovado, e preparados para escala imediata.', p1: 'KYC pré-verificado - sem loops de ID', p2: 'Pronto para alto volume - contorne verificação', p3: 'Implantação instantânea - desbloqueie fundos rápido' }, banking: { title: 'Soluções Bancárias Globais', desc: 'Cobertura bancária multi-jurisdição para movimento de capital fluido em mercados internacionais.', p1: 'Contas multi-moeda', p2: 'Liquidação transfronteiriça', p3: 'Pronto para conformidade - histórico de alto limite' }, escrow: { title: 'Serviços de Custódia Seguros', desc: 'A vantagem do intermediário. Cada transação é protegida através do nosso quadro institucional de custódia.', p1: 'Fundos mantidos com segurança', p2: 'Resolução de disputas', p3: 'Zero risco de contraparte' } },
+    continuity: { title: 'Continuidade Operacional', subtitle: 'Resolvemos os três principais problemas que mantêm operadores travados.', uptime: { title: 'Problemas de criação?', desc: 'Não queime seus IPs e dispositivos limpos. Fornecemos infraestrutura envelhecida pronta para escalar que passa nos controles de risco "Dia 1".' }, compliance: { title: 'Paredes de Verificação (KYC)?', desc: 'Pare de ficar preso em loops de ID. Cada conta que entregamos é pré-aprovada com documentação de alta qualidade.' }, support: { title: 'Banimentos e fundos retidos?', desc: 'Travado em 25% de reserva? Obtemos contas com histórico de alto limite e aconselhamos sobre retirar capital de retenções de 90 dias.' }, rapid: { title: 'Suporte a Operadores 24/7', desc: 'Acesso direto a consultores seniores através de canais privados do Telegram.' } },
+    proof: { title: 'Provas Empresariais', subtitle: 'Resultados de operadores reais + feedback de clientes do Telegram.', desc: 'Dashboards verificados, feedback de operadores e provas reais de chat do Telegram de nossa base de clientes ativa.', p1: '34K€+ volume bruto mensal — dashboard do Stripe verificado', p2: 'Ambiente Stripe ativo — multi-moeda habilitado', p3: 'Feedback de operador — onboarding bem-sucedido', p4: '25K€+ analytics do Shopify — loja ao vivo', p5: 'Confirmação de liquidação USDT — custódia concluída', p6: 'Acesso de equipe e segurança — totalmente provisionado', cards: [{ title: 'Analytics em Tempo Real', alt: 'Dashboard de Analytics do Shopify' }, { title: 'Rastreamento de Pagamentos', alt: 'Dashboard de Visão Geral de Pagamentos' }, { title: 'Integração de Mensagens', alt: 'Integração do WhatsApp' }, { title: 'Comunicações Seguras', alt: 'Mensagens Seguras' }, { title: 'Gestão de Equipe', alt: 'Parâmetros de Equipe' }, { title: 'Visão Financeira', alt: 'Dashboard Financeiro' }] },
+    carousel: { subtitle: 'Confiado por operadores em todo o mundo' },
+    featureCards: [{ title: 'Configuração Instantânea', description: 'Comece em minutos, não em dias.' }, { title: 'Contas Verificadas', description: 'Contas pré-verificadas, prontas para uso.' }, { title: 'Cobertura Global', description: 'Acesse contas em múltiplas regiões.' }, { title: 'Suporte 24/7', description: 'Ajuda dedicada quando precisar.' }],
+    how: { title: 'Como Funciona', subtitle: 'Simples, seguro e rápido', step1: { num: '01', title: 'Conecte e Confirme', desc: 'Entre em contato via Telegram ou WhatsApp. Compartilhe seus requisitos. Combinamos você com uma conta verificada.' }, step2: { num: '02', title: 'Verifique e Proteja', desc: 'Revise detalhes da conta, use nosso serviço de custódia e conclua a transferência com proteção total.' }, step3: { num: '03', title: 'Implante e Escale', desc: 'Obtenha credenciais completas, redefinição de 2FA, e comece a operar imediatamente com confiança.' }, buying: 'Comprar', selling: 'Vender', frozen: 'Conta Congelada?', frozenDesc: 'Ajudamos a recuperar ou substituir contas congeladas com alternativas verificadas.', trust: 'Por Que Confiar em Nós?', t1: '5.000+ transações bem-sucedidas', t2: 'Proteção de custódia em cada negócio', t3: 'Suporte multilíngue 24/7', t4: 'Apenas contas verificadas', t5: 'Preços transparentes', t6: 'Suporte pós-venda incluído', rules: 'Regras e Restrições', r1: 'Sem estornos ou disputas', r2: 'Sem uso ilegal de contas', r3: 'Respeite os Termos de Serviço da plataforma', r4: 'Uma conta por comprador a menos que aprovado', r5: 'Taxas de custódia não são reembolsáveis', readBeforeTitle: '📌 Leia Antes de Comprar / Vender', footer: 'Sempre verifique detalhes antes de finalizar. Em caso de dúvida, pergunte.' },
+    faq: { title: 'Perguntas Frequentes', subtitle: 'Respostas rápidas para perguntas comuns', q1: 'Quão rápido é a entrega?', a1: 'A maioria das contas é entregue dentro de 1-24 horas após confirmação do pagamento.', q2: 'A custódia é obrigatória?', a2: 'Sim, todas as transações usam nosso serviço seguro de custódia para proteção do comprador e vendedor.', q3: 'E se minha conta for banida?', a3: 'Oferecemos garantias de substituição em contas elegíveis dentro do período de garantia.', q4: 'Vocês suportam meu país?', a4: 'Operamos globalmente. Entre em contato para confirmar disponibilidade na sua região.', q5: 'Como entro em contato com o suporte?', a5: 'Entre em contato 24/7 via Telegram @ADjamesGrugeon ou WhatsApp +1 (254) 275-5458.' },
+    cta: { title: 'Pronto para Escalar?', desc: 'Junte-se a milhares de operadores que confiam em nossa infraestrutura.', telegram: 'Mensagem no Telegram', whatsapp: 'Chat no WhatsApp' },
+    feedbacks: { label: 'FEEDBACKS', title: 'Feedback de Negócios Passados', subtitle: 'Capturas de tela reais de transações FlowPay concluídas', desc: 'Veja painéis reais e provas de operadores que receberam contas Stripe/Shopify, fundos descongelados e conclusões de custódia bem-sucedidas.', screenshots: [{ alt: 'Painel Stripe EUA pós-entrega', caption: 'Painel Stripe EUA após entrega - 34K€+ volume mensal' }, { alt: 'Loja Shopify UK ao vivo', caption: 'Loja Shopify UK ao vivo após bypass de verificação' }, { alt: 'Confirmação de pagamento em custódia', caption: 'Pagamento USDT em custódia confirmado e recebido' }, { alt: 'Transferência bancária de alto limite', caption: 'Transferência bancária de alto limite concluída' }, { alt: 'Acesso de equipe provisionado', caption: 'Acesso de equipe e segurança totalmente provisionado' }, { alt: 'Fundos descongelados', caption: 'Fundos do Stripe descongelados de retenção de 90 dias' }] },
+    privacy: { label: 'POLÍTICA DE PRIVACIDADE', title: 'Política de Privacidade', intro: 'Levamos sua privacidade a sério. Esta política explica como coletamos, usamos e protegemos suas informações ao usar nossos serviços.', infoUsed: { title: 'Informações que Coletamos', desc: 'Coletamos informações que você nos fornece diretamente, como ao criar uma conta, fazer uma compra ou entrar em contato para suporte.' }, dataProtection: { title: 'Como Protegemos Seus Dados', desc: 'Implementamos medidas de segurança padrão para proteger suas informações pessoais contra acesso, alteração ou divulgação não autorizados.' }, supportComms: { title: 'Comunicações e Suporte', desc: 'Podemos entrar em contato via Telegram, WhatsApp ou email para fornecer suporte, atualizações ou notificações importantes de serviço.' } },
+    termsOfService: {
+      label: 'TERMOS DE SERVIÇO',
+      title: 'Termos de Serviço',
+      intro: 'Ao usar nossos serviços, você concorda com estes termos. Por favor, leia-os cuidadosamente antes de prosseguir com qualquer transação.',
+      delivery: { title: 'Entrega de Contas', desc: 'As contas são entregues dentro de 1-24 horas após confirmação do pagamento via custódia. A entrega inclui credenciais completas, instruções de redefinição de 2FA e guia de configuração inicial.' },
+      refund: { title: 'Política de Reembolso', desc: 'Oferecemos uma garantia de substituição de 24 horas. Se uma conta for sinalizada ou falhar dentro de 24h após o login, substituímos 1:1. Não há reembolsos após 24h, a menos que a conta nunca tenha sido entregue.' },
+      support: { title: 'Suporte e Comunicação', desc: 'O suporte é fornecido via Telegram @ADjamesGrugeon ou WhatsApp +1 (254) 275-5458. O tempo de resposta é tipicamente inferior a 1 hora durante o horário comercial.' },
+    }
+  },
+
+  vi: {
+    nav: { solutions: 'Giải pháp', continuity: 'Tính liên tục', proof: 'Bằng chứng', how: 'Cách hoạt động', faq: 'Câu hỏi thường gặp', feedbacks: 'Phản hồi', cta: 'Nói chuyện với James', mobileTitle: 'Điều hướng', mobileMenuLabel: 'Mở menu' },
+    terms: { title: 'Hoạt động thương nhân đã xác minh', setup: 'Thiết lập 48h', escrow: 'Chuyển khoản có ký quỹ', protection: 'Vốn được bảo vệ', coverage: 'Phạm vi ngân hàng toàn cầu', jurisdictions: '40+ khu vực pháp lý' },
+    hero: { badge: 'Cơ sở hạ tầng đã xác minh cho nhà điều hành khối lượng lớn', subtitle: 'Chúng tôi cung cấp môi trường Stripe, Shopify và Ngân hàng mà các nền tảng đã cố gắng lấy đi. Không vòng lặp xác minh. Không cần ID địa phương. Giao hàng 48h.', title: 'Cơ sở hạ tầng đã xác minh cho nhà điều hành khối lượng lớn', description: 'Mua tài khoản Stripe cũ với giới hạn cao. Bỏ qua xác minh Shopify ngay lập tức. Mở khóa quỹ Stripe bị giữ. Cơ sở hạ tầng doanh nghiệp Mỹ/Anh sẵn sàng trong 48h.', cta1: 'Tôi cần tài khoản mới', cta2: 'Khám phá giải pháp', ctaNewAccount: 'Tôi cần tài khoản mới', ctaFundsHold: 'Quỹ của tôi đang bị giữ', ctaKYC: 'Trợ giúp xác minh', jurisdiction: 'Hoạt động tại 40+ khu vực pháp lý' },
+    liveInventory: ['✅ 1x US Stripe + Shopify vừa giao cho nhà điều hành tại Maroc 🇲🇦', '✅ 1x Tài khoản Stripe UK cũ giao cho Algeria 🇩🇿', '✅ 1x Shopify giới hạn cao giao cho Ai Cập 🇪🇬', '✅ 1x US Stripe mở khóa giao cho Lebanon 🇱🇧', '✅ 1x Cửa hàng Shopify EU giao cho Tây Ban Nha 🇪🇸', '✅ 1x Tài khoản Stripe UK giao cho Pháp 🇫🇷', '✅ 1x Stripe US khối lượng cao giao cho UK 🇬🇧', '✅ 1x Shopify + Stripe giao cho Mỹ 🇺🇸', '✅ 1x Ngân hàng UAE + Stripe giao cho UAE 🇦🇪', '✅ 1x Tài khoản Stripe Châu Á giao cho Việt Nam 🇻🇳', '✅ 1x Stripe US giao cho Philippines 🇵🇭'],
+    telegramChannel: { title: 'Tham gia Kênh Telegram của chúng tôi để cập nhật kho hàng hàng ngày', desc: 'Nhận cảnh báo kho hàng thời gian thực, thông báo hàng mới và mẹo cho nhà điều hành. Không cần email.', cta: 'Tham gia ngay', success: 'Đã tham gia! Kiểm tra Telegram để cập nhật hàng ngày.' },
+    replacementPolicy: { title: 'Chính sách thay thế của chúng tôi', desc: 'Nếu tài khoản bị đánh dấu trong vòng 24h sau khi đăng nhập, chúng tôi thay thế 1:1. Không hỏi.', points: ['Bảo đảm thay thế 24h', 'Đổi 1:1 nếu bị đánh dấu', 'Chỉ thay thế chất lượng cao', 'Bao gồm xác minh lại'] },
+    telegramProofs: [{ text: 'Thanh toán đã vào ngân hàng, cảm ơn James!', author: 'Nhà điều hành MA' }, { text: 'Tài khoản hoàn hảo, đang mở rộng khối lượng.', author: 'Trader DZ' }, { text: 'Giao hàng nhanh + hoạt động hoàn hảo!', author: 'Nhà điều hành EG' }],
+    solutions: { title: 'Được xây dựng cho nhà điều hành di chuyển nhanh', subtitle: 'Ba trụ cột tích hợp loại bỏ ma sát thiết lập, bảo vệ vốn và giữ doanh nghiệp của bạn chạy mà không gián đoạn.', merchant: { title: 'Cửa hàng thương nhân đã xác minh', desc: 'Môi trường Shopify và Stripe khối lượng cao sẵn sàng triển khai. Đã xác minh đầy đủ, KYC đã phê duyệt, và sẵn sàng mở rộng ngay lập tức.', p1: 'KYC đã xác minh trước - không vòng lặp ID', p2: 'Sẵn sàng khối lượng cao - bỏ qua xác minh', p3: 'Triển khai ngay lập tức - mở khóa quỹ nhanh' }, banking: { title: 'Giải pháp ngân hàng toàn cầu', desc: 'Phạm vi ngân hàng đa khu vực pháp lý cho chuyển động vốn liền mạch trên thị trường quốc tế.', p1: 'Tài khoản đa tiền tệ', p2: 'Thanh toán xuyên biên giới', p3: 'Sẵn sàng tuân thủ - lịch sử giới hạn cao' }, escrow: { title: 'Dịch vụ ký quỹ an toàn', desc: 'Lợi thế trung gian. Mỗi giao dịch được bảo vệ thông qua khuôn khổ ký quỹ tổ chức của chúng tôi.', p1: 'Vốn được giữ an toàn', p2: 'Giải quyết tranh chấp', p3: 'Không rủi ro đối tác' } },
+    continuity: { title: 'Tính liên tục hoạt động', subtitle: 'Chúng tôi giải quyết ba vấn đề chính khiến nhà điều hành bị mắc kẹt.', uptime: { title: 'Vấn đề tạo?', desc: 'Đừng đốt IP và thiết bị sạch của bạn. Chúng tôi cung cấp cơ sở hạ tầng cũ sẵn sàng mở rộng vượt qua kiểm tra rủi ro "Ngày 1".' }, compliance: { title: 'Tường xác minh (KYC)?', desc: 'Ngừng bị mắc kẹt trong vòng lặp ID. Mỗi tài khoản chúng tôi giao đã được phê duyệt trước với tài liệu chất lượng cao.' }, support: { title: 'Cấm và quỹ bị giữ?', desc: 'Bị khóa ở 25% dự trữ? Chúng tôi cung cấp tài khoản có lịch sử giới hạn cao và tư vấn về việc rút vốn khỏi khoản giữ 90 ngày.' }, rapid: { title: 'Hỗ trợ nhà điều hành 24/7', desc: 'Truy cập trực tiếp đến cố vấn cao cấp qua kênh Telegram riêng.' } },
+    proof: { title: 'Bằng chứng doanh nghiệp', subtitle: 'Kết quả từ nhà điều hành thực + phản hồi khách hàng Telegram.', desc: 'Bảng điều khiển đã xác minh, phản hồi nhà điều hành và bằng chứng chat Telegram thực từ cơ sở khách hàng hoạt động của chúng tôi.', p1: '34K€+ tổng khối lượng hàng tháng — bảng điều khiển Stripe đã xác minh', p2: 'Môi trường Stripe hoạt động — đa tiền tệ đã bật', p3: 'Phản hồi nhà điều hành — onboarding thành công', p4: '25K€+ phân tích Shopify — cửa hàng trực tiếp', p5: 'Xác nhận thanh toán USDT — ký quỹ hoàn tất', p6: 'Quyền truy cập nhóm và bảo mật — đã cung cấp đầy đủ', cards: [{ title: 'Phân tích thời gian thực', alt: 'Bảng điều khiển phân tích Shopify' }, { title: 'Theo dõi thanh toán', alt: 'Bảng điều khiển tổng quan thanh toán' }, { title: 'Tích hợp nhắn tin', alt: 'Tích hợp WhatsApp' }, { title: 'Liên lạc an toàn', alt: 'Nhắn tin an toàn' }, { title: 'Quản lý nhóm', alt: 'Tham số nhóm' }, { title: 'Tổng quan tài chính', alt: 'Bảng điều khiển tài chính' }] },
+    carousel: { subtitle: 'Được tin cậy bởi nhà điều hành trên toàn thế giới' },
+    featureCards: [{ title: 'Thiết lập tức thì', description: 'Bắt đầu trong vài phút, không phải vài ngày.' }, { title: 'Tài khoản đã xác minh', description: 'Tài khoản đã kiểm tra trước, sẵn sàng sử dụng.' }, { title: 'Phạm vi toàn cầu', description: 'Truy cập tài khoản trên nhiều khu vực.' }, { title: 'Hỗ trợ 24/7', description: 'Trợ giúp chuyên dụng khi bạn cần.' }],
+    how: { title: 'Cách hoạt động', subtitle: 'Đơn giản, an toàn và nhanh', step1: { num: '01', title: 'Kết nối & Xác nhận', desc: 'Liên hệ qua Telegram hoặc WhatsApp. Chia sẻ yêu cầu của bạn. Chúng tôi kết nối bạn với tài khoản đã xác minh.' }, step2: { num: '02', title: 'Xác minh & Bảo mật', desc: 'Xem xét chi tiết tài khoản, sử dụng dịch vụ ký quỹ của chúng tôi và hoàn tất chuyển khoản với bảo vệ đầy đủ.' }, step3: { num: '03', title: 'Triển khai & Mở rộng', desc: 'Nhận thông tin đăng nhập đầy đủ, đặt lại 2FA, và bắt đầu hoạt động ngay lập tức với sự tự tin.' }, buying: 'Mua', selling: 'Bán', frozen: 'Tài khoản bị đóng băng?', frozenDesc: 'Chúng tôi giúp khôi phục hoặc thay thế tài khoản bị đóng băng bằng các lựa chọn thay thế đã xác minh.', trust: 'Tại sao tin tưởng chúng tôi?', t1: '5.000+ giao dịch thành công', t2: 'Bảo vệ ký quỹ trên mỗi giao dịch', t3: 'Hỗ trợ đa ngôn ngữ 24/7', t4: 'Chỉ tài khoản đã xác minh', t5: 'Giá cả minh bạch', t6: 'Hỗ trợ sau bán hàng bao gồm', rules: 'Quy tắc & Hạn chế', r1: 'Không hoàn tiền hoặc tranh chấp', r2: 'Không sử dụng tài khoản bất hợp pháp', r3: 'Tôn trọng Điều khoản dịch vụ nền tảng', r4: 'Một tài khoản mỗi người mua trừ khi được phê duyệt', r5: 'Phí ký quỹ không hoàn lại', readBeforeTitle: '📌 Đọc trước khi mua / bán', footer: 'Luôn xác minh chi tiết trước khi hoàn tất. Khi nghi ngờ, hãy hỏi.' },
+    faq: { title: 'Câu hỏi thường gặp', subtitle: 'Câu trả lời nhanh cho câu hỏi phổ biến', q1: 'Giao hàng nhanh thế nào?', a1: 'Hầu hết tài khoản được giao trong vòng 1-24 giờ sau khi xác nhận thanh toán.', q2: 'Ký quỹ có bắt buộc không?', a2: 'Có, tất cả giao dịch sử dụng dịch vụ ký quỹ an toàn của chúng tôi để bảo vệ người mua và người bán.', q3: 'Điều gì xảy ra nếu tài khoản của tôi bị cấm?', a3: 'Chúng tôi cung cấp bảo đảm thay thế cho tài khoản đủ điều kiện trong thời gian bảo hành.', q4: 'Các bạn có hỗ trợ quốc gia của tôi không?', a4: 'Chúng tôi hoạt động toàn cầu. Liên hệ để xác nhận khả dụng trong khu vực của bạn.', q5: 'Làm sao để liên hệ hỗ trợ?', a5: 'Liên hệ 24/7 qua Telegram @ADjamesGrugeon hoặc WhatsApp +1 (254) 275-5458.' },
+    cta: { title: 'Sẵn sàng mở rộng?', desc: 'Tham gia hàng ngàn nhà điều hành tin tưởng cơ sở hạ tầng của chúng tôi.', telegram: 'Nhắn tin trên Telegram', whatsapp: 'Chat trên WhatsApp' },
+    feedbacks: { label: 'FEEDBACKS', title: 'Phản hồi Giao dịch Quá khứ', subtitle: 'Ảnh chụp màn hình thực từ các giao dịch FlowPay hoàn thành', desc: 'Xem bảng điều khiển thực và bằng chứng từ nhà điều hành nhận tài khoản Stripe/Shopify, quỹ được giải phóng và hoàn thành ký quỹ thành công.', screenshots: [{ alt: 'Bảng điều khiển Stripe Mỹ sau giao hàng', caption: 'Bảng điều khiển Stripe Mỹ sau giao hàng - 34K€+ khối lượng hàng tháng' }, { alt: 'Cửa hàng Shopify UK trực tiếp', caption: 'Cửa hàng Shopify UK trực tiếp sau khi bỏ qua xác minh' }, { alt: 'Xác nhận thanh toán ký quỹ', caption: 'Thanh toán USDT ký quỹ xác nhận và nhận' }, { alt: 'Chuyển khoản ngân hàng giới hạn cao', caption: 'Chuyển khoản ngân hàng giới hạn cao hoàn thành' }, { alt: 'Quyền truy cập nhóm đã cung cấp', caption: 'Quyền truy cập nhóm và bảo mật đã cung cấp đầy đủ' }, { alt: 'Quỹ được giải phóng', caption: 'Quỹ Stripe được giải phóng khỏi khoản giữ 90 ngày' }] },
+    privacy: { label: 'CHÍNH SÁCH BẢO MẬT', title: 'Chính sách Bảo mật', intro: 'Chúng tôi coi trọng quyền riêng tư của bạn. Chính sách này giải thích cách chúng tôi thu thập, sử dụng và bảo vệ thông tin của bạn khi bạn sử dụng dịch vụ của chúng tôi.', infoUsed: { title: 'Thông tin Chúng tôi Thu thập', desc: 'Chúng tôi thu thập thông tin bạn cung cấp trực tiếp, như khi tạo tài khoản, mua hàng hoặc liên hệ hỗ trợ.' }, dataProtection: { title: 'Cách Chúng tôi Bảo vệ Dữ liệu', desc: 'Chúng tôi áp dụng các biện pháp bảo mật tiêu chuẩn để bảo vệ thông tin cá nhân của bạn khỏi truy cập, thay đổi hoặc tiết lộ trái phép.' }, supportComms: { title: 'Liên lạc & Hỗ trợ', desc: 'Chúng tôi có thể liên hệ qua Telegram, WhatsApp hoặc email để cung cấp hỗ trợ, cập nhật hoặc thông báo dịch vụ quan trọng.' } },
+    termsOfService: {
+      label: 'ĐIỀU KHOẢN DỊCH VỤ',
+      title: 'Điều khoản Dịch vụ',
+      intro: 'Bằng cách sử dụng dịch vụ của chúng tôi, bạn đồng ý với các điều khoản này. Vui lòng đọc kỹ trước khi tiến hành bất kỳ giao dịch nào.',
+      delivery: { title: 'Giao Tài khoản', desc: 'Tài khoản được giao trong vòng 1-24 giờ sau khi xác nhận thanh toán qua ký quỹ. Giao hàng bao gồm thông tin đăng nhập đầy đủ, hướng dẫn đặt lại 2FA và hướng dẫn thiết lập ban đầu.' },
+      refund: { title: 'Chính sách Hoàn tiền', desc: 'Chúng tôi cung cấp bảo đảm thay thế 24 giờ. Nếu tài khoản bị đánh dấu hoặc lỗi trong vòng 24h sau khi đăng nhập, chúng tôi thay thế 1:1. Không hoàn tiền sau 24h trừ khi tài khoản chưa bao giờ được giao.' },
+      support: { title: 'Hỗ trợ & Liên lạc', desc: 'Hỗ trợ được cung cấp qua Telegram @ADjamesGrugeon hoặc WhatsApp +1 (254) 275-5458. Thời gian phản hồi thường dưới 1 giờ trong giờ làm việc.' },
+    }
+  },
+
+  it: {
+    nav: { solutions: 'Soluzioni', continuity: 'Continuità', proof: 'Prove', how: 'Come Funziona', faq: 'FAQ', feedbacks: 'Recensioni', cta: 'Parla con James', mobileTitle: 'Navigazione', mobileMenuLabel: 'Apri menu' },
+    terms: { title: 'Operazioni commercianti verificate', setup: 'Configurazione 48h', escrow: 'Trasferimenti con deposito fiduciario', protection: 'Fondi protetti', coverage: 'Copertura bancaria globale', jurisdictions: '40+ giurisdizioni' },
+    hero: { badge: 'Infrastruttura Verificata per Operatori ad Alto Volume', subtitle: 'Forniamo gli ambienti Stripe, Shopify e bancari che le piattaforme hanno cercato di toglierti. Nessun loop di verifica. Nessun ID locale richiesto. Consegna 48h.', title: 'Infrastruttura Verificata per Operatori ad Alto Volume', description: 'Acquista account Stripe invecchiati con limiti alti. Salta la verifica Shopify istantaneamente. Sblocca fondi Stripe trattenuti. Infrastruttura aziendale USA/UK pronta in 48h.', cta1: 'Ho bisogno di un nuovo account', cta2: 'Esplora Soluzioni', ctaNewAccount: 'Ho bisogno di un nuovo account', ctaFundsHold: 'I miei fondi sono trattenuti', ctaKYC: 'Aiuto verifica', jurisdiction: 'Operativo in 40+ giurisdizioni' },
+    liveInventory: ['✅ 1x US Stripe + Shopify appena consegnato a operatore in Marocco 🇲🇦', '✅ 1x Account Stripe UK invecchiato consegnato ad Algeria 🇩🇿', '✅ 1x Shopify alto limite consegnato a Egitto 🇪🇬', '✅ 1x US Stripe sbloccato consegnato a Libano 🇱🇧', '✅ 1x Negozio Shopify UE consegnato a Spagna 🇪🇸', '✅ 1x Account Stripe UK consegnato a Francia 🇫🇷', '✅ 1x Stripe US alto volume consegnato a UK 🇬🇧', '✅ 1x Shopify + Stripe consegnato a USA 🇺🇸', '✅ 1x Banca UAE + Stripe consegnato a UAE 🇦🇪', '✅ 1x Account Stripe Asia consegnato a Vietnam 🇻🇳', '✅ 1x Stripe US consegnato a Filippine 🇵🇭'],
+    telegramChannel: { title: 'Unisciti al nostro Canale Telegram per Aggiornamenti Giornalieri sullo Stock', desc: 'Ricevi avvisi inventario in tempo reale, notifiche nuovo stock e consigli per operatori. Nessuna email richiesta.', cta: 'Unisciti Ora', success: 'Iscritto! Controlla Telegram per aggiornamenti giornalieri.' },
+    replacementPolicy: { title: 'La Nostra Politica di Sostituzione', desc: 'Se l\'account viene segnalato entro 24h dal login, lo sostituiamo 1:1. Senza domande.', points: ['Garanzia sostituzione 24h', 'Scambio 1:1 se segnalato', 'Solo sostituzioni di alta qualità', 'Include riverifica'] },
+    telegramProofs: [{ text: 'Pagamento arrivato in banca, grazie James!', author: 'Operatore MA' }, { text: 'Account perfetto, già scalando volume.', author: 'Trader DZ' }, { text: 'Consegna rapida + funziona perfettamente!', author: 'Operatore EG' }],
+    solutions: { title: 'Costruito per operatori che si muovono veloci', subtitle: 'Tre pilastri integrati che eliminano attrito configurazione, proteggono capitale e mantengono il tuo business in funzione senza interruzioni.', merchant: { title: 'Vetrine Commercianti Verificate', desc: 'Ambienti Shopify e Stripe ad alto volume pronti per il deployment. Completamente verificati, KYC approvato, e pronti per scaling immediato.', p1: 'KYC pre-verificato - nessun loop ID', p2: 'Pronto alto volume - salta verifica', p3: 'Deployment immediato - sblocca fondi velocemente' }, banking: { title: 'Soluzioni Bancarie Globali', desc: 'Copertura bancaria multi-giurisdizione per movimento capitale fluido su mercati internazionali.', p1: 'Account multi-valuta', p2: 'Liquidazione transfrontaliera', p3: 'Pronto conformità - storico limiti alti' }, escrow: { title: 'Servizi Deposito Fiduciario Sicuri', desc: 'Il vantaggio dell\'intermediario. Ogni transazione è protetta attraverso il nostro framework istituzionale di deposito fiduciario.', p1: 'Fondi custoditi in sicurezza', p2: 'Risoluzione dispute', p3: 'Zero rischio controparte' } },
+    continuity: { title: 'Continuità Operativa', subtitle: 'Risolviamo i tre problemi principali che bloccano gli operatori.', uptime: { title: 'Problemi di creazione?', desc: 'Non bruciare i tuoi IP e dispositivi puliti. Forniamo infrastruttura invecchiata pronta a scalare che supera i controlli rischio "Giorno 1".' }, compliance: { title: 'Muri di Verifica (KYC)?', desc: 'Smetti di rimanere bloccato in loop ID. Ogni account che consegniamo è pre-approvato con documentazione di alta qualità.' }, support: { title: 'Ban e fondi trattenuti?', desc: 'Bloccato al 25% di riserva? Forniamo account con storico limiti alti e consigliamo su come spostare capitale fuori da trattenute di 90 giorni.' }, rapid: { title: 'Supporto Operatori 24/7', desc: 'Accesso diretto a consulenti senior tramite canali Telegram privati.' } },
+    proof: { title: 'Prove Aziendali', subtitle: 'Risultati da operatori reali + feedback clienti Telegram.', desc: 'Dashboard verificate, feedback operatori e prove reali di chat Telegram dalla nostra base clienti attiva.', p1: '34K€+ volume lordo mensile — dashboard Stripe verificata', p2: 'Ambiente Stripe attivo — multi-valuta abilitato', p3: 'Feedback operatore — onboarding riuscito', p4: '25K€+ analytics Shopify — negozio live', p5: 'Conferma liquidazione USDT — deposito fiduciario completato', p6: 'Accesso team e sicurezza — completamente provisioning', cards: [{ title: 'Analytics in Tempo Reale', alt: 'Dashboard Analytics Shopify' }, { title: 'Tracciamento Pagamenti', alt: 'Dashboard Panoramica Pagamenti' }, { title: 'Integrazione Messaggistica', alt: 'Integrazione WhatsApp' }, { title: 'Comunicazioni Sicure', alt: 'Messaggistica Sicura' }, { title: 'Gestione Team', alt: 'Parametri Team' }, { title: 'Panoramica Finanziaria', alt: 'Dashboard Finanziaria' }] },
+    carousel: { subtitle: 'Fidato da operatori in tutto il mondo' },
+    featureCards: [{ title: 'Configurazione Istantanea', description: 'Inizia in minuti, non in giorni.' }, { title: 'Account Verificati', description: 'Account pre-verificati, pronti all\'uso.' }, { title: 'Copertura Globale', description: 'Accedi ad account in più regioni.' }, { title: 'Supporto 24/7', description: 'Aiuto dedicato quando ne hai bisogno.' }],
+    how: { title: 'Come Funziona', subtitle: 'Semplice, sicuro e veloce', step1: { num: '01', title: 'Connetti & Conferma', desc: 'Contattaci via Telegram o WhatsApp. Condividi i tuoi requisiti. Ti abbiniamo a un account verificato.' }, step2: { num: '02', title: 'Verifica & Proteggi', desc: 'Rivedi dettagli account, usa il nostro servizio di deposito fiduciario e completa il trasferimento con protezione totale.' }, step3: { num: '03', title: 'Deploy & Scala', desc: 'Ottieni credenziali complete, reset 2FA, e inizia a operare immediatamente con fiducia.' }, buying: 'Acquistare', selling: 'Vendere', frozen: 'Account Bloccato?', frozenDesc: 'Aiutiamo a recuperare o sostituire account bloccati con alternative verificate.', trust: 'Perché Fidarsi di Noi?', t1: '5.000+ transazioni riuscite', t2: 'Protezione deposito fiduciario su ogni deal', t3: 'Supporto multilingua 24/7', t4: 'Solo account verificati', t5: 'Prezzi trasparenti', t6: 'Supporto post-vendita incluso', rules: 'Regole & Restrizioni', r1: 'Nessun chargeback o disputa', r2: 'Nessun uso illegale di account', r3: 'Rispetta i Termini di Servizio della piattaforma', r4: 'Un account per acquirente salvo approvazione', r5: 'Commissioni deposito fiduciario non rimborsabili', readBeforeTitle: '📌 Leggi Prima di Acquistare / Vendere', footer: 'Verifica sempre i dettagli prima di finalizzare. In caso di dubbio, chiedi.' },
+    faq: { title: 'FAQ', subtitle: 'Risposte rapide a domande comuni', q1: 'Quanto è veloce la consegna?', a1: 'La maggior parte degli account viene consegnata entro 1-24 ore dopo conferma pagamento.', q2: 'Il deposito fiduciario è obbligatorio?', a2: 'Sì, tutte le transazioni usano il nostro servizio sicuro di deposito fiduciario per protezione acquirente e venditore.', q3: 'Cosa succede se il mio account viene bannato?', a3: 'Offriamo garanzie di sostituzione su account eleggibili entro il periodo di garanzia.', q4: 'Supportate il mio paese?', a4: 'Operiamo globalmente. Contattaci per confermare disponibilità nella tua regione.', q5: 'Come contatto il supporto?', a5: 'Contattaci 24/7 via Telegram @ADjamesGrugeon o WhatsApp +1 (254) 275-5458.' },
+    cta: { title: 'Pronto a Scalare?', desc: 'Unisciti a migliaia di operatori che si fidano della nostra infrastruttura.', telegram: 'Messaggio su Telegram', whatsapp: 'Chat su WhatsApp' },
+    feedbacks: { label: 'FEEDBACKS', title: 'Feedback Transazioni Passate', subtitle: 'Screenshot reali da transazioni FlowPay completate', desc: 'Vedi dashboard reali e prove da operatori che hanno ricevuto account Stripe/Shopify, fondi sbloccati e completamenti escrow riusciti.', screenshots: [{ alt: 'Dashboard Stripe US post-consegna', caption: 'Dashboard Stripe US dopo consegna - 34K€+ volume mensile' }, { alt: 'Negozio Shopify UK live', caption: 'Negozio Shopify UK live dopo bypass verifica' }, { alt: 'Conferma pagamento escrow', caption: 'Pagamento USDT escrow confermato e ricevuto' }, { alt: 'Trasferimento bancario alto limite', caption: 'Trasferimento bancario alto limite completato' }, { alt: 'Accesso team provisionato', caption: 'Accesso team e sicurezza completamente provisionato' }, { alt: 'Fondi sbloccati', caption: 'Fondi Stripe sbloccati da trattenuta 90 giorni' }] },
+    privacy: { label: 'INFORMATIVA SULLA PRIVACY', title: 'Informativa sulla Privacy', intro: 'Prendiamo sul serio la tua privacy. Questa informativa spiega come raccogliamo, utilizziamo e proteggiamo le tue informazioni quando utilizzi i nostri servizi.', infoUsed: { title: 'Informazioni che Raccogliamo', desc: 'Raccogliamo informazioni che ci fornisci direttamente, come quando crei un account, effettui un acquisto o ci contatti per supporto.' }, dataProtection: { title: 'Come Proteggiamo i Tuoi Dati', desc: 'Implementiamo misure di sicurezza standard per proteggere le tue informazioni personali da accesso, alterazione o divulgazione non autorizzati.' }, supportComms: { title: 'Comunicazioni e Supporto', desc: 'Potremmo contattarti tramite Telegram, WhatsApp o email per fornire supporto, aggiornamenti o notifiche di servizio importanti.' } },
+    termsOfService: {
+      label: 'TERMINI DI SERVIZIO',
+      title: 'Termini di Servizio',
+      intro: 'Utilizzando i nostri servizi, accetti questi termini. Si prega di leggerli attentamente prima di procedere con qualsiasi transazione.',
+      delivery: { title: 'Consegna Account', desc: 'Gli account vengono consegnati entro 1-24 ore dopo la conferma del pagamento tramite deposito fiduciario. La consegna include credenziali complete, istruzioni per il reset 2FA e guida alla configurazione iniziale.' },
+      refund: { title: 'Politica di Rimborso', desc: 'Offriamo una garanzia di sostituzione di 24 ore. Se un account viene segnalato o fallisce entro 24h dal login, lo sostituiamo 1:1. Nessun rimborso dopo 24h a meno che l\'account non sia mai stato consegnato.' },
+      support: { title: 'Supporto e Comunicazione', desc: 'Il supporto è fornito tramite Telegram @ADjamesGrugeon o WhatsApp +1 (254) 275-5458. Il tempo di risposta è tipicamente inferiore a 1 ora durante l\'orario lavorativo.' },
+    }
+  },
+
+  zh: {
+    nav: { solutions: '解决方案', continuity: '连续性', proof: '证明', how: '工作原理', faq: '常见问题', feedbacks: '反馈', cta: '与詹姆斯交谈', mobileTitle: '导航', mobileMenuLabel: '打开菜单' },
+    terms: { title: '已验证商家运营', setup: '48 小时设置', escrow: '托管转账', protection: '受保护资金', coverage: '全球银行覆盖', jurisdictions: '40+ 司法管辖区' },
+    hero: { badge: '高容量运营商验证基础设施', subtitle: '我们提供平台试图收回的 Stripe、Shopify 和银行环境。无验证循环。无需本地身份证。48 小时交付。', title: '高容量运营商验证基础设施', description: '购买高限额老化 Stripe 账户。即时绕过 Shopify 验证。解锁被冻结的 Stripe 资金。美/英商业基础设施 48 小时内就绪。', cta1: '我需要新账户', cta2: '探索解决方案', ctaNewAccount: '我需要新账户', ctaFundsHold: '我的资金被冻结', ctaKYC: '验证帮助', jurisdiction: '在 40+ 司法管辖区运营' },
+    liveInventory: ['✅ 1 个美国 Stripe + Shopify 商店刚交付给摩洛哥运营商 🇲🇦', '✅ 1 个英国老化 Stripe 账户交付给阿尔及利亚 🇩🇿', '✅ 1 个高限额 Shopify 交付给埃及 🇪🇬', '✅ 1 个美国解冻 Stripe 交付给黎巴嫩 🇱🇧', '✅ 1 个欧盟 Shopify 商店交付给西班牙 🇪🇸', '✅ 1 个英国 Stripe 账户交付给法国 🇫🇷', '✅ 1 个美国高容量 Stripe 交付给英国 🇬🇧', '✅ 1 个 Shopify + Stripe 交付给美国 🇺🇸', '✅ 1 个阿联酋银行 + Stripe 交付给阿联酋 🇦🇪', '✅ 1 个亚洲 Stripe 账户交付给越南 🇻🇳', '✅ 1 个美国 Stripe 交付给菲律宾 🇵🇭'],
+    telegramChannel: { title: '加入我们的 Telegram 频道获取每日库存更新', desc: '获取实时库存警报、新库存通知和运营商技巧。无需电子邮件。', cta: '立即加入', success: '已加入！查看 Telegram 获取每日更新。' },
+    replacementPolicy: { title: '我们的更换政策', desc: '如果账户在登录后 24 小时内被标记，我们 1:1 更换。无需询问。', points: ['24 小时更换保证', '如被标记则 1:1 更换', '仅高质量更换', '包括重新验证'] },
+    telegramProofs: [{ text: '付款已到账，谢谢詹姆斯！', author: '摩洛哥运营商' }, { text: '账户完美，已在扩展量。', author: '阿尔及利亚交易员' }, { text: '快速交付 + 完美运行！', author: '埃及运营商' }],
+    solutions: { title: '为快速行动的运营商打造', subtitle: '三个集成支柱消除设置摩擦、保护资本并保持业务无中断运行。', merchant: { title: '已验证商家店面', desc: '即部署高容量 Shopify 和 Stripe 环境。完全验证、KYC 批准、立即可扩展。', p1: '预验证 KYC - 无身份证循环', p2: '高容量就绪 - 绕过验证', p3: '即时部署 - 快速解锁资金' }, banking: { title: '全球银行解决方案', desc: '多司法管辖区银行覆盖，实现国际市场的无缝资本流动。', p1: '多币种账户', p2: '跨境结算', p3: '合规就绪 - 高限额历史' }, escrow: { title: '安全托管服务', desc: '中间人优势。每笔交易都通过我们的机构托管框架保护。', p1: '资金安全托管', p2: '争议解决', p3: '零对手方风险' } },
+    continuity: { title: '运营连续性', subtitle: '我们解决让运营商陷入困境的三个主要问题。', uptime: { title: '创建问题？', desc: '不要浪费您的干净 IP 和设备。我们提供可通过"第 1 天"风险检查的即用型老化基础设施。' }, compliance: { title: '验证 (KYC) 障碍？', desc: '停止陷入身份证循环。我们交付的每个账户都预批准并附带高质量文件。' }, support: { title: '封禁和资金冻结？', desc: '被锁定在 25% 储备？我们提供高限额历史账户并建议如何从 90 天冻结中提取资金。' }, rapid: { title: '24/7 运营商支持', desc: '通过私人 Telegram 频道直接访问高级顾问。' } },
+    proof: { title: '企业证明', subtitle: '真实运营商成果 + Telegram 客户反馈。', desc: '已验证仪表板、运营商反馈和来自我们活跃客户群的真实 Telegram 聊天证明。', p1: '34K€+ 月总交易量 — 已验证 Stripe 仪表板', p2: '活跃 Stripe 环境 — 启用多币种', p3: '运营商反馈 — 成功入驻', p4: '25K€+ Shopify 分析 — 实时店面', p5: 'USDT 结算确认 — 托管完成', p6: '团队和安全访问 — 完全配置', cards: [{ title: '实时分析', alt: 'Shopify 分析仪表板' }, { title: '付款跟踪', alt: '付款概览仪表板' }, { title: '消息集成', alt: 'WhatsApp 集成' }, { title: '安全通信', alt: '安全消息' }, { title: '团队管理', alt: '团队参数' }, { title: '财务概览', alt: '财务仪表板' }] },
+    carousel: { subtitle: '全球运营商信赖' },
+    featureCards: [{ title: '即时设置', description: '几分钟内开始，而非几天。' }, { title: '已验证账户', description: '预筛选、即用账户。' }, { title: '全球覆盖', description: '访问多个区域的账户。' }, { title: '24/7 支持', description: '需要时提供专用帮助。' }],
+    how: { title: '工作原理', subtitle: '简单、安全、快速', step1: { num: '01', title: '连接并确认', desc: '通过 Telegram 或 WhatsApp 联系我们。分享您的需求。我们为您匹配已验证账户。' }, step2: { num: '02', title: '验证并保护', desc: '查看账户详情，使用我们的托管服务，并在完全保护下完成转账。' }, step3: { num: '03', title: '部署并扩展', desc: '获取完整凭证、重置 2FA，并立即自信地开始运营。' }, buying: '购买', selling: '出售', frozen: '账户冻结？', frozenDesc: '我们帮助恢复或用已验证替代方案替换冻结账户。', trust: '为什么信任我们？', t1: '5,000+ 成功交易', t2: '每笔交易托管保护', t3: '24/7 多语言支持', t4: '仅已验证账户', t5: '透明定价', t6: '包含售后支持', rules: '规则与限制', r1: '无拒付或争议', r2: '无非法使用账户', r3: '遵守平台服务条款', r4: '每位买家一个账户，除非批准', r5: '托管费用不可退还', readBeforeTitle: '📌 购买/出售前阅读', footer: '完成前始终验证详情。如有疑问，请咨询。' },
+    faq: { title: '常见问题', subtitle: '常见问题的快速解答', q1: '交付速度如何？', a1: '大多数账户在付款确认后 1-24 小时内交付。', q2: '托管是强制性的吗？', a2: '是的，所有交易都使用我们的安全托管服务保护买卖双方。', q3: '如果我的账户被封禁怎么办？', a3: '我们在保修期内为符合条件的账户提供更换保证。', q4: '你们支持我的国家吗？', a4: '我们在全球运营。联系我们确认您地区的可用性。', q5: '如何联系支持？', a5: '通过 Telegram @ADjamesGrugeon 或 WhatsApp +1 (254) 275-5458 24/7 联系我们。' },
+    cta: { title: '准备好扩展了吗？', desc: '加入成千上万信任我们基础设施的运营商。', telegram: 'Telegram 消息', whatsapp: 'WhatsApp 聊天' },
+    feedbacks: { label: 'FEEDBACKS', title: '过去交易反馈', subtitle: 'FlowPay 完成交易的真实截图', desc: '查看实际仪表板和运营商收到的 Stripe/Shopify 账户、解冻资金和成功托管完成的证明。', screenshots: [{ alt: '交付后美国 Stripe 仪表板', caption: '交付后美国 Stripe 仪表板 - 34K€+ 月总量' }, { alt: '英国 Shopify 商店在线', caption: '英国 Shopify 商店在线后绕过验证' }, { alt: '托管付款确认', caption: 'USDT 托管付款确认并收到' }, { alt: '高限额银行转账', caption: '高限额银行转账完成' }, { alt: '团队访问已配置', caption: '团队和安全访问完全配置' }, { alt: '资金解冻', caption: 'Stripe 资金从 90 天冻结中解冻' }] },
+    privacy: { label: '隐私政策', title: '隐私政策', intro: '我们认真对待您的隐私。本政策解释了我们如何在您使用我们的服务时收集、使用和保护您的信息。', infoUsed: { title: '我们收集的信息', desc: '我们收集您直接提供给我们的信息，例如创建账户、进行购买或联系支持时。' }, dataProtection: { title: '我们如何保护您的数据', desc: '我们实施行业标准安全措施，保护您的个人信息免受未经授权的访问、更改或披露。' }, supportComms: { title: '沟通与支持', desc: '我们可能会通过 Telegram、WhatsApp 或电子邮件联系您，以提供支持、更新或重要的服务通知。' } },
+    termsOfService: {
+      label: '服务条款',
+      title: '服务条款',
+      intro: '使用我们的服务即表示您同意这些条款。在进行任何交易之前，请仔细阅读。',
+      delivery: { title: '账户交付', desc: '账户在托管付款确认后 1-24 小时内交付。交付包括完整凭证、2FA 重置说明和初始设置指南。' },
+      refund: { title: '退款政策', desc: '我们提供 24 小时更换保证。如果账户在登录后 24 小时内被标记或失败，我们 1:1 更换。24 小时后除非账户从未交付，否则不退款。' },
+      support: { title: '支持与沟通', desc: '支持通过 Telegram @ADjamesGrugeon 或 WhatsApp +1 (254) 275-5458 提供。响应时间通常在工作时间内少于 1 小时。' },
+    }
+  },
+
+  de: {
+    nav: { solutions: 'Lösungen', continuity: 'Kontinuität', proof: 'Nachweise', how: 'So funktioniert\'s', faq: 'FAQ', feedbacks: 'Bewertungen', cta: 'Mit James sprechen', mobileTitle: 'Navigation', mobileMenuLabel: 'Menü öffnen' },
+    terms: { title: 'Verifizierte Händleroperationen', setup: '48h Einrichtung', escrow: 'Treuhand-Transfers', protection: 'Geschützte Mittel', coverage: 'Globale Bankabdeckung', jurisdictions: '40+ Gerichtsbarkeiten' },
+    hero: { badge: 'Verifizierte Infrastruktur für Hochvolumen-Betreiber', subtitle: 'Wir bieten die Stripe-, Shopify- und Banking-Umgebungen, die Plattformen versucht haben, Ihnen zu nehmen. Keine Verifizierungsschleifen. Keine lokale ID erforderlich. 48h Lieferung.', title: 'Verifizierte Infrastruktur für Hochvolumen-Betreiber', description: 'Kaufen Sie gealterte Stripe-Konten mit hohen Limits. Umgehen Sie die Shopify-Verifizierung sofort. Entsperren Sie eingefrorene Stripe-Gelder. US/UK-Geschäftsinfrastruktur in 48h bereit.', cta1: 'Ich brauche ein neues Konto', cta2: 'Lösungen erkunden', ctaNewAccount: 'Ich brauche ein neues Konto', ctaFundsHold: 'Meine Gelder sind eingefroren', ctaKYC: 'Verifizierungshilfe', jurisdiction: 'Tätig in 40+ Gerichtsbarkeiten' },
+    liveInventory: ['✅ 1x US Stripe + Shopify-Store gerade an Betreiber in Marokko geliefert 🇲🇦', '✅ 1x UK gealtertes Stripe-Konto an Algerien geliefert 🇩🇿', '✅ 1x High-Limit Shopify an Ägypten geliefert 🇪🇬', '✅ 1x US Stripe entsperrt an Libanon geliefert 🇱🇧', '✅ 1x EU Shopify-Store an Spanien geliefert 🇪🇸', '✅ 1x UK Stripe-Konto an Frankreich geliefert 🇫🇷', '✅ 1x US High-Volume Stripe an UK geliefert 🇬🇧', '✅ 1x Shopify + Stripe an USA geliefert 🇺🇸', '✅ 1x UAE Banking + Stripe an UAE geliefert 🇦🇪', '✅ 1x Asia Stripe-Konto an Vietnam geliefert 🇻🇳', '✅ 1x US Stripe an Philippinen geliefert 🇵🇭'],
+    telegramChannel: { title: 'Treten Sie unserem Telegram-Kanal für tägliche Bestandsupdates bei', desc: 'Erhalten Sie Echtzeit-Bestandsalarme, neue Lagerbenachrichtigungen und Betreiber-Tipps. Keine E-Mail erforderlich.', cta: 'Jetzt beitreten', success: 'Beigetreten! Prüfen Sie Telegram für tägliche Updates.' },
+    replacementPolicy: { title: 'Unsere Ersatzpolitik', desc: 'Wenn das Konto innerhalb von 24h nach Login markiert wird, ersetzen wir es 1:1. Ohne Fragen.', points: ['24h Ersatzgarantie', '1:1-Tausch bei Markierung', 'Nur hochwertige Ersatzkonten', 'Inklusive Nachverifizierung'] },
+    telegramProofs: [{ text: 'Auszahlung auf der Bank angekommen, danke James!', author: 'Betreiber MA' }, { text: 'Konto perfekt, skaliere bereits Volumen.', author: 'Trader DZ' }, { text: 'Schnelle Lieferung + funktioniert perfekt!', author: 'EG Betreiber' }],
+    solutions: { title: 'Gebaut für Betreiber, die schnell handeln', subtitle: 'Drei integrierte Säulen, die Einrichtungsreibung eliminieren, Kapital schützen und Ihr Geschäft ohne Unterbrechung am Laufen halten.', merchant: { title: 'Verifizierte Händler-Storefronts', desc: 'Sofort einsatzbereite High-Volume Shopify- und Stripe-Umgebungen. Vollständig verifiziert, KYC-freigegeben, und bereit für sofortige Skalierung.', p1: 'Vorab verifiziertes KYC - keine ID-Schleifen', p2: 'High-Volume bereit - Verifizierung umgehen', p3: 'Sofortige Bereitstellung - Gelder schnell entsperren' }, banking: { title: 'Globale Banking-Lösungen', desc: 'Multi-Gerichtsbarkeiten-Bankabdeckung für nahtlose Kapitalbewegung über internationale Märkte.', p1: 'Multi-Währungs-Konten', p2: 'Grenzüberschreitende Abrechnung', p3: 'Compliance-bereit - High-Limit-Historie' }, escrow: { title: 'Sichere Treuhanddienste', desc: 'Der Mittler-Vorteil. Jede Transaktion ist durch unser institutionelles Treuhand-Framework geschützt.', p1: 'Gelder sicher verwahrt', p2: 'Streitbeilegung', p3: 'Null Gegenparteirisiko' } },
+    continuity: { title: 'Operative Kontinuität', subtitle: 'Wir lösen die drei Hauptprobleme, die Betreiber festhalten.', uptime: { title: 'Erstellungsprobleme?', desc: 'Verbrennen Sie nicht Ihre sauberen IPs und Geräte. Wir bieten sofort skalierbare, gealterte Infrastruktur, die "Tag 1"-Risikoprüfungen besteht.' }, compliance: { title: 'Verifizierungs (KYC)-Wände?', desc: 'Hören Sie auf, in ID-Schleifen stecken zu bleiben. Jedes Konto, das wir liefern, ist mit hochwertiger Dokumentation vorab freigegeben.' }, support: { title: 'Sperren & Gelder eingefroren?', desc: 'Bei 25% Reserve gesperrt? Wir beschaffen Konten mit High-Limit-Historie und beraten zum Herausziehen von Kapital aus 90-Tage-Sperren.' }, rapid: { title: '24/7 Betreiber-Support', desc: 'Direkter Zugang zu Senior-Beratern über private Telegram-Kanäle.' } },
+    proof: { title: 'Unternehmensnachweise', subtitle: 'Ergebnisse von echten Betreibern + Kunden-Telegram-Feedback.', desc: 'Verifizierte Dashboards, Betreiber-Feedback und echte Telegram-Chat-Nachweise von unserer aktiven Kundenbasis.', p1: '34K€+ monatliches Bruttovolumen — verifiziertes Stripe-Dashboard', p2: 'Aktive Stripe-Umgebung — Multi-Währung aktiviert', p3: 'Betreiber-Feedback — erfolgreicher Onboarding', p4: '25K€+ Shopify-Analytics — Live-Storefront', p5: 'USDT-Abrechnungsbestätigung — Treuhand abgeschlossen', p6: 'Team- & Sicherheitszugang — vollständig bereitgestellt', cards: [{ title: 'Echtzeit-Analytics', alt: 'Shopify Analytics Dashboard' }, { title: 'Zahlungsverfolgung', alt: 'Zahlungsübersicht-Dashboard' }, { title: 'Messaging-Integration', alt: 'WhatsApp-Integration' }, { title: 'Sichere Kommunikation', alt: 'Sicheres Messaging' }, { title: 'Team-Management', alt: 'Team-Parameter' }, { title: 'Finanzübersicht', alt: 'Finanz-Dashboard' }] },
+    carousel: { subtitle: 'Vertraut von Betreibern weltweit' },
+    featureCards: [{ title: 'Sofortige Einrichtung', description: 'Starten Sie in Minuten, nicht Tagen.' }, { title: 'Verifizierte Konten', description: 'Vorab geprüfte, einsatzbereite Konten.' }, { title: 'Globale Abdeckung', description: 'Zugriff auf Konten in mehreren Regionen.' }, { title: '24/7 Support', description: 'Dedizierte Hilfe, wann immer Sie sie benötigen.' }],
+    how: { title: 'So funktioniert\'s', subtitle: 'Einfach, sicher und schnell', step1: { num: '01', title: 'Verbinden & Bestätigen', desc: 'Kontaktieren Sie uns über Telegram oder WhatsApp. Teilen Sie Ihre Anforderungen mit. Wir matchen Sie mit einem verifizierten Konto.' }, step2: { num: '02', title: 'Prüfen & Sichern', desc: 'Überprüfen Sie Kontodetails, nutzen Sie unseren Treuhanddienst und schließen Sie den Transfer mit vollem Schutz ab.' }, step3: { num: '03', title: 'Bereitstellen & Skalieren', desc: 'Erhalten Sie vollständige Anmeldedaten, 2FA-Reset, und starten Sie sofort mit Vertrauen.' }, buying: 'Kaufen', selling: 'Verkaufen', frozen: 'Konto eingefroren?', frozenDesc: 'Wir helfen, eingefrorene Konten mit verifizierten Alternativen wiederherzustellen oder zu ersetzen.', trust: 'Warum uns vertrauen?', t1: '5.000+ erfolgreiche Transaktionen', t2: 'Treuhand-Schutz bei jedem Deal', t3: '24/7 mehrsprachiger Support', t4: 'Nur verifizierte Konten', t5: 'Transparente Preisgestaltung', t6: 'After-Sales-Support inklusive', rules: 'Regeln & Einschränkungen', r1: 'Keine Chargebacks oder Streitigkeiten', r2: 'Keine illegale Nutzung von Konten', r3: 'Respektieren Sie die Plattform-AGB', r4: 'Ein Konto pro Käufer, außer genehmigt', r5: 'Treuhandgebühren sind nicht erstattungsfähig', readBeforeTitle: '📌 Vor Kauf/Verkauf lesen', footer: 'Immer Details vor Abschluss prüfen. Bei Zweifel fragen.' },
+    faq: { title: 'FAQ', subtitle: 'Schnelle Antworten auf häufige Fragen', q1: 'Wie schnell ist die Lieferung?', a1: 'Die meisten Konten werden innerhalb von 1-24 Stunden nach Zahlungsbestätigung geliefert.', q2: 'Ist Treuhand obligatorisch?', a2: 'Ja, alle Transaktionen nutzen unseren sicheren Treuhanddienst zum Schutz von Käufer und Verkäufer.', q3: 'Was passiert, wenn mein Konto gesperrt wird?', a3: 'Wir bieten Ersatzgarantien für berechtigte Konten innerhalb der Garantiezeit.', q4: 'Unterstützen Sie mein Land?', a4: 'Wir operieren global. Kontaktieren Sie uns, um Verfügbarkeit in Ihrer Region zu bestätigen.', q5: 'Wie kontaktiere ich den Support?', a5: 'Erreichen Sie uns 24/7 über Telegram @ADjamesGrugeon oder WhatsApp +1 (254) 275-5458.' },
+    cta: { title: 'Bereit zu skalieren?', desc: 'Schließen Sie sich Tausenden von Betreibern an, die unserer Infrastruktur vertrauen.', telegram: 'Nachricht auf Telegram', whatsapp: 'Chat auf WhatsApp' },
+    feedbacks: { label: 'FEEDBACKS', title: 'Feedback zu vergangenen Deals', subtitle: 'Echte Screenshots von abgeschlossenen FlowPay-Transaktionen', desc: 'Sehen Sie echte Dashboards und Beweise von Betreibern, die Stripe/Shopify-Konten, entsperrte Gelder und erfolgreiche Treuhand-Abschlüsse erhalten haben.', screenshots: [{ alt: 'US Stripe-Dashboard nach Lieferung', caption: 'US Stripe-Dashboard nach Lieferung - 34K€+ monatliches Volumen' }, { alt: 'UK Shopify-Shop live', caption: 'UK Shopify-Shop live nach Verifizierungs-Bypass' }, { alt: 'Treuhand-Zahlungsbestätigung', caption: 'USDT Treuhand-Zahlung bestätigt und erhalten' }, { alt: 'High-Limit Banküberweisung', caption: 'High-Limit Banküberweisung abgeschlossen' }, { alt: 'Team-Zugang bereitgestellt', caption: 'Team- und Sicherheitszugang vollständig bereitgestellt' }, { alt: 'Entsperrte Gelder', caption: 'Stripe-Gelder aus 90-Tage-Sperre entsperrt' }] },
+    privacy: { label: 'DATENSCHUTZRICHTLINIE', title: 'Datenschutzrichtlinie', intro: 'Wir nehmen Ihren Datenschutz ernst. Diese Richtlinie erklärt, wie wir Ihre Informationen sammeln, verwenden und schützen, wenn Sie unsere Dienste nutzen.', infoUsed: { title: 'Gesammelte Informationen', desc: 'Wir sammeln Informationen, die Sie uns direkt zur Verfügung stellen, z.B. bei der Kontoerstellung, einem Kauf oder der Kontaktaufnahme mit dem Support.' }, dataProtection: { title: 'Schutz Ihrer Daten', desc: 'Wir implementieren branchenübliche Sicherheitsmaßnahmen, um Ihre persönlichen Daten vor unbefugtem Zugriff, Änderung oder Offenlegung zu schützen.' }, supportComms: { title: 'Kommunikation & Support', desc: 'Wir können Sie über Telegram, WhatsApp oder E-Mail kontaktieren, um Support, Updates oder wichtige Service-Benachrichtigungen bereitzustellen.' } },
+    termsOfService: {
+      label: 'NUTZUNGSBEDINGUNGEN',
+      title: 'Nutzungsbedingungen',
+      intro: 'Durch die Nutzung unserer Dienste stimmen Sie diesen Bedingungen zu. Bitte lesen Sie sie sorgfältig, bevor Sie eine Transaktion durchführen.',
+      delivery: { title: 'Konto-Lieferung', desc: 'Konten werden innerhalb von 1-24 Stunden nach Zahlungsbestätigung via Treuhand geliefert. Die Lieferung umfasst vollständige Anmeldedaten, 2FA-Reset-Anweisungen und eine Erstkonfigurationsanleitung.' },
+      refund: { title: 'Rückerstattungsrichtlinie', desc: 'Wir bieten eine 24-Stunden-Ersatzgarantie. Wenn ein Konto innerhalb von 24h nach Login markiert wird oder fehlschlägt, ersetzen wir es 1:1. Keine Rückerstattung nach 24h, es sei denn, das Konto wurde nie geliefert.' },
+      support: { title: 'Support & Kommunikation', desc: 'Support wird über Telegram @ADjamesGrugeon oder WhatsApp +1 (254) 275-5458 bereitgestellt. Die Antwortzeit beträgt typischerweise unter 1 Stunde während der Geschäftszeiten.' },
+    }
+  }
+};

@@ -10,7 +10,7 @@ export default function Footer() {
   ];
 
   const companyLinks = [
-    { label: 'About FlowPay', href: '/about' },
+    { label: 'Feedbacks', href: '/feedbacks' },
     { label: 'Terms', href: '/terms' },
     { label: 'Privacy', href: '/privacy' },
     { label: 'Contact', href: 'https://t.me/ADjamesGrugeon' },

@@ -8,6 +8,12 @@ import { useLanguage } from '@/app/providers';
 export default function LogoCarousel() {
   const { language } = useLanguage();
   const t = translations[language];
+
+  // 🔍 Dev-only warning for missing carousel translations
+  if (process.env.NODE_ENV === 'development' && !t?.carousel) {
+    console.warn(`[i18n] Missing "carousel" section for language: ${language}`);
+  }
+
   const platforms = [
     { name: 'Payoneer', icon: 'https://img.icons8.com/?size=100&id=ouYlSyYhEAKU&format=png&color=000000' },
     { name: 'PayPal', icon: 'https://img.icons8.com/?size=100&id=iouv9vHfqHvP&format=png&color=000000' },
@@ -28,7 +34,7 @@ export default function LogoCarousel() {
     <div className="w-full bg-gray-50 border-y border-gray-200 py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <p className="text-center text-lg font-bold text-gray-600 mb-6">
-          {t.carousel.subtitle}
+          {t?.carousel?.subtitle || 'Trusted by operators worldwide'}
         </p>
 
         <div className="relative h-24 overflow-hidden [mask-image:linear-gradient(to_right,transparent_0%,black_8%,black_92%,transparent_100%)]">
@@ -84,4 +90,3 @@ export default function LogoCarousel() {
     </div>
   );
 }
-

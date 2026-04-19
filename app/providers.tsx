@@ -4,6 +4,8 @@
 import { createContext, useContext, useState, useEffect, ReactNode } from 'react';
 import { Language } from '@/lib/translations';
 
+const languages: Language[] = ['en', 'fr', 'ar', 'es', 'pt', 'vi', 'it', 'zh', 'de'];
+
 type LanguageContextType = {
   language: Language;
   setLanguage: (lang: Language) => void;
@@ -28,11 +30,25 @@ export function Providers({ children }: { children: ReactNode }) {
 
   useEffect(() => {
     setMounted(true);
+    // Check localStorage first
     const saved = localStorage.getItem('language') as Language | null;
-    if (saved) {
+    if (saved && languages.includes(saved)) {
       setLanguage(saved);
       document.documentElement.dir = saved === 'ar' ? 'rtl' : 'ltr';
+      return;
     }
+    
+    // Browser language detection
+    const browserLang = navigator.language.split('-')[0] as Language;
+    if (languages.includes(browserLang)) {
+      setLanguage(browserLang);
+      document.documentElement.dir = browserLang === 'ar' ? 'rtl' : 'ltr';
+      localStorage.setItem('language', browserLang);
+      return;
+    }
+    
+    // Default to English
+    setLanguage('en');
   }, []);
 
   const handleSetLanguage = (lang: Language) => {
