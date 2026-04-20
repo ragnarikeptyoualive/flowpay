@@ -70,7 +70,6 @@ interface HomeTranslations {
     step3: { num: string; title: string; desc: string };
     readBeforeTitle: string;
     footer: string;
-    // Accordion sections
     buying: { label: string; items: string[] };
     selling: { label: string; items: string[] };
     frozen: { label: string; desc: string };
@@ -85,6 +84,7 @@ interface HomeTranslations {
     q3: string; a3: string;
     q4: string; a4: string;
     q5: string; a5: string;
+    q6: string; a6: string;
   };
   cta: {
     title: string;
@@ -224,6 +224,8 @@ const homeTranslations: Record<Language, HomeTranslations> = {
       a4: 'We operate globally. Contact us to confirm availability for your region.',
       q5: 'How do I contact support?',
       a5: 'Reach us 24/7 via Telegram @ADjamesGrugeon or WhatsApp +1 (254) 275-5458.',
+      q6: 'What documents do I get?',
+      a6: 'Full KYC pack, recovery email, and browser cookies/proxy for a safe login, and 2FA Handover',
     },
     cta: {
       title: 'Ready to Scale?',
@@ -362,6 +364,8 @@ const homeTranslations: Record<Language, HomeTranslations> = {
       a4: 'Nous opérons mondialement. Contactez-nous pour confirmer la disponibilité dans votre région.',
       q5: 'Comment contacter le support ?',
       a5: 'Contactez-nous 24/7 via Telegram @ADjamesGrugeon ou WhatsApp +1 (254) 275-5458.',
+      q6: 'Quels documents est-ce que je reçois ?',
+      a6: 'Pack KYC complet, email de récupération, et cookies/proxy du navigateur pour une connexion sécurisée, ainsi que la remise 2FA',
     },
     cta: {
       title: 'Prêt à scaler ?',
@@ -500,6 +504,8 @@ const homeTranslations: Record<Language, HomeTranslations> = {
       a4: 'نعمل عالمياً. تواصل معنا لتأكيد التوفر في منطقتك.',
       q5: 'كيف أتواصل مع الدعم؟',
       a5: 'تواصل معنا 24/7 عبر تليجرام @ADjamesGrugeon أو واتساب +1 (254) 275-5458.',
+      q6: 'ما هي المستندات التي أحصل عليها؟',
+      a6: 'حزمة KYC كاملة، بريد إلكتروني للاسترداد، وملفات تعريف الارتباط/وكيل المتصفح لتسجيل دخول آمن، وتسليم 2FA',
     },
     cta: {
       title: 'جاهز للتوسع؟',
@@ -638,6 +644,8 @@ const homeTranslations: Record<Language, HomeTranslations> = {
       a4: 'Operamos globalmente. Contáctanos para confirmar disponibilidad en tu región.',
       q5: '¿Cómo contacto al soporte?',
       a5: 'Contáctanos 24/7 vía Telegram @ADjamesGrugeon o WhatsApp +1 (254) 275-5458.',
+      q6: '¿Qué documentos recibo?',
+      a6: 'Pack KYC completo, email de recuperación, y cookies/proxy del navegador para un inicio de sesión seguro, y entrega de 2FA',
     },
     cta: {
       title: '¿Listo para Escalar?',
@@ -776,6 +784,8 @@ const homeTranslations: Record<Language, HomeTranslations> = {
       a4: 'Operamos globalmente. Entre em contato para confirmar disponibilidade na sua região.',
       q5: 'Como entro em contato com o suporte?',
       a5: 'Entre em contato 24/7 via Telegram @ADjamesGrugeon ou WhatsApp +1 (254) 275-5458.',
+      q6: 'Quais documentos eu recebo?',
+      a6: 'Pacote KYC completo, email de recuperação, e cookies/proxy do navegador para login seguro, e entrega do 2FA',
     },
     cta: {
       title: 'Pronto para Escalar?',
@@ -914,6 +924,8 @@ const homeTranslations: Record<Language, HomeTranslations> = {
       a4: 'Chúng tôi hoạt động toàn cầu. Liên hệ để xác nhận khả dụng trong khu vực của bạn.',
       q5: 'Làm sao để liên hệ hỗ trợ?',
       a5: 'Liên hệ 24/7 qua Telegram @ADjamesGrugeon hoặc WhatsApp +1 (254) 275-5458.',
+      q6: 'Tôi nhận được những tài liệu gì?',
+      a6: 'Gói KYC đầy đủ, email khôi phục, và cookie/proxy trình duyệt để đăng nhập an toàn, cùng bàn giao 2FA',
     },
     cta: {
       title: 'Sẵn sàng mở rộng?',
@@ -1052,6 +1064,8 @@ const homeTranslations: Record<Language, HomeTranslations> = {
       a4: 'Operiamo globalmente. Contattaci per confermare disponibilità nella tua regione.',
       q5: 'Come contatto il supporto?',
       a5: 'Contattaci 24/7 via Telegram @ADjamesGrugeon o WhatsApp +1 (254) 275-5458.',
+      q6: 'Quali documenti ricevo?',
+      a6: 'Pacchetto KYC completo, email di recupero, e cookie/proxy del browser per un accesso sicuro, e consegna 2FA',
     },
     cta: {
       title: 'Pronto a Scalare?',
@@ -1190,6 +1204,8 @@ const homeTranslations: Record<Language, HomeTranslations> = {
       a4: '我们在全球运营。联系我们确认您地区的可用性。',
       q5: '如何联系支持？',
       a5: '通过 Telegram @ADjamesGrugeon 或 WhatsApp +1 (254) 275-5458 24/7 联系我们。',
+      q6: '我会收到哪些文件？',
+      a6: '完整 KYC 包、恢复邮箱、浏览器 Cookie/代理以确保安全登录，以及 2FA 移交',
     },
     cta: {
       title: '准备好扩展了吗？',
@@ -1328,6 +1344,8 @@ const homeTranslations: Record<Language, HomeTranslations> = {
       a4: 'Wir operieren global. Kontaktieren Sie uns, um Verfügbarkeit in Ihrer Region zu bestätigen.',
       q5: 'Wie kontaktiere ich den Support?',
       a5: 'Erreichen Sie uns 24/7 über Telegram @ADjamesGrugeon oder WhatsApp +1 (254) 275-5458.',
+      q6: 'Welche Dokumente erhalte ich?',
+      a6: 'Vollständiges KYC-Paket, Wiederherstellungs-E-Mail, und Browser-Cookies/Proxy für eine sichere Anmeldung, sowie 2FA-Übergabe',
     },
     cta: {
       title: 'Bereit zu skalieren?',
@@ -1484,13 +1502,14 @@ export default function HomeClient() {
     },
   ];
 
-  // FAQ items with inline translations
+  // FAQ items with inline translations - NOW WITH 6 ITEMS
   const faqItems = [
     { id: 'faq1', title: t.faq.q1, content: t.faq.a1 },
     { id: 'faq2', title: t.faq.q2, content: t.faq.a2 },
     { id: 'faq3', title: t.faq.q3, content: t.faq.a3 },
     { id: 'faq4', title: t.faq.q4, content: t.faq.a4 },
     { id: 'faq5', title: t.faq.q5, content: t.faq.a5 },
+    { id: 'faq6', title: t.faq.q6, content: t.faq.a6 },
   ];
 
   // Proof cards with images 1-6 from public folder

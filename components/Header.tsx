@@ -3,6 +3,7 @@
 import { useState, useEffect, useRef } from 'react';
 import { Menu } from 'lucide-react';
 import Link from 'next/link';
+import { useRouter, usePathname } from 'next/navigation';
 
 import LanguageSelector from './LanguageSelector';
 import { useLanguage } from '@/app/providers';
@@ -12,6 +13,9 @@ import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 export default function Header() {
   const { language } = useLanguage();
   const t = translations[language];
+  const router = useRouter();
+  const pathname = usePathname();
+  
   const [isScrolled, setIsScrolled] = useState(false);
   const [showHeader, setShowHeader] = useState(true);
   const lastScrollY = useRef(0);
@@ -36,31 +40,48 @@ export default function Header() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // Nav links with fallbacks - Proof changed to Feedbacks linking to /feedbacks page
-  const navLinks = [
-    { href: '#solutions', label: t?.nav?.solutions || 'Solutions', isExternal: false },
-    { href: '#continuity', label: t?.nav?.continuity || 'Continuity', isExternal: false },
-    { href: '/feedbacks', label: t?.nav?.feedbacks || 'Feedbacks', isExternal: true }, // ✅ Changed: Proof → Feedbacks page
-    { href: '#how', label: t?.nav?.how || 'How It Works', isExternal: false },
-    { href: '#faq', label: t?.nav?.faq || 'FAQ', isExternal: false },
+  // Nav links configuration - sections that exist on home page
+  const sectionLinks = [
+    { id: 'solutions', label: t?.nav?.solutions || 'Solutions' },
+    { id: 'continuity', label: t?.nav?.continuity || 'Continuity' },
+    { id: 'how', label: t?.nav?.how || 'How It Works' },
+    { id: 'faq', label: t?.nav?.faq || 'FAQ' },
   ];
 
-  // Helper to handle navigation
-  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string, isExternal: boolean) => {
-    if (isExternal) {
-      // Let Next.js handle page navigation
-      return;
-    }
-    // Handle anchor scroll for same-page links
-    e.preventDefault();
-    const targetId = href.replace('#', '');
-    const element = document.getElementById(targetId);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-      // Update URL without reload
-      window.history.pushState(null, '', href);
+  // Helper: Navigate to home page and scroll to section
+  const navigateToSection = (sectionId: string) => {
+    const isHomePage = pathname === '/';
+    
+    if (isHomePage) {
+      // Already on home page - just scroll
+      const element = document.getElementById(sectionId);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+        window.history.pushState(null, '', `#${sectionId}`);
+      }
+    } else {
+      // On different page - navigate to home with hash, then scroll after load
+      // Store target section in sessionStorage for the home page to read
+      sessionStorage.setItem('scrollToSection', sectionId);
+      router.push(`/#${sectionId}`);
     }
   };
+
+  // Effect: Handle scroll-to-section after navigation from another page
+  useEffect(() => {
+    const targetSection = sessionStorage.getItem('scrollToSection');
+    if (targetSection && pathname === '/') {
+      // Small delay to ensure content is rendered
+      const timer = setTimeout(() => {
+        const element = document.getElementById(targetSection);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+        sessionStorage.removeItem('scrollToSection');
+      }, 100);
+      return () => clearTimeout(timer);
+    }
+  }, [pathname]);
 
   return (
     <header
@@ -83,16 +104,22 @@ export default function Header() {
 
         {/* Desktop Navigation */}
         <nav className="hidden lg:flex gap-8 text-sm">
-          {navLinks.map((link) => (
-            <a
-              key={link.href}
-              href={link.href}
-              onClick={(e) => handleNavClick(e, link.href, link.isExternal || false)}
-              className="text-gray-700 hover:text-black transition cursor-pointer"
+          {sectionLinks.map((link) => (
+            <button
+              key={link.id}
+              onClick={() => navigateToSection(link.id)}
+              className="text-gray-700 hover:text-black transition cursor-pointer bg-transparent border-none p-0 font-inherit"
             >
               {link.label}
-            </a>
+            </button>
           ))}
+          {/* Feedbacks link - goes to separate page */}
+          <Link
+            href="/feedbacks"
+            className="text-gray-700 hover:text-black transition"
+          >
+            {t?.nav?.feedbacks || 'Feedbacks'}
+          </Link>
         </nav>
 
         {/* Right Side Controls */}
@@ -114,7 +141,6 @@ export default function Header() {
           <Sheet>
             <SheetTrigger asChild className="lg:hidden">
               <button 
-                onClick={() => console.log('Burger menu clicked')} 
                 className="p-2 rounded-lg hover:bg-gray-100 text-gray-700 transition [&>svg]:pointer-events-none"
                 aria-label={t?.nav?.mobileMenuLabel || 'Open menu'}
               >
@@ -126,29 +152,32 @@ export default function Header() {
                 <h3 className="text-xs font-semibold text-gray-500 uppercase tracking-wider px-4 mb-6">
                   {t?.nav?.mobileTitle || 'Navigation'}
                 </h3>
-                {navLinks.map((link) => (
-                  <a
-                    key={link.href}
-                    href={link.href}
-                    onClick={(e) => {
-                      if (!link.isExternal) {
-                        e.preventDefault();
-                        const targetId = link.href.replace('#', '');
-                        const element = document.getElementById(targetId);
-                        if (element) {
-                          element.scrollIntoView({ behavior: 'smooth' });
-                          window.history.pushState(null, '', link.href);
-                        }
-                      }
-                      // Close sheet after click
+                {/* Section links - navigate to home + scroll */}
+                {sectionLinks.map((link) => (
+                  <button
+                    key={link.id}
+                    onClick={() => {
+                      navigateToSection(link.id);
+                      // Close sheet
                       const closeBtn = document.querySelector('[data-radix-sheet-close]') as HTMLElement;
                       closeBtn?.click();
                     }}
-                    className="block px-4 py-3 rounded-lg text-gray-700 hover:bg-blue-50 hover:text-blue-600 font-medium transition"
+                    className="w-full text-left px-4 py-3 rounded-lg text-gray-700 hover:bg-blue-50 hover:text-blue-600 font-medium transition bg-transparent border-none cursor-pointer"
                   >
                     {link.label}
-                  </a>
+                  </button>
                 ))}
+                {/* Feedbacks - separate page */}
+                <Link
+                  href="/feedbacks"
+                  onClick={() => {
+                    const closeBtn = document.querySelector('[data-radix-sheet-close]') as HTMLElement;
+                    closeBtn?.click();
+                  }}
+                  className="block px-4 py-3 rounded-lg text-gray-700 hover:bg-blue-50 hover:text-blue-600 font-medium transition"
+                >
+                  {t?.nav?.feedbacks || 'Feedbacks'}
+                </Link>
               </div>
             </SheetContent>
           </Sheet>
