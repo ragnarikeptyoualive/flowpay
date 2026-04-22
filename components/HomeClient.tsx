@@ -102,7 +102,7 @@ const homeTranslations: Record<Language, HomeTranslations> = {
       title: 'Elite Account Infrastructure',
       description: 'Verified, scalable, and secure accounts for high-volume operators worldwide.',
       cta1: 'Get Started',
-      cta2: 'Learn More',
+      
     },
     terms: {
       title: 'Setup Time',
@@ -1569,15 +1569,7 @@ export default function HomeClient() {
               >
                 {t.hero.cta1}
               </a>
-              <button
-                onClick={() => {
-                  const howSection = document.getElementById('how');
-                  howSection?.scrollIntoView({ behavior: 'smooth' });
-                }}
-                className="inline-flex items-center justify-center rounded-full border border-slate-200/20 bg-white px-8 py-4 text-base font-semibold text-slate-950 transition hover:border-slate-300 hover:bg-slate-100"
-              >
-                {t.hero.cta2}
-              </button>
+              
             </div>
 
             <div className="mx-auto mt-12 grid max-w-5xl gap-4 sm:grid-cols-3">
