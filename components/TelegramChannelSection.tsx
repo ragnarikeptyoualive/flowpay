@@ -12,6 +12,7 @@ export default function TelegramChannelSection() {
 
   const handleJoin = () => {
     window.open('https://t.me/+yourchannel', '_blank');
+    fbq('track', 'Lead', {content_name: 'Channel Join'});
     setJoined(true);
     setTimeout(() => setJoined(false), 3000);
   };

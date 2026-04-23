@@ -1565,6 +1565,7 @@ export default function HomeClient() {
                 href="https://t.me/ADjamesGrugeon"
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick="fbq('track', 'Lead', {content_name: 'Hero Button'});"
                 className="inline-flex items-center justify-center rounded-full bg-sky-500 px-8 py-4 text-base font-semibold text-slate-950 shadow-xl shadow-sky-500/30 transition hover:bg-sky-400"
               >
                 {t.hero.cta1}
@@ -1761,6 +1762,7 @@ export default function HomeClient() {
                 href="https://t.me/ADjamesGrugeon?text=Inquiry_NewAccount"
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick="fbq('track', 'Lead', {content_name: 'Floating Pop-up', content_category: 'Telegram Connect'});"
                 className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors"
               >
                 {t.cta.telegram}
@@ -1769,6 +1771,7 @@ export default function HomeClient() {
                 href="https://wa.me/12542755458"
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick="fbq('track', 'Lead', {content_name: 'WhatsApp'});"
                 className="border-2 border-gray-900 text-gray-900 px-8 py-3 rounded-lg font-semibold hover:bg-gray-900 hover:text-white transition-colors"
               >
                 {t.cta.whatsapp}

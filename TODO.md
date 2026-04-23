@@ -1,18 +1,13 @@
-# TODO: Add new FAQ to all languages in lib/translations.ts
+# Meta Pixel Implementation TODO
+Status: ✅ Approved by user
 
 ## Steps:
-- [x] 1. Create TODO.md with plan steps
-- [ ] 2. Read lib/translations.ts (already done)
-- [ ] 3. Edit translations.ts to add q6/a6 for 'en'
-- [ ] 4. Edit for 'fr'
-- [ ] 5. Edit for 'ar'
-- [ ] 6. Edit for 'es'
-- [ ] 7. Edit for 'pt'
-- [ ] 8. Edit for 'vi'
-- [ ] 9. Edit for 'it'
-- [ ] 10. Edit for 'zh'
-- [ ] 11. Edit for 'de'
-- [ ] 12. Update TODO.md with completion
-- [ ] 13. Test: pnpm dev && check FAQ section in browser
-- [ ] 14. attempt_completion
-
+- [x] 1. Create this TODO.md
+- [x] 2. Add Pixel base script to app/layout.tsx
+- [x] 3. Edit components/HomeClient.tsx (Hero + WhatsApp onclick)
+- [x] 4. Edit components/Header.tsx (2x desktop/mobile onclick)
+- [x] 5. Edit components/Footer.tsx (Contact onclick)
+- [x] 6. Edit components/TelegramChannelSection.tsx (Join onclick)
+- [x] 7. Test: pnpm dev, check console/network/fb Events Manager
+- [ ] 8. Update TODO progress
+- [ ] 9. attempt_completion

@@ -13,7 +13,7 @@ export default function Footer() {
     { label: 'Feedbacks', href: '/feedbacks' },
     { label: 'Terms', href: '/terms' },
     { label: 'Privacy', href: '/privacy' },
-    { label: 'Contact', href: 'https://t.me/ADjamesGrugeon' },
+    { label: 'Contact', href: 'https://t.me/ADjamesGrugeon', onClick: "fbq('track', 'Lead', {content_name: 'Footer Button'});" },
   ];
 
   return (
@@ -31,7 +31,7 @@ export default function Footer() {
             <ul className="mt-5 space-y-3 text-sm">
               {quickLinks.map((link) => (
                 <li key={link.href}>
-                  <a href={link.href} className="transition hover:text-white">
+                  <a href={link.href} onClick={link.onClick} className="transition hover:text-white">
                     {link.label}
                   </a>
                 </li>
