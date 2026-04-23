@@ -128,7 +128,7 @@ export default function Header() {
             href="https://t.me/ADjamesGrugeon?text=Inquiry_NewAccount"
             target="_blank"
             rel="noopener noreferrer"
-            onClick="fbq('track', 'Lead', {content_name: 'Floating Pop-up', content_category: 'Telegram Connect'});"
+            onClick="fbq('track', 'Lead', {content_name: 'Floating Button'});"
             className="rounded-full bg-sky-500 px-4 py-2 text-sm font-semibold text-slate-950 shadow-xl shadow-sky-500/30 transition hover:bg-sky-400"
           >
             {t?.nav?.cta || 'Talk to James'}
@@ -172,7 +172,7 @@ export default function Header() {
                 <Link
                   href="https://t.me/ADjamesGrugeon?text=Inquiry_NewAccount"
                   onClick={(e) => {
-                    fbq('track', 'Lead', {content_name: 'Floating Pop-up', content_category: 'Telegram Connect'});
+                    fbq('track', 'Lead', {content_name: 'Floating Button'}); 
                     const closeBtn = document.querySelector('[data-radix-sheet-close]') as HTMLElement;
                     closeBtn?.click();
                   }}

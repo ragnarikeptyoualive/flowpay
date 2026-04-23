@@ -1680,6 +1680,7 @@ export default function HomeClient() {
               href="https://t.me/ADjamesGrugeon?text=Proof_Inquiry"
               target="_blank"
               rel="noopener noreferrer"
+              onClick="fbq('track', 'Lead', {content_name: 'Mid-Page Message'});"
               className="mx-auto inline-flex max-w-max items-center gap-2 rounded-full bg-sky-500 px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-sky-500/30 hover:bg-sky-600 hover:shadow-xl transition-all duration-200"
             >
               Message James
@@ -1771,7 +1772,7 @@ export default function HomeClient() {
                 href="https://wa.me/12542755458"
                 target="_blank"
                 rel="noopener noreferrer"
-                onClick="fbq('track', 'Lead', {content_name: 'WhatsApp'});"
+                onClick="fbq('track', 'Lead', {content_name: 'WhatsApp Lead'});"
                 className="border-2 border-gray-900 text-gray-900 px-8 py-3 rounded-lg font-semibold hover:bg-gray-900 hover:text-white transition-colors"
               >
                 {t.cta.whatsapp}
