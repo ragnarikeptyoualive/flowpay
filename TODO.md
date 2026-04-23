@@ -9,5 +9,5 @@ Status: ✅ Approved by user
 - [x] 5. Edit components/Footer.tsx (Contact onclick)
 - [x] 6. Edit components/TelegramChannelSection.tsx (Join onclick)
 - [x] 7. Test: pnpm dev, check console/network/fb Events Manager
-- [ ] 8. Update TODO progress
+- [x] 8. Update TODO progress
 - [ ] 9. attempt_completion
