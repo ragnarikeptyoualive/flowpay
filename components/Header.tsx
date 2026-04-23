@@ -124,15 +124,16 @@ export default function Header() {
 
         {/* Right Side Controls */}
         <div className="hidden items-center gap-4 lg:flex">
-          <a
-            href="https://t.me/ADjamesGrugeon?text=Inquiry_NewAccount"
-            target="_blank"
-            rel="noopener noreferrer"
-            onClick="fbq('track', 'Lead', {content_name: 'Floating Button'});"
-            className="rounded-full bg-sky-500 px-4 py-2 text-sm font-semibold text-slate-950 shadow-xl shadow-sky-500/30 transition hover:bg-sky-400"
+          <button
+            type="button"
+            onClick={() => {
+              fbq('track', 'Lead', {content_name: 'Floating Button'});
+              window.open('https://t.me/ADjamesGrugeon', '_blank');
+            }}
+            className="rounded-full bg-sky-500 px-4 py-2 text-sm font-semibold text-slate-950 shadow-xl shadow-sky-500/30 hover:bg-sky-400 transition-all duration-300"
           >
             {t?.nav?.cta || 'Talk to James'}
-          </a>
+          </button>
           <LanguageSelector />
         </div>
 
@@ -169,17 +170,18 @@ export default function Header() {
                   </button>
                 ))}
                 {/* Feedbacks - separate page */}
-                <Link
-                  href="https://t.me/ADjamesGrugeon?text=Inquiry_NewAccount"
+                <button
+                  type="button"
                   onClick={(e) => {
-                    fbq('track', 'Lead', {content_name: 'Floating Button'}); 
+                    fbq('track', 'Lead', {content_name: 'Pop-up Connect'}); 
+                    window.open('https://t.me/ADjamesGrugeon?text=Inquiry_NewAccount', '_blank');
                     const closeBtn = document.querySelector('[data-radix-sheet-close]') as HTMLElement;
                     closeBtn?.click();
                   }}
-                  className="block px-4 py-3 rounded-lg text-gray-700 hover:bg-blue-50 hover:text-blue-600 font-medium transition"
+                  className="w-full text-left px-4 py-3 rounded-lg text-gray-700 hover:bg-blue-50 hover:text-blue-600 font-medium transition bg-transparent border-none cursor-pointer"
                 >
                   {t?.nav?.feedbacks || 'Feedbacks'}
-                </Link>
+                </button>
               </div>
             </SheetContent>
           </Sheet>
