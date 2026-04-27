@@ -1,20 +1,20 @@
-# Funnel Optimization TODO
+# Task: Update Rules & Restrictions
+
+## Goal
+Replace the two rules:
+- "One account per buyer unless approved"
+- "Escrow fees are non-refundable"
+
+With a single new rule in all 9 languages:
+- "No data leak or ID asked, and we keep as minimal data as possible for a better use of app later on"
+
+## Files to Edit
+1. `lib/translations.ts` — update `HowTranslations` interface (remove `r5`) and all 9 language objects
+2. `components/HomeClient.tsx` — update `how.rules.items` arrays in all 9 language objects
 
 ## Steps
-
-- [x] 1. Analyze current codebase and identify issues
-- [ ] 2. Rewrite `components/HomeClient.tsx` with optimized funnel
-  - [ ] Add Urgency Notification Bar (all 9 languages)
-  - [ ] Update Hero with pain-driven headline + keep video bg
-  - [ ] Add Trust Stats section (StatsCounter)
-  - [ ] Add Offer section (4 cards: Stripe, Shopify, PayPal, Banking)
-  - [ ] Keep Solutions + Continuity + Proof (GalleryAutoSlider)
-  - [ ] Update How It Works to 4 steps
-  - [ ] Update FAQ to 6 questions with new copy
-  - [ ] Update Final CTA with urgency copy
-  - [ ] Ensure all CTAs use `fbq('track', 'Lead')`
-  - [ ] Complete translations for all 9 languages
-- [ ] 3. Update `components/Header.tsx` — ensure CTA uses pixel tracking
-- [ ] 4. Update `components/Footer.tsx` — ensure Telegram link uses pixel tracking
-- [ ] 5. Build & verify no errors
+- [ ] Update TODO.md (this file)
+- [ ] Edit `lib/translations.ts`
+- [ ] Edit `components/HomeClient.tsx`
+- [ ] Verify no broken references remain
 

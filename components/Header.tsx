@@ -84,7 +84,7 @@ export default function Header() {
 
   return (
     <header
-      className={`fixed top-[3.5rem] sm:top-12 left-0 w-full z-40 transform transition-all duration-500 ease-in-out ${
+      className={`fixed top-[3.5rem] sm:top-12 left-0 w-full z-40 transform transition-all duration-200 ease-in-out ${
         showHeader ? 'translate-y-0 opacity-100' : '-translate-y-full opacity-0'
       } ${
         isAtTop && isHomePage

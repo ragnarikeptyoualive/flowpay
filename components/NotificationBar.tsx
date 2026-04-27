@@ -8,15 +8,15 @@ declare const fbq: (...args: any[]) => void;
 type Language = 'en' | 'fr' | 'ar' | 'es' | 'pt' | 'vi' | 'it' | 'zh' | 'de';
 
 const notifBarText: Record<Language, string> = {
-  en: '⚠️ Only 3 Stripe Accounts Left Today — Limited stock, high demand!',
-  fr: '⚠️ Plus que 3 comptes Stripe aujourd\'hui — Stock limité, forte demande !',
-  ar: '⚠️ لم يتبق سوى 3 حسابات Stripe اليوم — كمية محدودة وطلب مرتفع!',
-  es: '⚠️ Solo quedan 3 cuentas Stripe hoy — Stock limitado, alta demanda!',
-  pt: '⚠️ Apenas 3 contas Stripe restantes hoje — Estoque limitado, alta demanda!',
-  vi: '⚠️ Chỉ còn 3 tài khoản Stripe hôm nay — Hàng giới hạn, nhu cầu cao!',
-  it: '⚠️ Solo 3 account Stripe rimasti oggi — Stock limitato, alta richiesta!',
-  zh: '⚠️ 今日仅剩 3 个 Stripe 账户 — 库存有限，需求高！',
-  de: '⚠️ Nur noch 3 Stripe-Konten heute — Begrenzter Vorrat, hohe Nachfrage!',
+  en: '⚠️ Only 3 Stripe Accounts Left Today  Limited stock, high demand!',
+  fr: '⚠️ Plus que 3 comptes Stripe aujourd\'hui  Stock limité, forte demande !',
+  ar: '⚠️ لم يتبق سوى 3 حسابات Stripe اليوم  كمية محدودة وطلب مرتفع!',
+  es: '⚠️ Solo quedan 3 cuentas Stripe hoy  Stock limitado, alta demanda!',
+  pt: '⚠️ Apenas 3 contas Stripe restantes hoje  Estoque limitado, alta demanda!',
+  vi: '⚠️ Chỉ còn 3 tài khoản Stripe hôm nay  Hàng giới hạn, nhu cầu cao!',
+  it: '⚠️ Solo 3 account Stripe rimasti oggi  Stock limitato, alta richiesta!',
+  zh: '⚠️ 今日仅剩 3 个 Stripe 账户  库存有限，需求高！',
+  de: '⚠️ Nur noch 3 Stripe-Konten heute  Begrenzter Vorrat, hohe Nachfrage!',
 };
 
 const ctaText: Record<Language, string> = {
