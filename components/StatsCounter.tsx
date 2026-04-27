@@ -9,7 +9,11 @@ interface StatItem {
 }
 
 interface StatsCounterProps {
-  stats: StatItem[];
+  stats?: StatItem[];
+  end?: number;
+  prefix?: string;
+  suffix?: string;
+  speed?: string;
 }
 
 function CountUpNumber({ value, suffix = '' }: { value: number; suffix?: string }) {
@@ -55,7 +59,59 @@ function CountUpNumber({ value, suffix = '' }: { value: number; suffix?: string 
   );
 }
 
-export default function StatsCounter({ stats }: StatsCounterProps) {
+function SingleCounter({ end = 0, prefix = '', suffix = '', speed = 'medium-fast' }: { end?: number; prefix?: string; suffix?: string; speed?: string }) {
+  const [count, setCount] = useState(0);
+  const ref = useRef<HTMLSpanElement>(null);
+  const hasAnimated = useRef(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(([entry]) => {
+      if (entry.isIntersecting && !hasAnimated.current) {
+        hasAnimated.current = true;
+        const duration = speed === 'fast' ? 1000 : speed === 'medium-fast' ? 2000 : 3000;
+        const steps = 60;
+        const increment = end / steps;
+        let current = 0;
+
+        const interval = setInterval(() => {
+          current += increment;
+          if (current >= end) {
+            setCount(end);
+            clearInterval(interval);
+          } else {
+            setCount(Math.floor(current));
+          }
+        }, duration / steps);
+
+        return () => clearInterval(interval);
+      }
+    });
+
+    if (ref.current) {
+      observer.observe(ref.current);
+    }
+
+    return () => observer.disconnect();
+  }, [end, speed]);
+
+  return (
+    <span ref={ref}>
+      {prefix}{count.toLocaleString()}{suffix}
+    </span>
+  );
+}
+
+export default function StatsCounter({ stats, end, prefix, suffix, speed }: StatsCounterProps) {
+  // Single-counter mode (used in HomeClient hero value rows)
+  if (end !== undefined) {
+    return <SingleCounter end={end} prefix={prefix} suffix={suffix} speed={speed} />;
+  }
+
+  // Grid mode with stats array
+  if (!stats || !Array.isArray(stats)) {
+    return null;
+  }
+
   return (
     <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8">
       {stats.map((stat, idx) => (
@@ -69,4 +125,3 @@ export default function StatsCounter({ stats }: StatsCounterProps) {
     </div>
   );
 }
-

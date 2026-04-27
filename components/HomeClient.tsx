@@ -18,6 +18,8 @@ import ScrollAnimationWrapper from '@/components/ScrollAnimationWrapper';
 import GalleryAutoSlider from '@/components/GalleryAutoSlider';
 import { Check, Bolt, ShieldCheck, Globe2, Headset } from 'lucide-react';
 
+declare const fbq: (...args: any[]) => void;
+
 // ─────────────────────────────────────────────────────────────
 // INLINE TRANSLATIONS (9 languages) - Embedded in this file
 // ─────────────────────────────────────────────────────────────
@@ -39,6 +41,7 @@ interface HomeTranslations {
     protection: string;
     coverage: string;
     jurisdictions: string;
+    processed: string;
   };
   featureCards: Array<{ title: string; description: string }>;
   solutions: {
@@ -111,6 +114,7 @@ const homeTranslations: Record<Language, HomeTranslations> = {
       protection: 'Included',
       coverage: 'Coverage',
       jurisdictions: 'Global',
+      processed: 'Processed',
     },
     featureCards: [
       { title: 'Instant Setup', description: 'Get started in minutes, not days.' },
@@ -251,6 +255,7 @@ const homeTranslations: Record<Language, HomeTranslations> = {
       protection: 'Inclus',
       coverage: 'Couverture',
       jurisdictions: 'Mondiale',
+      processed: 'Traité',
     },
     featureCards: [
       { title: 'Configuration instantanée', description: 'Commencez en minutes, pas en jours.' },
@@ -391,6 +396,7 @@ const homeTranslations: Record<Language, HomeTranslations> = {
       protection: 'مشمول',
       coverage: 'التغطية',
       jurisdictions: 'عالمية',
+      processed: 'معالجته',
     },
     featureCards: [
       { title: 'إعداد فوري', description: 'ابدأ في دقائق، ليس أيام.' },
@@ -531,6 +537,7 @@ const homeTranslations: Record<Language, HomeTranslations> = {
       protection: 'Incluido',
       coverage: 'Cobertura',
       jurisdictions: 'Global',
+      processed: 'Procesado',
     },
     featureCards: [
       { title: 'Configuración instantánea', description: 'Comienza en minutos, no en días.' },
@@ -671,6 +678,7 @@ const homeTranslations: Record<Language, HomeTranslations> = {
       protection: 'Incluído',
       coverage: 'Cobertura',
       jurisdictions: 'Global',
+      processed: 'Processado',
     },
     featureCards: [
       { title: 'Configuração instantânea', description: 'Comece em minutos, não em dias.' },
@@ -811,6 +819,7 @@ const homeTranslations: Record<Language, HomeTranslations> = {
       protection: 'Đã bao gồm',
       coverage: 'Phạm vi',
       jurisdictions: 'Toàn cầu',
+      processed: 'Đã xử lý',
     },
     featureCards: [
       { title: 'Thiết lập tức thì', description: 'Bắt đầu trong vài phút, không phải vài ngày.' },
@@ -951,6 +960,7 @@ const homeTranslations: Record<Language, HomeTranslations> = {
       protection: 'Incluso',
       coverage: 'Copertura',
       jurisdictions: 'Globale',
+      processed: 'Elaborato',
     },
     featureCards: [
       { title: 'Configurazione istantanea', description: 'Inizia in minuti, non in giorni.' },
@@ -1091,6 +1101,7 @@ const homeTranslations: Record<Language, HomeTranslations> = {
       protection: '已包含',
       coverage: '覆盖范围',
       jurisdictions: '全球',
+      processed: '已处理',
     },
     featureCards: [
       { title: '即时设置', description: '几分钟内开始，而非几天。' },
@@ -1231,6 +1242,7 @@ const homeTranslations: Record<Language, HomeTranslations> = {
       protection: 'Inklusive',
       coverage: 'Abdeckung',
       jurisdictions: 'Global',
+      processed: 'Verarbeitet',
     },
     featureCards: [
       { title: 'Sofortige Einrichtung', description: 'Starten Sie in Minuten, nicht Tagen.' },
@@ -1411,11 +1423,25 @@ export default function HomeClient() {
   // Proof items using inline translations
   const proofs = [t.proof.p1, t.proof.p2, t.proof.p3, t.proof.p4, t.proof.p5, t.proof.p6];
 
-  // Value rows using inline translations
+  // Value rows using inline translations - ONLY 3: Setup Time, Processed ($500k+ counter), Coverage
   const valueRows = [
-    { label: t.terms.title, value: t.terms.setup },
-    { label: t.terms.escrow, value: t.terms.protection },
-    { label: t.terms.coverage, value: t.terms.jurisdictions },
+    { 
+      label: t.terms.title, 
+      value: language === 'en' ? '10 minutes' : (language === 'fr' ? '10 minutes' : (language === 'ar' ? '10 دقائق' : (language === 'es' ? '10 minutos' : (language === 'pt' ? '10 minutos' : (language === 'vi' ? '10 phút' : (language === 'it' ? '10 minuti' : (language === 'zh' ? '10分钟' : (language === 'de' ? '10 Minuten' : t.terms.setup)))))))) 
+    },
+    { 
+      label: t.terms.processed,
+      value: '$500k+',
+      isCounter: true,
+      counterEnd: 500,
+      counterPrefix: '$',
+      counterSuffix: 'k+',
+      counterSpeed: 'medium-fast'
+    },
+    { 
+      label: t.terms.coverage, 
+      value: t.terms.jurisdictions 
+    },
   ];
 
   // Feature cards with inline translations
@@ -1530,6 +1556,9 @@ export default function HomeClient() {
     { title: t.proof.cards[5].title, src: '/11.jpg', alt: t.proof.cards[5].alt },
   ];
 
+
+
+
   return (
     <main className="w-full bg-white text-gray-900" dir={isArabic ? 'rtl' : 'ltr'}>
       <Header />
@@ -1552,14 +1581,78 @@ export default function HomeClient() {
               <p className="mb-6 inline-flex rounded-full border border-black/10 bg-white/90 px-4 py-2 text-xs uppercase tracking-[0.4em] text-slate-900 shadow-lg shadow-slate-950/10">
                 {t.hero.badge}
               </p>
-              <h1 className="mt-6 text-5xl font-semibold leading-tight tracking-[-0.04em] text-black sm:text-6xl lg:text-7xl">
-                {t.hero.title}
+              {/* NEW HEADLINE split into two lines for English and similar for other languages */}
+              <h1 className="mt-6 text-5xl font-extrabold leading-tight tracking-[-0.04em] text-black sm:text-6xl lg:text-7xl">
+                {language === 'en' && (
+                  <>
+                    Stop Getting Your Payments Blocked<br />
+                    <span className="text-sky-600">Get Verified Accounts in Minutes!</span>
+                  </>
+                )}
+                {language === 'fr' && (
+                  <>
+                    Stop aux paiements bloqués<br />
+                    <span className="text-sky-600">Comptes vérifiés en quelques minutes !</span>
+                  </>
+                )}
+                {language === 'ar' && (
+                  <>
+                    توقف عن حظر مدفوعاتك<br />
+                    <span className="text-sky-600">احصل على حسابات موثقة خلال دقائق!</span>
+                  </>
+                )}
+                {language === 'es' && (
+                  <>
+                    Deja de bloquear tus pagos<br />
+                    <span className="text-sky-600">Consigue cuentas verificadas en minutos!</span>
+                  </>
+                )}
+                {language === 'pt' && (
+                  <>
+                    Pare de bloquear seus pagamentos<br />
+                    <span className="text-sky-600">Contas verificadas em minutos!</span>
+                  </>
+                )}
+                {language === 'vi' && (
+                  <>
+                    Ngừng bị chặn thanh toán<br />
+                    <span className="text-sky-600">Nhận tài khoản xác minh trong vài phút!</span>
+                  </>
+                )}
+                {language === 'it' && (
+                  <>
+                    Basta blocchi ai pagamenti<br />
+                    <span className="text-sky-600">Account verificati in pochi minuti!</span>
+                  </>
+                )}
+                {language === 'zh' && (
+                  <>
+                    停止支付被封<br />
+                    <span className="text-sky-600">几分钟内获取已验证账户！</span>
+                  </>
+                )}
+                {language === 'de' && (
+                  <>
+                    Keine Zahlungsblockaden mehr<br />
+                    <span className="text-sky-600">Verifizierte Konten in Minuten!</span>
+                  </>
+                )}
               </h1>
-              <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-slate-900 sm:text-xl">
-                {t.hero.description}
+              <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-slate-900 sm:text-xl font-semibold">
+                {/* Multi-language subheadline */}
+                {language === 'en' && 'For dropshippers & high-risk businesses'}
+                {language === 'fr' && 'Pour dropshippers & entreprises à risque'}
+                {language === 'ar' && 'للدروبشيبرز والأعمال عالية المخاطر'}
+                {language === 'es' && 'Para dropshippers y negocios de alto riesgo'}
+                {language === 'pt' && 'Para dropshippers e negócios de alto risco'}
+                {language === 'vi' && 'Cho dropshipper & doanh nghiệp rủi ro cao'}
+                {language === 'it' && 'Per dropshipper e aziende ad alto rischio'}
+                {language === 'zh' && '适用于高风险电商和企业'}
+                {language === 'de' && 'Für Dropshipper & Hochrisiko-Unternehmen'}
               </p>
             </div>
 
+            {/* CTA with Facebook Pixel and urgency text */}
             <div className="mt-12 flex flex-col items-center justify-center gap-4 sm:flex-row sm:justify-center">
               <a
                 href="https://t.me/ADjamesGrugeon"
@@ -1568,16 +1661,36 @@ export default function HomeClient() {
                 onClick={() => fbq('track', 'Lead', {content_name: 'Hero Button'})}
                 className="inline-flex items-center justify-center rounded-full bg-sky-500 px-8 py-4 text-base font-semibold text-slate-950 shadow-xl shadow-sky-500/30 transition hover:bg-sky-400"
               >
-                {t.hero.cta1}
+                {/* Multi-language CTA */}
+                {language === 'en' && 'Message James Now'}
+                {language === 'fr' && 'Message James maintenant'}
+                {language === 'ar' && 'راسل جيمس الآن'}
+                {language === 'es' && 'Mensajea a James ahora'}
+                {language === 'pt' && 'Mensagem para James agora'}
+                {language === 'vi' && 'Nhắn James ngay'}
+                {language === 'it' && 'Messaggia James ora'}
+                {language === 'zh' && '立即联系 James'}
+                {language === 'de' && 'Jetzt James kontaktieren'}
               </a>
-              
             </div>
 
+            {/* Value rows (setup, processed with counter, coverage) - ONLY 3 items */}
             <div className="mx-auto mt-12 grid max-w-5xl gap-4 sm:grid-cols-3">
-              {valueRows.map((row) => (
+              {valueRows.map((row, idx) => (
                 <div key={row.label} className="rounded-3xl border border-black/10 bg-white/90 px-6 py-5 shadow-sm">
                   <p className="text-xs uppercase tracking-[0.3em] text-slate-700">{row.label}</p>
-                  <p className="mt-3 text-3xl font-semibold text-black">{row.value}</p>
+                  <p className="mt-3 text-3xl font-semibold text-black">
+                    {row.isCounter ? (
+                      <StatsCounter 
+                        end={row.counterEnd} 
+                        prefix={row.counterPrefix} 
+                        suffix={row.counterSuffix}
+                        speed={row.counterSpeed}
+                      />
+                    ) : (
+                      row.value
+                    )}
+                  </p>
                 </div>
               ))}
             </div>

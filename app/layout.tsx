@@ -4,6 +4,7 @@ import { Analytics } from '@vercel/analytics/next'
 import Script from 'next/script'
 import './globals.css'
 import Footer from '@/components/Footer';
+import NotificationBar from '@/components/NotificationBar';
 import { Providers } from './providers'
 
 const _geist = Geist({ subsets: ['latin'] });
@@ -53,7 +54,10 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning dir="ltr">
       <body className="font-sans antialiased bg-white text-gray-900">
         <Providers>
-          {children}
+          <NotificationBar />
+          <div className="pt-16 sm:pt-12">
+            {children}
+          </div>
           <Footer />
 {process.env.NODE_ENV === 'production' && <Analytics />}
           <Script

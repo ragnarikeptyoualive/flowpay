@@ -10,17 +10,20 @@ import { useLanguage } from '@/app/providers';
 import { translations } from '@/lib/translations';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 
+declare const fbq: (...args: any[]) => void;
+
 export default function Header() {
   const { language } = useLanguage();
   const t = translations[language];
   const router = useRouter();
   const pathname = usePathname();
   
-  const [isScrolled, setIsScrolled] = useState(false);
+  const [isAtTop, setIsAtTop] = useState(true);
   const [showHeader, setShowHeader] = useState(true);
   const lastScrollY = useRef(0);
+  const isHomePage = pathname === '/';
 
-  // 🔍 Dev-only warning for missing nav translations
+  // 🔍 Dev-only warning
   if (process.env.NODE_ENV === 'development' && !t?.nav) {
     console.warn(`[i18n] Missing "nav" section for language: ${language}`);
   }
@@ -28,19 +31,24 @@ export default function Header() {
   useEffect(() => {
     const handleScroll = () => {
       const scrollY = window.scrollY;
-      setIsScrolled(scrollY > 20);
+
+      // Detect top
+      setIsAtTop(scrollY < 20);
+
+      // Show/hide logic
       if (scrollY < 80) {
         setShowHeader(true);
       } else {
         setShowHeader(scrollY < lastScrollY.current);
       }
+
       lastScrollY.current = scrollY;
     };
+
     window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // Nav links configuration - sections that exist on home page
   const sectionLinks = [
     { id: 'solutions', label: t?.nav?.solutions || 'Solutions' },
     { id: 'continuity', label: t?.nav?.continuity || 'Continuity' },
@@ -48,30 +56,21 @@ export default function Header() {
     { id: 'faq', label: t?.nav?.faq || 'FAQ' },
   ];
 
-  // Helper: Navigate to home page and scroll to section
   const navigateToSection = (sectionId: string) => {
-    const isHomePage = pathname === '/';
-    
     if (isHomePage) {
-      // Already on home page - just scroll
       const element = document.getElementById(sectionId);
       if (element) {
         element.scrollIntoView({ behavior: 'smooth' });
-        window.history.pushState(null, '', `#${sectionId}`);
       }
     } else {
-      // On different page - navigate to home with hash, then scroll after load
-      // Store target section in sessionStorage for the home page to read
       sessionStorage.setItem('scrollToSection', sectionId);
       router.push(`/#${sectionId}`);
     }
   };
 
-  // Effect: Handle scroll-to-section after navigation from another page
   useEffect(() => {
     const targetSection = sessionStorage.getItem('scrollToSection');
     if (targetSection && pathname === '/') {
-      // Small delay to ensure content is rendered
       const timer = setTimeout(() => {
         const element = document.getElementById(targetSection);
         if (element) {
@@ -85,100 +84,122 @@ export default function Header() {
 
   return (
     <header
-      className={`fixed top-0 left-0 w-full z-50 transform transition-transform duration-300 ${
-        showHeader ? 'translate-y-0' : '-translate-y-full'
+      className={`fixed top-[3.5rem] sm:top-12 left-0 w-full z-40 transform transition-all duration-500 ease-in-out ${
+        showHeader ? 'translate-y-0 opacity-100' : '-translate-y-full opacity-0'
       } ${
-        isScrolled
+        isAtTop && isHomePage
+          ? 'bg-transparent'
+          : showHeader
           ? 'bg-white/90 backdrop-blur-md border-b border-gray-200 shadow-sm'
           : 'bg-transparent'
       }`}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between gap-4">
-        <Link href="/" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="flex items-center gap-3 overflow-visible">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2 flex items-center justify-between gap-4">
+        
+        <Link
+          href="/"
+          onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+          className="flex items-center gap-3 overflow-visible"
+        >
           <img
             src="/logo.png"
             alt="FlowPay Logo"
-            className="h-20 w-auto scale-110 sm:h-24 sm:scale-125"
+            className="h-20 w-auto scale-110 sm:h-24 sm:scale-125 transition-transform duration-300"
           />
         </Link>
 
         {/* Desktop Navigation */}
-        <nav className="hidden lg:flex gap-8 text-sm">
+        <nav
+          className={`hidden lg:flex gap-8 text-sm transition-colors duration-300 ${
+            isAtTop && isHomePage ? 'text-white drop-shadow-md' : 'text-gray-700'
+          }`}
+        >
           {sectionLinks.map((link) => (
             <button
               key={link.id}
               onClick={() => navigateToSection(link.id)}
-              className="text-gray-700 hover:text-black transition cursor-pointer bg-transparent border-none p-0 font-inherit"
+              className={`transition cursor-pointer bg-transparent border-none p-0 font-inherit ${
+                isAtTop && isHomePage ? 'hover:text-white/80' : 'hover:text-black'
+              }`}
             >
               {link.label}
             </button>
           ))}
-          {/* Feedbacks link - goes to separate page */}
+
           <Link
             href="/feedbacks"
-            className="text-gray-700 hover:text-black transition"
+            className={`transition ${
+              isAtTop && isHomePage ? 'hover:text-white/80' : 'hover:text-black'
+            }`}
           >
             {t?.nav?.feedbacks || 'Feedbacks'}
           </Link>
         </nav>
 
-        {/* Right Side Controls */}
+        {/* Right Side */}
         <div className="hidden items-center gap-4 lg:flex">
           <button
             type="button"
             onClick={() => {
-              fbq('track', 'Lead', {content_name: 'Floating Button'});
+              if (typeof fbq !== 'undefined') {
+                fbq('track', 'Lead', { content_name: 'Floating Button' });
+              }
               window.open('https://t.me/ADjamesGrugeon', '_blank');
             }}
             className="rounded-full bg-sky-500 px-4 py-2 text-sm font-semibold text-slate-950 shadow-xl shadow-sky-500/30 hover:bg-sky-400 transition-all duration-300"
           >
             {t?.nav?.cta || 'Talk to James'}
           </button>
+
           <LanguageSelector />
         </div>
 
-        {/* Mobile Menu */}
+        {/* Mobile */}
         <div className="flex items-center gap-4 lg:hidden">
           <LanguageSelector />
+
           <Sheet>
-            <SheetTrigger asChild className="lg:hidden">
-              <button 
-                className="p-2 rounded-lg hover:bg-gray-100 text-gray-700 transition [&>svg]:pointer-events-none"
+            <SheetTrigger asChild>
+              <button
+                className={`p-2 rounded-lg transition ${
+                  isAtTop && isHomePage
+                    ? 'hover:bg-white/10 text-white drop-shadow-md'
+                    : 'hover:bg-gray-100 text-gray-700'
+                }`}
                 aria-label={t?.nav?.mobileMenuLabel || 'Open menu'}
               >
-                <Menu className="w-6 h-6 pointer-events-none" />
+                <Menu className="w-6 h-6" />
               </button>
             </SheetTrigger>
+
             <SheetContent side="right" className="w-72 bg-white border-l border-gray-200">
               <div className="mt-8 space-y-1">
                 <h3 className="text-xs font-semibold text-gray-500 uppercase tracking-wider px-4 mb-6">
                   {t?.nav?.mobileTitle || 'Navigation'}
                 </h3>
-                {/* Section links - navigate to home + scroll */}
+
                 {sectionLinks.map((link) => (
                   <button
                     key={link.id}
                     onClick={() => {
                       navigateToSection(link.id);
-                      // Close sheet
-                      const closeBtn = document.querySelector('[data-radix-sheet-close]') as HTMLElement;
-                      closeBtn?.click();
+                      document.querySelector('[data-radix-sheet-close]')?.dispatchEvent(new Event('click'));
                     }}
-                    className="w-full text-left px-4 py-3 rounded-lg text-gray-700 hover:bg-blue-50 hover:text-blue-600 font-medium transition bg-transparent border-none cursor-pointer"
+                    className="w-full text-left px-4 py-3 rounded-lg text-gray-700 hover:bg-blue-50 hover:text-blue-600 font-medium transition"
                   >
                     {link.label}
                   </button>
                 ))}
-                {/* Feedbacks - separate page */}
+
                 <button
-                  type="button"
-                  onClick={(e) => {
-                    fbq('track', 'Lead', {content_name: 'Pop-up Connect'}); 
+                  onClick={() => {
+                    if (typeof fbq !== 'undefined') {
+                      fbq('track', 'Lead', { content_name: 'Pop-up Connect' });
+                    }
                     window.open('https://t.me/ADjamesGrugeon?text=Inquiry_NewAccount', '_blank');
-                    const closeBtn = document.querySelector('[data-radix-sheet-close]') as HTMLElement;
-                    closeBtn?.click();
+                    document.querySelector('[data-radix-sheet-close]')?.dispatchEvent(new Event('click'));
                   }}
-                  className="w-full text-left px-4 py-3 rounded-lg text-gray-700 hover:bg-blue-50 hover:text-blue-600 font-medium transition bg-transparent border-none cursor-pointer"
+                  className="w-full text-left px-4 py-3 rounded-lg text-gray-700 hover:bg-blue-50 hover:text-blue-600 font-medium transition"
                 >
                   {t?.nav?.feedbacks || 'Feedbacks'}
                 </button>

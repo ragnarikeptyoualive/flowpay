@@ -1,13 +1,20 @@
-# Meta Pixel Implementation TODO
-Status: ✅ Approved by user
+# Funnel Optimization TODO
 
-## Steps:
-- [x] 1. Create this TODO.md
-- [x] 2. Add Pixel base script to app/layout.tsx
-- [x] 3. Edit components/HomeClient.tsx (Hero + WhatsApp onclick)
-- [x] 4. Edit components/Header.tsx (2x desktop/mobile onclick)
-- [x] 5. Edit components/Footer.tsx (Contact onclick)
-- [x] 6. Edit components/TelegramChannelSection.tsx (Join onclick)
-- [x] 7. Test: pnpm dev, check console/network/fb Events Manager
-- [x] 8. Update TODO progress
-- [ ] 9. attempt_completion
+## Steps
+
+- [x] 1. Analyze current codebase and identify issues
+- [ ] 2. Rewrite `components/HomeClient.tsx` with optimized funnel
+  - [ ] Add Urgency Notification Bar (all 9 languages)
+  - [ ] Update Hero with pain-driven headline + keep video bg
+  - [ ] Add Trust Stats section (StatsCounter)
+  - [ ] Add Offer section (4 cards: Stripe, Shopify, PayPal, Banking)
+  - [ ] Keep Solutions + Continuity + Proof (GalleryAutoSlider)
+  - [ ] Update How It Works to 4 steps
+  - [ ] Update FAQ to 6 questions with new copy
+  - [ ] Update Final CTA with urgency copy
+  - [ ] Ensure all CTAs use `fbq('track', 'Lead')`
+  - [ ] Complete translations for all 9 languages
+- [ ] 3. Update `components/Header.tsx` — ensure CTA uses pixel tracking
+- [ ] 4. Update `components/Footer.tsx` — ensure Telegram link uses pixel tracking
+- [ ] 5. Build & verify no errors
+
