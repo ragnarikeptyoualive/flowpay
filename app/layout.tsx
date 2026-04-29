@@ -51,7 +51,24 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning dir="ltr">
+<html lang="en" suppressHydrationWarning dir="ltr">
+      <Script
+        src="https://www.googletagmanager.com/gtag/js?id=G-DLJLZFNV6H"
+        strategy="afterInteractive"
+      />
+      <Script
+        id="google-gtag"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-DLJLZFNV6H');
+          `,
+        }}
+      />
       <body className="font-sans antialiased bg-white text-gray-900">
         <Providers>
           <NotificationBar />
